@@ -1,0 +1,59 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_10dcf/fast && /usr/bin/gmake -f CMakeFiles/cmTC_10dcf.dir/build.make CMakeFiles/cmTC_10dcf.dir/build
+gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_10dcf.dir/src.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_10dcf.dir/src.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_10dcf
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10dcf.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_10dcf.dir/src.cxx.o  -o cmTC_10dcf 
+CMakeFiles/cmTC_10dcf.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x2d): undefined reference to `pthread_create'
+src.cxx:(.text+0x39): undefined reference to `pthread_detach'
+src.cxx:(.text+0x4a): undefined reference to `pthread_join'
+src.cxx:(.text+0x5e): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_10dcf] Error 1
+gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_10dcf/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d554d/fast && /usr/bin/gmake -f CMakeFiles/cmTC_d554d.dir/build.make CMakeFiles/cmTC_d554d.dir/build
+gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d554d.dir/CheckFunctionExists.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d554d.dir/CheckFunctionExists.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_d554d
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d554d.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d554d.dir/CheckFunctionExists.cxx.o  -o cmTC_d554d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_d554d] Error 1
+gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_d554d/fast] Error 2
+
+
+

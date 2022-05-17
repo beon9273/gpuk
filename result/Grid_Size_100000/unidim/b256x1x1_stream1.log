@@ -1,0 +1,29 @@
+INFO: float precision operand used.
+
+Device : Tesla T4
+maxThreadsPerMultiProcessor : 1024
+maxGridSize : (2147483647, 65535, 65535)
+maxThreadsPerBlock : 1024
+maxThreadsDim : (1024, 1024, 64)
+regsPerMultiprocessor : 65536
+regsPerBlock : 65536
+Cuda driver version: 11040
+Cuda rt version: 11030
+INFO: Warp Occupancy with block size 256 : 25%
+INFO: Estimated max occupancy with block size =  256, min grid size = 40
+
+INFO: grid size = 100000 x 1, block size =  256 x 1
+INFO: Creating 10 boundless plane surfaces
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+
+INFO: Time (ms) to run simulation: 2020.89
+INFO: Time (ms) for KF track fitting on device 0 : 138.533803
+INFO: Total Wall clock time (ms) for KF track fitting: 138.604630
+------------------------  ending  -----------------------

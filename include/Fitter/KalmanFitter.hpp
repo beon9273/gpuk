@@ -24,6 +24,9 @@
 
 #include <functional>
 #include <memory>
+#include <cuda/std/chrono>
+#include <iostream>
+#include <time.h>
 
 namespace Acts {
 
@@ -752,8 +755,33 @@ public:
     kalmanActor.m_outlierFinder = kfOptions.outlierFinder;
 
     // Run the fitter
+
+
+
+    // auto tstart = cuda::std::chrono::high_resolution_clock::now();
+    // std::chrono::duration<double> start_seconds = tstart;
+    // auto tstart = cuda::std::chrono::system_clock::now();
+
+    // int64_t t0 = clock ();
     const PropagatorResult propRes =
         m_propagator.template propagate(sParameters, kalmanOptions, kfResult);
+    // printf("Propagation time: %ld microseconds\n", clock () - t0);
+    // printf("%d, %ld\n", propRes.steps, clock()-t0);
+
+
+    // auto tstop = cuda::std::chrono::high_resolution_clock::now();
+    // std::chrono::duration<double> stop_seconds = tstop;
+    // auto tstop = cuda::std::chrono::system_clock::now();
+    // auto duration = cuda::std::chrono::duration_cast<cuda::std::chrono::nanoseconds>(tstop-tstart);
+    // std::chrono::duration<double> elapsed_seconds = tstop-tstart;
+
+    // std::cout << "Number of RK4 Steps in this track: " << propRes.steps << std::endl;
+    // std::cout << "Propergation time:" << duration.count() << "microseconds" << std::endl;
+
+    // printf("Number of RK4 Steps in this track: %d; Propagation time: %ld microseconds\n", propRes.steps);
+    // printf("Propagation time: %0.5lf nanoseconds\n", duration.count());
+    // printf("Propagation time: %0.5lf microseconds\n", elapsed_seconds.count());
+
 
     POP_RANGE();
 

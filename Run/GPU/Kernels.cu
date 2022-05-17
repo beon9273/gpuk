@@ -24,6 +24,7 @@ fitKernelThreadPerTrack(KalmanFitterType *kFitter,
   // Different threads handles different track
   if (threadId < (nTracks + offset)) {
     // Use the CudaKernelContainer for the source links and fitted states
+    // printf("Start Thread Id is %d\n", threadId);
     KalmanFitterResultType fitResult;
     fitResult.fittedStates = Acts::CudaKernelContainer<TSType>(
         fittedStates + threadId * nSurfaces, nSurfaces);
@@ -41,6 +42,7 @@ fitKernelThreadPerTrack(KalmanFitterType *kFitter,
     // Set the fitted parameters
     // @WARNING The reference surface in fPars doesn't make sense actually
     fitPars[threadId] = fitResult.fittedParameters;
+    // printf("End Thread Id is %d\n", threadId);
   }
 }
 

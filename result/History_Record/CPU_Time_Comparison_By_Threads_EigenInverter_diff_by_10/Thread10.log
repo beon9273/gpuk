@@ -1,0 +1,14 @@
+INFO: float precision operand used.
+INFO: Creating 10 boundless plane surfaces
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+
+INFO: Time (ms) to run simulation: 2091.83
+INFO: Time (ms) to run KF track fitting for 10000 with 10 OMP threads: 246.052
+------------------------  ending  -----------------------

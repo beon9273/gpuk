@@ -11,6 +11,10 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
 
   PropagatorResult result;
 
+  int surface_steps = 0;
+  int surface_counts = 0;
+
+
   using StateType = State<propagator_options_t>;
   StateType state(start, options);
 
@@ -40,7 +44,9 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       // Perform a propagation step - it takes the propagation state
 
       PUSH_RANGE("step", 3);
+      int64_t t0 = clock ();
       bool res = m_stepper.step(state);
+      int64_t t1 = clock ();
       // How to handle the error here
       // if (not res) {
       //}
@@ -49,12 +55,21 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       // result.pathLength += s;
 
       POP_RANGE();
+      ++surface_steps;
 
       // Post-stepping:
       // navigator status call - action list - aborter list - target call
 
       PUSH_RANGE("status + action", 4);
       m_navigator.status(state, m_stepper);
+
+      auto surface = state.navigation.currentSurface;
+      if (surface != nullptr) {
+        printf("Steps %d; %d; %ld\n", surface_steps, surface_counts, t1-t0);
+        surface_steps = 0;
+        ++surface_counts;
+      }
+
       state.options.action(state, m_stepper, actorResult);
 
       if (state.options.aborter(state, m_stepper, actorResult) or
@@ -147,11 +162,14 @@ __device__ void Acts::Propagator<S, N>::propagate(
     }
     __syncthreads();
     // Propagation loop : stepping
+    int surface_steps = 0;
+    int surface_counts = 0;
 
     for (int step = result.steps; step < state.options.maxSteps; ++step) {
       // Perform a propagation step - it takes the propagation state
       if (IS_MAIN_THREAD) {
         ++result.steps;
+        ++surface_steps;
       }
       // maybe don't need syncthreads here
       __syncthreads();
@@ -170,7 +188,13 @@ __device__ void Acts::Propagator<S, N>::propagate(
         m_navigator.status(state, m_stepper);
       }
       __syncthreads();
-
+      auto surface = state.navigation.currentSurface;
+      printf("Steps %d; %d\n", surface_steps, surface_counts);
+      if (surface != nullptr && IS_MAIN_THREAD) {
+        printf("Steps %d; %d\n", surface_steps, surface_counts);
+        surface_steps = 0;
+        ++surface_counts;
+      }
       // The state and actorResult is at shared memory. The m_stepper is at
       // global memory
       state.options.action.actionOnDevice(state, m_stepper, actorResult);

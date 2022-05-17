@@ -1,0 +1,2607 @@
+INFO: float precision operand used.
+
+Device : Tesla T4
+maxThreadsPerMultiProcessor : 1024
+maxGridSize : (2147483647, 65535, 65535)
+maxThreadsPerBlock : 1024
+maxThreadsDim : (1024, 1024, 64)
+regsPerMultiprocessor : 65536
+regsPerBlock : 65536
+Cuda driver version: 11040
+Cuda rt version: 11030
+INFO: Warp Occupancy with block size 64 : 25%
+INFO: Estimated max occupancy with block size =  256, min grid size = 40
+
+INFO: grid size = 5120 x 1, block size =  8 x 8
+INFO: Creating 10 boundless plane surfaces
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+Warning! Generated particle rejected!
+
+INFO: Time (ms) to run simulation: 2435.82
+Start Thread Id is 7648
+Start Thread Id is 7649
+Start Thread Id is 7650
+Start Thread Id is 7651
+Start Thread Id is 7652
+Start Thread Id is 7653
+Start Thread Id is 7654
+Start Thread Id is 7655
+Start Thread Id is 7656
+Start Thread Id is 7657
+Start Thread Id is 7658
+Start Thread Id is 7659
+Start Thread Id is 7660
+Start Thread Id is 7661
+Start Thread Id is 7662
+Start Thread Id is 7663
+Start Thread Id is 7664
+Start Thread Id is 7665
+Start Thread Id is 7666
+Start Thread Id is 7667
+Start Thread Id is 7668
+Start Thread Id is 7669
+Start Thread Id is 7670
+Start Thread Id is 7671
+Start Thread Id is 7672
+Start Thread Id is 7673
+Start Thread Id is 7674
+Start Thread Id is 7675
+Start Thread Id is 7676
+Start Thread Id is 7677
+Start Thread Id is 7678
+Start Thread Id is 7679
+Start Thread Id is 2112
+Start Thread Id is 2113
+Start Thread Id is 2114
+Start Thread Id is 2115
+Start Thread Id is 2116
+Start Thread Id is 2117
+Start Thread Id is 2118
+Start Thread Id is 2119
+Start Thread Id is 2120
+Start Thread Id is 2121
+Start Thread Id is 2122
+Start Thread Id is 2123
+Start Thread Id is 2124
+Start Thread Id is 2125
+Start Thread Id is 2126
+Start Thread Id is 2127
+Start Thread Id is 2128
+Start Thread Id is 2129
+Start Thread Id is 2130
+Start Thread Id is 2131
+Start Thread Id is 2132
+Start Thread Id is 2133
+Start Thread Id is 2134
+Start Thread Id is 2135
+Start Thread Id is 2136
+Start Thread Id is 2137
+Start Thread Id is 2138
+Start Thread Id is 2139
+Start Thread Id is 2140
+Start Thread Id is 2141
+Start Thread Id is 2142
+Start Thread Id is 2143
+Start Thread Id is 6784
+Start Thread Id is 6785
+Start Thread Id is 6786
+Start Thread Id is 6787
+Start Thread Id is 6788
+Start Thread Id is 6789
+Start Thread Id is 6790
+Start Thread Id is 6791
+Start Thread Id is 6792
+Start Thread Id is 6793
+Start Thread Id is 6794
+Start Thread Id is 6795
+Start Thread Id is 6796
+Start Thread Id is 6797
+Start Thread Id is 6798
+Start Thread Id is 6799
+Start Thread Id is 6800
+Start Thread Id is 6801
+Start Thread Id is 6802
+Start Thread Id is 6803
+Start Thread Id is 6804
+Start Thread Id is 6805
+Start Thread Id is 6806
+Start Thread Id is 6807
+Start Thread Id is 6808
+Start Thread Id is 6809
+Start Thread Id is 6810
+Start Thread Id is 6811
+Start Thread Id is 6812
+Start Thread Id is 6813
+Start Thread Id is 6814
+Start Thread Id is 6815
+Start Thread Id is 5696
+Start Thread Id is 5697
+Start Thread Id is 5698
+Start Thread Id is 5699
+Start Thread Id is 5700
+Start Thread Id is 5701
+Start Thread Id is 5702
+Start Thread Id is 5703
+Start Thread Id is 5704
+Start Thread Id is 5705
+Start Thread Id is 5706
+Start Thread Id is 5707
+Start Thread Id is 5708
+Start Thread Id is 5709
+Start Thread Id is 5710
+Start Thread Id is 5711
+Start Thread Id is 5712
+Start Thread Id is 5713
+Start Thread Id is 5714
+Start Thread Id is 5715
+Start Thread Id is 5716
+Start Thread Id is 5717
+Start Thread Id is 5718
+Start Thread Id is 5719
+Start Thread Id is 5720
+Start Thread Id is 5721
+Start Thread Id is 5722
+Start Thread Id is 5723
+Start Thread Id is 5724
+Start Thread Id is 5725
+Start Thread Id is 5726
+Start Thread Id is 5727
+Start Thread Id is 6304
+Start Thread Id is 6305
+Start Thread Id is 6306
+Start Thread Id is 6307
+Start Thread Id is 6308
+Start Thread Id is 6309
+Start Thread Id is 6310
+Start Thread Id is 6311
+Start Thread Id is 6312
+Start Thread Id is 6313
+Start Thread Id is 6314
+Start Thread Id is 6315
+Start Thread Id is 6316
+Start Thread Id is 6317
+Start Thread Id is 6318
+Start Thread Id is 6319
+Start Thread Id is 6320
+Start Thread Id is 6321
+Start Thread Id is 6322
+Start Thread Id is 6323
+Start Thread Id is 6324
+Start Thread Id is 6325
+Start Thread Id is 6326
+Start Thread Id is 6327
+Start Thread Id is 6328
+Start Thread Id is 6329
+Start Thread Id is 6330
+Start Thread Id is 6331
+Start Thread Id is 6332
+Start Thread Id is 6333
+Start Thread Id is 6334
+Start Thread Id is 6335
+Start Thread Id is 5408
+Start Thread Id is 5409
+Start Thread Id is 5410
+Start Thread Id is 5411
+Start Thread Id is 5412
+Start Thread Id is 5413
+Start Thread Id is 5414
+Start Thread Id is 5415
+Start Thread Id is 5416
+Start Thread Id is 5417
+Start Thread Id is 5418
+Start Thread Id is 5419
+Start Thread Id is 5420
+Start Thread Id is 5421
+Start Thread Id is 5422
+Start Thread Id is 5423
+Start Thread Id is 5424
+Start Thread Id is 5425
+Start Thread Id is 5426
+Start Thread Id is 5427
+Start Thread Id is 5428
+Start Thread Id is 5429
+Start Thread Id is 5430
+Start Thread Id is 5431
+Start Thread Id is 5432
+Start Thread Id is 5433
+Start Thread Id is 5434
+Start Thread Id is 5435
+Start Thread Id is 5436
+Start Thread Id is 5437
+Start Thread Id is 5438
+Start Thread Id is 5439
+Start Thread Id is 6944
+Start Thread Id is 6945
+Start Thread Id is 6946
+Start Thread Id is 6947
+Start Thread Id is 6948
+Start Thread Id is 6949
+Start Thread Id is 6950
+Start Thread Id is 6951
+Start Thread Id is 6952
+Start Thread Id is 6953
+Start Thread Id is 6954
+Start Thread Id is 6955
+Start Thread Id is 6956
+Start Thread Id is 6957
+Start Thread Id is 6958
+Start Thread Id is 6959
+Start Thread Id is 6960
+Start Thread Id is 6961
+Start Thread Id is 6962
+Start Thread Id is 6963
+Start Thread Id is 6964
+Start Thread Id is 6965
+Start Thread Id is 6966
+Start Thread Id is 6967
+Start Thread Id is 6968
+Start Thread Id is 6969
+Start Thread Id is 6970
+Start Thread Id is 6971
+Start Thread Id is 6972
+Start Thread Id is 6973
+Start Thread Id is 6974
+Start Thread Id is 6975
+Start Thread Id is 3648
+Start Thread Id is 3649
+Start Thread Id is 3650
+Start Thread Id is 3651
+Start Thread Id is 3652
+Start Thread Id is 3653
+Start Thread Id is 3654
+Start Thread Id is 3655
+Start Thread Id is 3656
+Start Thread Id is 3657
+Start Thread Id is 3658
+Start Thread Id is 3659
+Start Thread Id is 3660
+Start Thread Id is 3661
+Start Thread Id is 3662
+Start Thread Id is 3663
+Start Thread Id is 3664
+Start Thread Id is 3665
+Start Thread Id is 3666
+Start Thread Id is 3667
+Start Thread Id is 3668
+Start Thread Id is 3669
+Start Thread Id is 3670
+Start Thread Id is 3671
+Start Thread Id is 3672
+Start Thread Id is 3673
+Start Thread Id is 3674
+Start Thread Id is 3675
+Start Thread Id is 3676
+Start Thread Id is 3677
+Start Thread Id is 3678
+Start Thread Id is 3679
+Start Thread Id is 7200
+Start Thread Id is 7201
+Start Thread Id is 7202
+Start Thread Id is 7203
+Start Thread Id is 7204
+Start Thread Id is 7205
+Start Thread Id is 7206
+Start Thread Id is 7207
+Start Thread Id is 7208
+Start Thread Id is 7209
+Start Thread Id is 7210
+Start Thread Id is 7211
+Start Thread Id is 7212
+Start Thread Id is 7213
+Start Thread Id is 7214
+Start Thread Id is 7215
+Start Thread Id is 7216
+Start Thread Id is 7217
+Start Thread Id is 7218
+Start Thread Id is 7219
+Start Thread Id is 7220
+Start Thread Id is 7221
+Start Thread Id is 7222
+Start Thread Id is 7223
+Start Thread Id is 7224
+Start Thread Id is 7225
+Start Thread Id is 7226
+Start Thread Id is 7227
+Start Thread Id is 7228
+Start Thread Id is 7229
+Start Thread Id is 7230
+Start Thread Id is 7231
+Start Thread Id is 1824
+Start Thread Id is 1825
+Start Thread Id is 1826
+Start Thread Id is 1827
+Start Thread Id is 1828
+Start Thread Id is 1829
+Start Thread Id is 1830
+Start Thread Id is 1831
+Start Thread Id is 1832
+Start Thread Id is 1833
+Start Thread Id is 1834
+Start Thread Id is 1835
+Start Thread Id is 1836
+Start Thread Id is 1837
+Start Thread Id is 1838
+Start Thread Id is 1839
+Start Thread Id is 1840
+Start Thread Id is 1841
+Start Thread Id is 1842
+Start Thread Id is 1843
+Start Thread Id is 1844
+Start Thread Id is 1845
+Start Thread Id is 1846
+Start Thread Id is 1847
+Start Thread Id is 1848
+Start Thread Id is 1849
+Start Thread Id is 1850
+Start Thread Id is 1851
+Start Thread Id is 1852
+Start Thread Id is 1853
+Start Thread Id is 1854
+Start Thread Id is 1855
+Start Thread Id is 608
+Start Thread Id is 609
+Start Thread Id is 610
+Start Thread Id is 611
+Start Thread Id is 612
+Start Thread Id is 613
+Start Thread Id is 614
+Start Thread Id is 615
+Start Thread Id is 616
+Start Thread Id is 617
+Start Thread Id is 618
+Start Thread Id is 619
+Start Thread Id is 620
+Start Thread Id is 621
+Start Thread Id is 622
+Start Thread Id is 623
+Start Thread Id is 624
+Start Thread Id is 625
+Start Thread Id is 626
+Start Thread Id is 627
+Start Thread Id is 628
+Start Thread Id is 629
+Start Thread Id is 630
+Start Thread Id is 631
+Start Thread Id is 632
+Start Thread Id is 633
+Start Thread Id is 634
+Start Thread Id is 635
+Start Thread Id is 636
+Start Thread Id is 637
+Start Thread Id is 638
+Start Thread Id is 639
+Start Thread Id is 3328
+Start Thread Id is 3329
+Start Thread Id is 3330
+Start Thread Id is 3331
+Start Thread Id is 3332
+Start Thread Id is 3333
+Start Thread Id is 3334
+Start Thread Id is 3335
+Start Thread Id is 3336
+Start Thread Id is 3337
+Start Thread Id is 3338
+Start Thread Id is 3339
+Start Thread Id is 3340
+Start Thread Id is 3341
+Start Thread Id is 3342
+Start Thread Id is 3343
+Start Thread Id is 3344
+Start Thread Id is 3345
+Start Thread Id is 3346
+Start Thread Id is 3347
+Start Thread Id is 3348
+Start Thread Id is 3349
+Start Thread Id is 3350
+Start Thread Id is 3351
+Start Thread Id is 3352
+Start Thread Id is 3353
+Start Thread Id is 3354
+Start Thread Id is 3355
+Start Thread Id is 3356
+Start Thread Id is 3357
+Start Thread Id is 3358
+Start Thread Id is 3359
+Start Thread Id is 7168
+Start Thread Id is 7169
+Start Thread Id is 7170
+Start Thread Id is 7171
+Start Thread Id is 7172
+Start Thread Id is 7173
+Start Thread Id is 7174
+Start Thread Id is 7175
+Start Thread Id is 7176
+Start Thread Id is 7177
+Start Thread Id is 7178
+Start Thread Id is 7179
+Start Thread Id is 7180
+Start Thread Id is 7181
+Start Thread Id is 7182
+Start Thread Id is 7183
+Start Thread Id is 7184
+Start Thread Id is 7185
+Start Thread Id is 7186
+Start Thread Id is 7187
+Start Thread Id is 7188
+Start Thread Id is 7189
+Start Thread Id is 7190
+Start Thread Id is 7191
+Start Thread Id is 7192
+Start Thread Id is 7193
+Start Thread Id is 7194
+Start Thread Id is 7195
+Start Thread Id is 7196
+Start Thread Id is 7197
+Start Thread Id is 7198
+Start Thread Id is 7199
+Start Thread Id is 2944
+Start Thread Id is 2945
+Start Thread Id is 2946
+Start Thread Id is 2947
+Start Thread Id is 2948
+Start Thread Id is 2949
+Start Thread Id is 2950
+Start Thread Id is 2951
+Start Thread Id is 2952
+Start Thread Id is 2953
+Start Thread Id is 2954
+Start Thread Id is 2955
+Start Thread Id is 2956
+Start Thread Id is 2957
+Start Thread Id is 2958
+Start Thread Id is 2959
+Start Thread Id is 2960
+Start Thread Id is 2961
+Start Thread Id is 2962
+Start Thread Id is 2963
+Start Thread Id is 2964
+Start Thread Id is 2965
+Start Thread Id is 2966
+Start Thread Id is 2967
+Start Thread Id is 2968
+Start Thread Id is 2969
+Start Thread Id is 2970
+Start Thread Id is 2971
+Start Thread Id is 2972
+Start Thread Id is 2973
+Start Thread Id is 2974
+Start Thread Id is 2975
+Start Thread Id is 2080
+Start Thread Id is 2081
+Start Thread Id is 2082
+Start Thread Id is 2083
+Start Thread Id is 2084
+Start Thread Id is 2085
+Start Thread Id is 2086
+Start Thread Id is 2087
+Start Thread Id is 2088
+Start Thread Id is 2089
+Start Thread Id is 2090
+Start Thread Id is 2091
+Start Thread Id is 2092
+Start Thread Id is 2093
+Start Thread Id is 2094
+Start Thread Id is 2095
+Start Thread Id is 2096
+Start Thread Id is 2097
+Start Thread Id is 2098
+Start Thread Id is 2099
+Start Thread Id is 2100
+Start Thread Id is 2101
+Start Thread Id is 2102
+Start Thread Id is 2103
+Start Thread Id is 2104
+Start Thread Id is 2105
+Start Thread Id is 2106
+Start Thread Id is 2107
+Start Thread Id is 2108
+Start Thread Id is 2109
+Start Thread Id is 2110
+Start Thread Id is 2111
+Start Thread Id is 8640
+Start Thread Id is 8641
+Start Thread Id is 8642
+Start Thread Id is 8643
+Start Thread Id is 8644
+Start Thread Id is 8645
+Start Thread Id is 8646
+Start Thread Id is 8647
+Start Thread Id is 8648
+Start Thread Id is 8649
+Start Thread Id is 8650
+Start Thread Id is 8651
+Start Thread Id is 8652
+Start Thread Id is 8653
+Start Thread Id is 8654
+Start Thread Id is 8655
+Start Thread Id is 8656
+Start Thread Id is 8657
+Start Thread Id is 8658
+Start Thread Id is 8659
+Start Thread Id is 8660
+Start Thread Id is 8661
+Start Thread Id is 8662
+Start Thread Id is 8663
+Start Thread Id is 8664
+Start Thread Id is 8665
+Start Thread Id is 8666
+Start Thread Id is 8667
+Start Thread Id is 8668
+Start Thread Id is 8669
+Start Thread Id is 8670
+Start Thread Id is 8671
+Start Thread Id is 1344
+Start Thread Id is 1345
+Start Thread Id is 1346
+Start Thread Id is 1347
+Start Thread Id is 1348
+Start Thread Id is 1349
+Start Thread Id is 1350
+Start Thread Id is 1351
+Start Thread Id is 1352
+Start Thread Id is 1353
+Start Thread Id is 1354
+Start Thread Id is 1355
+Start Thread Id is 1356
+Start Thread Id is 1357
+Start Thread Id is 1358
+Start Thread Id is 1359
+Start Thread Id is 1360
+Start Thread Id is 1361
+Start Thread Id is 1362
+Start Thread Id is 1363
+Start Thread Id is 1364
+Start Thread Id is 1365
+Start Thread Id is 1366
+Start Thread Id is 1367
+Start Thread Id is 1368
+Start Thread Id is 1369
+Start Thread Id is 1370
+Start Thread Id is 1371
+Start Thread Id is 1372
+Start Thread Id is 1373
+Start Thread Id is 1374
+Start Thread Id is 1375
+ad Id is 6400
+ad Id is 6401
+ad Id is 6402
+ad Id is 6403
+ad Id is 6404
+ad Id is 6405
+ad Id is 6406
+ad Id is 6407
+ad Id is 6408
+ad Id is 6409
+ad Id is 6410
+ad Id is 6411
+ad Id is 6412
+ad Id is 6413
+ad Id is 6414
+ad Id is 6415
+ad Id is 6416
+ad Id is 6417
+20, 76884368
+21, 76884368
+20, 76884368
+21, 76884368
+20, 76884368
+20, 76884368
+20, 76884368
+19, 76884368
+17, 76884368
+19, 76884368
+21, 76884368
+20, 76884368
+20, 76884368
+21, 76884368
+18, 76884368
+21, 76884368
+18, 76884368
+18, 76884368
+20, 76884368
+20, 76884368
+20, 76884368
+20, 76884368
+20, 76884368
+19, 76884368
+19, 76884368
+21, 76884368
+21, 76884368
+18, 76884368
+19, 76884368
+19, 76884368
+18, 76884368
+21, 76884368
+End Thread Id is 7200
+End Thread Id is 7201
+End Thread Id is 7202
+End Thread Id is 7203
+End Thread Id is 7204
+End Thread Id is 7205
+End Thread Id is 7206
+End Thread Id is 7207
+End Thread Id is 7208
+End Thread Id is 7209
+End Thread Id is 7210
+End Thread Id is 7211
+End Thread Id is 7212
+End Thread Id is 7213
+End Thread Id is 7214
+End Thread Id is 7215
+End Thread Id is 7216
+End Thread Id is 7217
+End Thread Id is 7218
+End Thread Id is 7219
+End Thread Id is 7220
+End Thread Id is 7221
+End Thread Id is 7222
+End Thread Id is 7223
+End Thread Id is 7224
+End Thread Id is 7225
+End Thread Id is 7226
+End Thread Id is 7227
+End Thread Id is 7228
+End Thread Id is 7229
+End Thread Id is 7230
+End Thread Id is 7231
+18, 59385930
+19, 59385930
+17, 59385930
+19, 59385930
+21, 59385930
+19, 59385930
+20, 59385930
+19, 59385930
+19, 59385930
+20, 59385930
+21, 59385930
+20, 59385930
+21, 59385930
+20, 59385930
+21, 59385930
+20, 59385930
+19, 59385930
+20, 59385930
+18, 59385930
+20, 59385930
+20, 59385930
+20, 59385930
+19, 59385930
+20, 59385930
+21, 59385930
+20, 59385930
+20, 59385930
+20, 59385930
+19, 59385930
+19, 59385930
+21, 59385930
+21, 59385930
+19, 57784981
+19, 57784981
+21, 57784981
+19, 57784981
+17, 57784981
+21, 57784981
+19, 57784981
+18, 57784981
+19, 57784981
+20, 57784981
+20, 57784981
+20, 57784981
+21, 57784981
+18, 57784981
+19, 57784981
+19, 57784981
+19, 57784981
+19, 57784981
+19, 57784981
+21, 57784981
+20, 57784981
+21, 57784981
+19, 57784981
+18, 57784981
+19, 57784981
+20, 57784981
+19, 57784981
+18, 57784981
+20, 57784981
+20, 57784981
+20, 57784981
+20, 57784981
+End Thread Id is 576
+End Thread Id is 577
+End Thread Id is 578
+End Thread Id is 579
+End Thread Id is 580
+End Thread Id is 581
+End Thread Id is 582
+End Thread Id is 583
+End Thread Id is 584
+End Thread Id is 585
+End Thread Id is 586
+End Thread Id is 587
+End Thread Id is 588
+End Thread Id is 589
+End Thread Id is 590
+End Thread Id is 591
+End Thread Id is 592
+End Thread Id is 593
+End Thread Id is 594
+End Thread Id is 595
+End Thread Id is 596
+End Thread Id is 597
+End Thread Id is 598
+End Thread Id is 599
+End Thread Id is 600
+End Thread Id is 601
+End Thread Id is 602
+End Thread Id is 603
+End Thread Id is 604
+End Thread Id is 605
+End Thread Id is 606
+End Thread Id is 607
+End Thread Id is 608
+End Thread Id is 609
+End Thread Id is 610
+End Thread Id is 611
+End Thread Id is 612
+End Thread Id is 613
+End Thread Id is 614
+End Thread Id is 615
+End Thread Id is 616
+End Thread Id is 617
+End Thread Id is 618
+End Thread Id is 619
+End Thread Id is 620
+End Thread Id is 621
+End Thread Id is 622
+End Thread Id is 623
+End Thread Id is 624
+End Thread Id is 625
+End Thread Id is 626
+End Thread Id is 627
+End Thread Id is 628
+End Thread Id is 629
+End Thread Id is 630
+End Thread Id is 631
+End Thread Id is 632
+End Thread Id is 633
+End Thread Id is 634
+End Thread Id is 635
+End Thread Id is 636
+End Thread Id is 637
+End Thread Id is 638
+End Thread Id is 639
+End Thread Id is 2112
+End Thread Id is 2113
+End Thread Id is 2114
+End Thread Id is 2115
+End Thread Id is 2116
+End Thread Id is 2117
+End Thread Id is 2118
+End Thread Id is 2119
+End Thread Id is 2120
+End Thread Id is 2121
+End Thread Id is 2122
+End Thread Id is 2123
+End Thread Id is 2124
+End Thread Id is 2125
+End Thread Id is 2126
+End Thread Id is 2127
+End Thread Id is 2128
+End Thread Id is 2129
+End Thread Id is 2130
+End Thread Id is 2131
+End Thread Id is 2132
+End Thread Id is 2133
+End Thread Id is 2134
+End Thread Id is 2135
+End Thread Id is 2136
+End Thread Id is 2137
+End Thread Id is 2138
+End Thread Id is 2139
+End Thread Id is 2140
+End Thread Id is 2141
+End Thread Id is 2142
+End Thread Id is 2143
+End Thread Id is 5696
+End Thread Id is 5697
+End Thread Id is 5698
+End Thread Id is 5699
+End Thread Id is 5700
+End Thread Id is 5701
+End Thread Id is 5702
+End Thread Id is 5703
+End Thread Id is 5704
+End Thread Id is 5705
+End Thread Id is 5706
+End Thread Id is 5707
+End Thread Id is 5708
+End Thread Id is 5709
+End Thread Id is 5710
+End Thread Id is 5711
+End Thread Id is 5712
+End Thread Id is 5713
+End Thread Id is 5714
+End Thread Id is 5715
+End Thread Id is 5716
+End Thread Id is 5717
+End Thread Id is 5718
+End Thread Id is 5719
+End Thread Id is 5720
+End Thread Id is 5721
+End Thread Id is 5722
+End Thread Id is 5723
+End Thread Id is 5724
+End Thread Id is 5725
+End Thread Id is 5726
+End Thread Id is 5727
+19, 52722753
+21, 52722753
+20, 52722753
+20, 52722753
+21, 52722753
+21, 52722753
+21, 52722753
+20, 52722753
+21, 52722753
+20, 52722753
+21, 52722753
+21, 52722753
+19, 52722753
+19, 52722753
+21, 52722753
+20, 52722753
+19, 52722753
+17, 52722753
+19, 52722753
+18, 52722753
+19, 52722753
+19, 52722753
+21, 52722753
+20, 52722753
+21, 52722753
+20, 52722753
+19, 52722753
+20, 52722753
+21, 52722753
+20, 52722753
+21, 52722753
+19, 52722753
+End Thread Id is 8160
+End Thread Id is 8161
+End Thread Id is 8162
+End Thread Id is 8163
+End Thread Id is 8164
+End Thread Id is 8165
+End Thread Id is 8166
+End Thread Id is 8167
+End Thread Id is 8168
+End Thread Id is 8169
+End Thread Id is 8170
+End Thread Id is 8171
+End Thread Id is 8172
+End Thread Id is 8173
+End Thread Id is 8174
+End Thread Id is 8175
+End Thread Id is 8176
+End Thread Id is 8177
+End Thread Id is 8178
+End Thread Id is 8179
+End Thread Id is 8180
+End Thread Id is 8181
+End Thread Id is 8182
+End Thread Id is 8183
+End Thread Id is 8184
+End Thread Id is 8185
+End Thread Id is 8186
+End Thread Id is 8187
+End Thread Id is 8188
+End Thread Id is 8189
+End Thread Id is 8190
+End Thread Id is 8191
+19, 82142104
+18, 82142104
+21, 82142104
+19, 82142104
+20, 82142104
+18, 82142104
+19, 82142104
+20, 82142104
+20, 82142104
+21, 82142104
+21, 82142104
+20, 82142104
+21, 82142104
+19, 82142104
+20, 82142104
+17, 82142104
+21, 82142104
+21, 82142104
+20, 82142104
+19, 82142104
+19, 82142104
+20, 82142104
+20, 82142104
+20, 82142104
+20, 82142104
+20, 82142104
+18, 82142104
+20, 82142104
+20, 82142104
+19, 82142104
+21, 82142104
+19, 82142104
+20, 52805666
+19, 52805666
+19, 52805666
+20, 52805666
+20, 52805666
+20, 52805666
+21, 52805666
+20, 52805666
+19, 52805666
+19, 52805666
+19, 52805666
+21, 52805666
+21, 52805666
+20, 52805666
+20, 52805666
+20, 52805666
+19, 52805666
+21, 52805666
+21, 52805666
+19, 52805666
+21, 52805666
+21, 52805666
+19, 52805666
+21, 52805666
+21, 52805666
+19, 52805666
+18, 52805666
+20, 52805666
+19, 52805666
+20, 52805666
+20, 52805666
+21, 52805666
+20, 82078779
+19, 82078779
+21, 82078779
+19, 82078779
+19, 82078779
+20, 82078779
+20, 82078779
+20, 82078779
+21, 82078779
+21, 82078779
+21, 82078779
+19, 82078779
+20, 82078779
+20, 82078779
+18, 82078779
+20, 82078779
+21, 82078779
+19, 82078779
+19, 82078779
+19, 82078779
+20, 82078779
+18, 82078779
+20, 82078779
+19, 82078779
+18, 82078779
+21, 82078779
+21, 82078779
+19, 82078779
+18, 82078779
+20, 82078779
+17, 82078779
+19, 82078779
+21, 94220555
+18, 94220555
+17, 94220555
+18, 94220555
+19, 94220555
+21, 94220555
+20, 94220555
+20, 94220555
+19, 94220555
+21, 94220555
+20, 94220555
+21, 94220555
+19, 94220555
+19, 94220555
+19, 94220555
+20, 94220555
+20, 94220555
+20, 94220555
+19, 94220555
+20, 94220555
+20, 94220555
+21, 94220555
+20, 94220555
+21, 94220555
+20, 94220555
+19, 94220555
+21, 94220555
+19, 94220555
+19, 94220555
+21, 94220555
+20, 94220555
+20, 94220555
+End Thread Id is 3040
+End Thread Id is 3041
+End Thread Id is 3042
+End Thread Id is 3043
+End Thread Id is 3044
+End Thread Id is 3045
+End Thread Id is 3046
+End Thread Id is 3047
+End Thread Id is 3048
+End Thread Id is 3049
+End Thread Id is 3050
+End Thread Id is 3051
+End Thread Id is 3052
+End Thread Id is 3053
+End Thread Id is 3054
+End Thread Id is 3055
+End Thread Id is 3056
+End Thread Id is 3057
+End Thread Id is 3058
+End Thread Id is 3059
+End Thread Id is 3060
+End Thread Id is 3061
+End Thread Id is 3062
+End Thread Id is 3063
+End Thread Id is 3064
+End Thread Id is 3065
+End Thread Id is 3066
+End Thread Id is 3067
+End Thread Id is 3068
+End Thread Id is 3069
+End Thread Id is 3070
+End Thread Id is 3071
+End Thread Id is 7488
+End Thread Id is 7489
+End Thread Id is 7490
+End Thread Id is 7491
+End Thread Id is 7492
+End Thread Id is 7493
+End Thread Id is 7494
+End Thread Id is 7495
+End Thread Id is 7496
+End Thread Id is 7497
+End Thread Id is 7498
+End Thread Id is 7499
+End Thread Id is 7500
+End Thread Id is 7501
+End Thread Id is 7502
+End Thread Id is 7503
+End Thread Id is 7504
+End Thread Id is 7505
+End Thread Id is 7506
+End Thread Id is 7507
+End Thread Id is 7508
+End Thread Id is 7509
+End Thread Id is 7510
+End Thread Id is 7511
+End Thread Id is 7512
+End Thread Id is 7513
+End Thread Id is 7514
+End Thread Id is 7515
+End Thread Id is 7516
+End Thread Id is 7517
+End Thread Id is 7518
+End Thread Id is 7519
+End Thread Id is 448
+End Thread Id is 449
+End Thread Id is 450
+End Thread Id is 451
+End Thread Id is 452
+End Thread Id is 453
+End Thread Id is 454
+End Thread Id is 455
+End Thread Id is 456
+End Thread Id is 457
+End Thread Id is 458
+End Thread Id is 459
+End Thread Id is 460
+End Thread Id is 461
+End Thread Id is 462
+End Thread Id is 463
+End Thread Id is 464
+End Thread Id is 465
+End Thread Id is 466
+End Thread Id is 467
+End Thread Id is 468
+End Thread Id is 469
+End Thread Id is 470
+End Thread Id is 471
+End Thread Id is 472
+End Thread Id is 473
+End Thread Id is 474
+End Thread Id is 475
+End Thread Id is 476
+End Thread Id is 477
+End Thread Id is 478
+End Thread Id is 479
+End Thread Id is 7392
+End Thread Id is 7393
+End Thread Id is 7394
+End Thread Id is 7395
+End Thread Id is 7396
+End Thread Id is 7397
+End Thread Id is 7398
+End Thread Id is 7399
+End Thread Id is 7400
+End Thread Id is 7401
+End Thread Id is 7402
+End Thread Id is 7403
+End Thread Id is 7404
+End Thread Id is 7405
+End Thread Id is 7406
+End Thread Id is 7407
+End Thread Id is 7408
+End Thread Id is 7409
+End Thread Id is 7410
+End Thread Id is 7411
+End Thread Id is 7412
+End Thread Id is 7413
+End Thread Id is 7414
+End Thread Id is 7415
+End Thread Id is 7416
+End Thread Id is 7417
+End Thread Id is 7418
+End Thread Id is 7419
+End Thread Id is 7420
+End Thread Id is 7421
+End Thread Id is 7422
+End Thread Id is 7423
+20, 54952569
+19, 54952569
+20, 54952569
+19, 54952569
+18, 54952569
+18, 54952569
+20, 54952569
+18, 54952569
+19, 54952569
+18, 54952569
+18, 54952569
+20, 54952569
+21, 54952569
+18, 54952569
+20, 54952569
+20, 54952569
+20, 54952569
+19, 54952569
+20, 54952569
+19, 54952569
+21, 54952569
+20, 54952569
+21, 54952569
+20, 54952569
+20, 54952569
+18, 54952569
+20, 54952569
+20, 54952569
+20, 54952569
+18, 54952569
+20, 54952569
+20, 54952569
+19, 70589968
+19, 70589968
+21, 70589968
+20, 70589968
+19, 70589968
+20, 70589968
+21, 70589968
+21, 70589968
+20, 70589968
+20, 70589968
+18, 70589968
+19, 70589968
+20, 70589968
+20, 70589968
+21, 70589968
+20, 70589968
+20, 70589968
+18, 70589968
+20, 70589968
+20, 70589968
+19, 70589968
+19, 70589968
+18, 70589968
+19, 70589968
+20, 70589968
+21, 70589968
+19, 70589968
+20, 70589968
+21, 70589968
+18, 70589968
+19, 70589968
+20, 70589968
+18, 85636888
+20, 85636888
+20, 85636888
+18, 85636888
+20, 85636888
+20, 85636888
+21, 85636888
+19, 85636888
+20, 85636888
+19, 85636888
+19, 85636888
+20, 85636888
+20, 85636888
+19, 85636888
+19, 85636888
+21, 85636888
+21, 85636888
+19, 85636888
+20, 85636888
+20, 85636888
+20, 85636888
+20, 85636888
+19, 85636888
+19, 85636888
+18, 85636888
+18, 85636888
+21, 85636888
+18, 85636888
+20, 85636888
+18, 85636888
+19, 85636888
+20, 85636888
+20, 49243554
+19, 49243554
+20, 49243554
+19, 49243554
+20, 49243554
+21, 49243554
+21, 49243554
+18, 49243554
+20, 49243554
+20, 49243554
+21, 49243554
+20, 49243554
+19, 49243554
+19, 49243554
+18, 49243554
+21, 49243554
+20, 49243554
+20, 49243554
+19, 49243554
+21, 49243554
+18, 49243554
+19, 49243554
+20, 49243554
+21, 49243554
+20, 49243554
+21, 49243554
+19, 49243554
+20, 49243554
+20, 49243554
+19, 49243554
+21, 49243554
+21, 49243554
+End Thread Id is 7296
+End Thread Id is 7297
+End Thread Id is 7298
+End Thread Id is 7299
+End Thread Id is 7300
+End Thread Id is 7301
+End Thread Id is 7302
+End Thread Id is 7303
+End Thread Id is 7304
+End Thread Id is 7305
+End Thread Id is 7306
+End Thread Id is 7307
+End Thread Id is 7308
+End Thread Id is 7309
+End Thread Id is 7310
+End Thread Id is 7311
+End Thread Id is 7312
+End Thread Id is 7313
+End Thread Id is 7314
+End Thread Id is 7315
+End Thread Id is 7316
+End Thread Id is 7317
+End Thread Id is 7318
+End Thread Id is 7319
+End Thread Id is 7320
+End Thread Id is 7321
+End Thread Id is 7322
+End Thread Id is 7323
+End Thread Id is 7324
+End Thread Id is 7325
+End Thread Id is 7326
+End Thread Id is 7327
+End Thread Id is 7328
+End Thread Id is 7329
+End Thread Id is 7330
+End Thread Id is 7331
+End Thread Id is 7332
+End Thread Id is 7333
+End Thread Id is 7334
+End Thread Id is 7335
+End Thread Id is 7336
+End Thread Id is 7337
+End Thread Id is 7338
+End Thread Id is 7339
+End Thread Id is 7340
+End Thread Id is 7341
+End Thread Id is 7342
+End Thread Id is 7343
+End Thread Id is 7344
+End Thread Id is 7345
+End Thread Id is 7346
+End Thread Id is 7347
+End Thread Id is 7348
+End Thread Id is 7349
+End Thread Id is 7350
+End Thread Id is 7351
+End Thread Id is 7352
+End Thread Id is 7353
+End Thread Id is 7354
+End Thread Id is 7355
+End Thread Id is 7356
+End Thread Id is 7357
+End Thread Id is 7358
+End Thread Id is 7359
+20, 49338110
+19, 49338110
+21, 49338110
+20, 49338110
+19, 49338110
+19, 49338110
+19, 49338110
+20, 49338110
+19, 49338110
+20, 49338110
+19, 49338110
+19, 49338110
+19, 49338110
+20, 49338110
+21, 49338110
+20, 49338110
+19, 49338110
+20, 49338110
+19, 49338110
+18, 49338110
+20, 49338110
+20, 49338110
+21, 49338110
+19, 49338110
+19, 49338110
+21, 49338110
+21, 49338110
+18, 49338110
+19, 49338110
+20, 49338110
+18, 49338110
+20, 49338110
+End Thread Id is 5600
+End Thread Id is 5601
+End Thread Id is 5602
+End Thread Id is 5603
+End Thread Id is 5604
+End Thread Id is 5605
+End Thread Id is 5606
+End Thread Id is 5607
+End Thread Id is 5608
+End Thread Id is 5609
+End Thread Id is 5610
+End Thread Id is 5611
+End Thread Id is 5612
+End Thread Id is 5613
+End Thread Id is 5614
+End Thread Id is 5615
+End Thread Id is 5616
+End Thread Id is 5617
+End Thread Id is 5618
+End Thread Id is 5619
+End Thread Id is 5620
+End Thread Id is 5621
+End Thread Id is 5622
+End Thread Id is 5623
+End Thread Id is 5624
+End Thread Id is 5625
+End Thread Id is 5626
+End Thread Id is 5627
+End Thread Id is 5628
+End Thread Id is 5629
+End Thread Id is 5630
+End Thread Id is 5631
+17, 86195940
+20, 86195940
+18, 86195940
+19, 86195940
+20, 86195940
+19, 86195940
+19, 86195940
+18, 86195940
+21, 86195940
+20, 86195940
+20, 86195940
+21, 86195940
+19, 86195940
+21, 86195940
+20, 86195940
+20, 86195940
+19, 86195940
+19, 86195940
+20, 86195940
+19, 86195940
+21, 86195940
+19, 86195940
+20, 86195940
+19, 86195940
+18, 86195940
+20, 86195940
+19, 86195940
+19, 86195940
+20, 86195940
+21, 86195940
+20, 86195940
+20, 86195940
+End Thread Id is 7104
+End Thread Id is 7105
+End Thread Id is 7106
+End Thread Id is 7107
+End Thread Id is 7108
+End Thread Id is 7109
+End Thread Id is 7110
+End Thread Id is 7111
+End Thread Id is 7112
+End Thread Id is 7113
+End Thread Id is 7114
+End Thread Id is 7115
+End Thread Id is 7116
+End Thread Id is 7117
+End Thread Id is 7118
+End Thread Id is 7119
+End Thread Id is 7120
+End Thread Id is 7121
+End Thread Id is 7122
+End Thread Id is 7123
+End Thread Id is 7124
+End Thread Id is 7125
+End Thread Id is 7126
+End Thread Id is 7127
+End Thread Id is 7128
+End Thread Id is 7129
+End Thread Id is 7130
+End Thread Id is 7131
+End Thread Id is 7132
+End Thread Id is 7133
+End Thread Id is 7134
+End Thread Id is 7135
+End Thread Id is 7264
+End Thread Id is 7265
+End Thread Id is 7266
+End Thread Id is 7267
+End Thread Id is 7268
+End Thread Id is 7269
+End Thread Id is 7270
+End Thread Id is 7271
+End Thread Id is 7272
+End Thread Id is 7273
+End Thread Id is 7274
+End Thread Id is 7275
+End Thread Id is 7276
+End Thread Id is 7277
+End Thread Id is 7278
+End Thread Id is 7279
+End Thread Id is 7280
+End Thread Id is 7281
+End Thread Id is 7282
+End Thread Id is 7283
+End Thread Id is 7284
+End Thread Id is 7285
+End Thread Id is 7286
+End Thread Id is 7287
+End Thread Id is 7288
+End Thread Id is 7289
+End Thread Id is 7290
+End Thread Id is 7291
+End Thread Id is 7292
+End Thread Id is 7293
+End Thread Id is 7294
+End Thread Id is 7295
+End Thread Id is 1792
+End Thread Id is 1793
+End Thread Id is 1794
+End Thread Id is 1795
+End Thread Id is 1796
+End Thread Id is 1797
+End Thread Id is 1798
+End Thread Id is 1799
+End Thread Id is 1800
+End Thread Id is 1801
+End Thread Id is 1802
+End Thread Id is 1803
+End Thread Id is 1804
+End Thread Id is 1805
+End Thread Id is 1806
+End Thread Id is 1807
+End Thread Id is 1808
+End Thread Id is 1809
+End Thread Id is 1810
+End Thread Id is 1811
+End Thread Id is 1812
+End Thread Id is 1813
+End Thread Id is 1814
+End Thread Id is 1815
+End Thread Id is 1816
+End Thread Id is 1817
+End Thread Id is 1818
+End Thread Id is 1819
+End Thread Id is 1820
+End Thread Id is 1821
+End Thread Id is 1822
+End Thread Id is 1823
+20, 50165296
+20, 50165296
+20, 50165296
+21, 50165296
+20, 50165296
+19, 50165296
+20, 50165296
+21, 50165296
+20, 50165296
+19, 50165296
+19, 50165296
+19, 50165296
+21, 50165296
+20, 50165296
+20, 50165296
+20, 50165296
+17, 50165296
+20, 50165296
+21, 50165296
+20, 50165296
+19, 50165296
+18, 50165296
+20, 50165296
+20, 50165296
+18, 50165296
+19, 50165296
+19, 50165296
+21, 50165296
+19, 50165296
+19, 50165296
+19, 50165296
+20, 50165296
+End Thread Id is 2656
+End Thread Id is 2657
+End Thread Id is 2658
+End Thread Id is 2659
+End Thread Id is 2660
+End Thread Id is 2661
+End Thread Id is 2662
+End Thread Id is 2663
+End Thread Id is 2664
+End Thread Id is 2665
+End Thread Id is 2666
+End Thread Id is 2667
+End Thread Id is 2668
+End Thread Id is 2669
+End Thread Id is 2670
+End Thread Id is 2671
+End Thread Id is 2672
+End Thread Id is 2673
+End Thread Id is 2674
+End Thread Id is 2675
+End Thread Id is 2676
+End Thread Id is 2677
+End Thread Id is 2678
+End Thread Id is 2679
+End Thread Id is 2680
+End Thread Id is 2681
+End Thread Id is 2682
+End Thread Id is 2683
+End Thread Id is 2684
+End Thread Id is 2685
+End Thread Id is 2686
+End Thread Id is 2687
+End Thread Id is 320
+End Thread Id is 321
+End Thread Id is 322
+End Thread Id is 323
+End Thread Id is 324
+End Thread Id is 325
+End Thread Id is 326
+End Thread Id is 327
+End Thread Id is 328
+End Thread Id is 329
+End Thread Id is 330
+End Thread Id is 331
+End Thread Id is 332
+End Thread Id is 333
+End Thread Id is 334
+End Thread Id is 335
+End Thread Id is 336
+End Thread Id is 337
+End Thread Id is 338
+End Thread Id is 339
+End Thread Id is 340
+End Thread Id is 341
+End Thread Id is 342
+End Thread Id is 343
+End Thread Id is 344
+End Thread Id is 345
+End Thread Id is 346
+End Thread Id is 347
+End Thread Id is 348
+End Thread Id is 349
+End Thread Id is 350
+End Thread Id is 351
+20, 104069096
+20, 104069096
+21, 104069096
+19, 104069096
+19, 104069096
+20, 104069096
+17, 104069096
+21, 104069096
+21, 104069096
+21, 104069096
+20, 104069096
+20, 104069096
+21, 104069096
+18, 104069096
+19, 104069096
+20, 104069096
+20, 104069096
+19, 104069096
+21, 104069096
+21, 104069096
+21, 104069096
+18, 104069096
+20, 104069096
+19, 104069096
+20, 104069096
+20, 104069096
+19, 104069096
+18, 104069096
+20, 104069096
+20, 104069096
+18, 104069096
+18, 104069096
+19, 114962861
+20, 114962861
+19, 114962861
+20, 114962861
+20, 114962861
+21, 114962861
+19, 114962861
+20, 114962861
+19, 114962861
+20, 114962861
+20, 114962861
+18, 114962861
+21, 114962861
+20, 114962861
+19, 114962861
+18, 114962861
+21, 114962861
+21, 114962861
+20, 114962861
+19, 114962861
+19, 114962861
+19, 114962861
+18, 114962861
+19, 114962861
+18, 114962861
+20, 114962861
+21, 114962861
+20, 114962861
+21, 114962861
+19, 114962861
+19, 114962861
+20, 114962861
+20, 114774199
+20, 114774199
+18, 114774199
+20, 114774199
+18, 114774199
+20, 114774199
+18, 114774199
+21, 114774199
+21, 114774199
+21, 114774199
+21, 114774199
+19, 114774199
+21, 114774199
+20, 114774199
+20, 114774199
+21, 114774199
+20, 114774199
+20, 114774199
+20, 114774199
+20, 114774199
+18, 114774199
+21, 114774199
+20, 114774199
+20, 114774199
+19, 114774199
+20, 114774199
+18, 114774199
+20, 114774199
+21, 114774199
+17, 114774199
+20, 114774199
+20, 114774199
+End Thread Id is 2784
+End Thread Id is 2785
+End Thread Id is 2786
+End Thread Id is 2787
+End Thread Id is 2788
+End Thread Id is 2789
+End Thread Id is 2790
+End Thread Id is 2791
+End Thread Id is 2792
+End Thread Id is 2793
+End Thread Id is 2794
+End Thread Id is 2795
+End Thread Id is 2796
+End Thread Id is 2797
+End Thread Id is 2798
+End Thread Id is 2799
+End Thread Id is 2800
+End Thread Id is 2801
+End Thread Id is 2802
+End Thread Id is 2803
+End Thread Id is 2804
+End Thread Id is 2805
+End Thread Id is 2806
+End Thread Id is 2807
+End Thread Id is 2808
+End Thread Id is 2809
+End Thread Id is 2810
+End Thread Id is 2811
+End Thread Id is 2812
+End Thread Id is 2813
+End Thread Id is 2814
+End Thread Id is 2815
+21, 97508111
+20, 97508111
+19, 97508111
+20, 97508111
+18, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+17, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+19, 97508111
+21, 97508111
+21, 97508111
+19, 97508111
+20, 97508111
+20, 97508111
+21, 97508111
+21, 97508111
+19, 97508111
+20, 97508111
+20, 97508111
+18, 97508111
+19, 97508111
+18, 97508111
+21, 97508111
+20, 97508111
+19, 97508111
+End Thread Id is 5056
+End Thread Id is 5057
+End Thread Id is 5058
+End Thread Id is 5059
+End Thread Id is 5060
+End Thread Id is 5061
+End Thread Id is 5062
+End Thread Id is 5063
+End Thread Id is 5064
+End Thread Id is 5065
+End Thread Id is 5066
+End Thread Id is 5067
+End Thread Id is 5068
+End Thread Id is 5069
+End Thread Id is 5070
+End Thread Id is 5071
+End Thread Id is 5072
+End Thread Id is 5073
+End Thread Id is 5074
+End Thread Id is 5075
+End Thread Id is 5076
+End Thread Id is 5077
+End Thread Id is 5078
+End Thread Id is 5079
+End Thread Id is 5080
+End Thread Id is 5081
+End Thread Id is 5082
+End Thread Id is 5083
+End Thread Id is 5084
+End Thread Id is 5085
+End Thread Id is 5086
+End Thread Id is 5087
+End Thread Id is 5216
+End Thread Id is 5217
+End Thread Id is 5218
+End Thread Id is 5219
+End Thread Id is 5220
+End Thread Id is 5221
+End Thread Id is 5222
+End Thread Id is 5223
+End Thread Id is 5224
+End Thread Id is 5225
+End Thread Id is 5226
+End Thread Id is 5227
+End Thread Id is 5228
+End Thread Id is 5229
+End Thread Id is 5230
+End Thread Id is 5231
+End Thread Id is 5232
+End Thread Id is 5233
+End Thread Id is 5234
+End Thread Id is 5235
+End Thread Id is 5236
+End Thread Id is 5237
+End Thread Id is 5238
+End Thread Id is 5239
+End Thread Id is 5240
+End Thread Id is 5241
+End Thread Id is 5242
+End Thread Id is 5243
+End Thread Id is 5244
+End Thread Id is 5245
+End Thread Id is 5246
+End Thread Id is 5247
+End Thread Id is 8032
+End Thread Id is 8033
+End Thread Id is 8034
+End Thread Id is 8035
+End Thread Id is 8036
+End Thread Id is 8037
+End Thread Id is 8038
+End Thread Id is 8039
+End Thread Id is 8040
+End Thread Id is 8041
+End Thread Id is 8042
+End Thread Id is 8043
+End Thread Id is 8044
+End Thread Id is 8045
+End Thread Id is 8046
+End Thread Id is 8047
+End Thread Id is 8048
+End Thread Id is 8049
+End Thread Id is 8050
+End Thread Id is 8051
+End Thread Id is 8052
+End Thread Id is 8053
+End Thread Id is 8054
+End Thread Id is 8055
+End Thread Id is 8056
+End Thread Id is 8057
+End Thread Id is 8058
+End Thread Id is 8059
+End Thread Id is 8060
+End Thread Id is 8061
+End Thread Id is 8062
+End Thread Id is 8063
+20, 71595893
+21, 71595893
+20, 71595893
+19, 71595893
+21, 71595893
+18, 71595893
+21, 71595893
+19, 71595893
+18, 71595893
+19, 71595893
+20, 71595893
+19, 71595893
+18, 71595893
+21, 71595893
+20, 71595893
+20, 71595893
+21, 71595893
+21, 71595893
+20, 71595893
+20, 71595893
+18, 71595893
+19, 71595893
+20, 71595893
+20, 71595893
+20, 71595893
+20, 71595893
+19, 71595893
+21, 71595893
+19, 71595893
+19, 71595893
+18, 71595893
+18, 71595893
+20, 76064404
+20, 76064404
+19, 76064404
+20, 76064404
+21, 76064404
+19, 76064404
+18, 76064404
+19, 76064404
+18, 76064404
+20, 76064404
+19, 76064404
+21, 76064404
+20, 76064404
+18, 76064404
+20, 76064404
+20, 76064404
+21, 76064404
+18, 76064404
+19, 76064404
+20, 76064404
+18, 76064404
+21, 76064404
+19, 76064404
+19, 76064404
+19, 76064404
+20, 76064404
+19, 76064404
+21, 76064404
+18, 76064404
+21, 76064404
+18, 76064404
+21, 76064404
+End Thread Id is 5792
+End Thread Id is 5793
+End Thread Id is 5794
+End Thread Id is 5795
+End Thread Id is 5796
+End Thread Id is 5797
+End Thread Id is 5798
+End Thread Id is 5799
+End Thread Id is 5800
+End Thread Id is 5801
+End Thread Id is 5802
+End Thread Id is 5803
+End Thread Id is 5804
+End Thread Id is 5805
+End Thread Id is 5806
+End Thread Id is 5807
+End Thread Id is 5808
+End Thread Id is 5809
+End Thread Id is 5810
+End Thread Id is 5811
+End Thread Id is 5812
+End Thread Id is 5813
+End Thread Id is 5814
+End Thread Id is 5815
+End Thread Id is 5816
+End Thread Id is 5817
+End Thread Id is 5818
+End Thread Id is 5819
+End Thread Id is 5820
+End Thread Id is 5821
+End Thread Id is 5822
+End Thread Id is 5823
+20, 73856243
+19, 73856243
+20, 73856243
+19, 73856243
+20, 73856243
+19, 73856243
+20, 73856243
+18, 73856243
+19, 73856243
+18, 73856243
+19, 73856243
+18, 73856243
+21, 73856243
+21, 73856243
+21, 73856243
+20, 73856243
+19, 73856243
+19, 73856243
+19, 73856243
+18, 73856243
+19, 73856243
+19, 73856243
+19, 73856243
+19, 73856243
+18, 73856243
+18, 73856243
+19, 73856243
+20, 73856243
+18, 73856243
+20, 73856243
+19, 73856243
+21, 73856243
+End Thread Id is 8736
+End Thread Id is 8737
+End Thread Id is 8738
+End Thread Id is 8739
+End Thread Id is 8740
+End Thread Id is 8741
+End Thread Id is 8742
+End Thread Id is 8743
+End Thread Id is 8744
+End Thread Id is 8745
+End Thread Id is 8746
+End Thread Id is 8747
+End Thread Id is 8748
+End Thread Id is 8749
+End Thread Id is 8750
+End Thread Id is 8751
+End Thread Id is 8752
+End Thread Id is 8753
+End Thread Id is 8754
+End Thread Id is 8755
+End Thread Id is 8756
+End Thread Id is 8757
+End Thread Id is 8758
+End Thread Id is 8759
+End Thread Id is 8760
+End Thread Id is 8761
+End Thread Id is 8762
+End Thread Id is 8763
+End Thread Id is 8764
+End Thread Id is 8765
+End Thread Id is 8766
+End Thread Id is 8767
+End Thread Id is 8704
+End Thread Id is 8705
+End Thread Id is 8706
+End Thread Id is 8707
+End Thread Id is 8708
+End Thread Id is 8709
+End Thread Id is 8710
+End Thread Id is 8711
+End Thread Id is 8712
+End Thread Id is 8713
+End Thread Id is 8714
+End Thread Id is 8715
+End Thread Id is 8716
+End Thread Id is 8717
+End Thread Id is 8718
+End Thread Id is 8719
+End Thread Id is 8720
+End Thread Id is 8721
+End Thread Id is 8722
+End Thread Id is 8723
+End Thread Id is 8724
+End Thread Id is 8725
+End Thread Id is 8726
+End Thread Id is 8727
+End Thread Id is 8728
+End Thread Id is 8729
+End Thread Id is 8730
+End Thread Id is 8731
+End Thread Id is 8732
+End Thread Id is 8733
+End Thread Id is 8734
+End Thread Id is 8735
+20, 83999367
+19, 83999367
+18, 83999367
+21, 83999367
+20, 83999367
+20, 83999367
+21, 83999367
+20, 83999367
+19, 83999367
+21, 83999367
+20, 83999367
+20, 83999367
+20, 83999367
+20, 83999367
+20, 83999367
+21, 83999367
+19, 83999367
+19, 83999367
+18, 83999367
+20, 83999367
+19, 83999367
+19, 83999367
+20, 83999367
+21, 83999367
+19, 83999367
+19, 83999367
+19, 83999367
+20, 83999367
+20, 83999367
+20, 83999367
+18, 83999367
+21, 83999367
+20, 115436943
+18, 115436943
+19, 115436943
+20, 115436943
+21, 115436943
+19, 115436943
+18, 115436943
+17, 115436943
+20, 115436943
+18, 115436943
+21, 115436943
+19, 115436943
+20, 115436943
+19, 115436943
+19, 115436943
+21, 115436943
+20, 115436943
+20, 115436943
+20, 115436943
+19, 115436943
+20, 115436943
+21, 115436943
+20, 115436943
+21, 115436943
+20, 115436943
+18, 115436943
+20, 115436943
+19, 115436943
+21, 115436943
+19, 115436943
+20, 115436943
+20, 115436943
+End Thread Id is 288
+End Thread Id is 289
+End Thread Id is 290
+End Thread Id is 291
+End Thread Id is 292
+End Thread Id is 293
+End Thread Id is 294
+End Thread Id is 295
+End Thread Id is 296
+End Thread Id is 297
+End Thread Id is 298
+End Thread Id is 299
+End Thread Id is 300
+End Thread Id is 301
+End Thread Id is 302
+End Thread Id is 303
+End Thread Id is 304
+End Thread Id is 305
+End Thread Id is 306
+End Thread Id is 307
+End Thread Id is 308
+End Thread Id is 309
+End Thread Id is 310
+End Thread Id is 311
+End Thread Id is 312
+End Thread Id is 313
+End Thread Id is 314
+End Thread Id is 315
+End Thread Id is 316
+End Thread Id is 317
+End Thread Id is 318
+End Thread Id is 319
+End Thread Id is 32
+End Thread Id is 33
+End Thread Id is 34
+End Thread Id is 35
+End Thread Id is 36
+End Thread Id is 37
+End Thread Id is 38
+End Thread Id is 39
+End Thread Id is 40
+End Thread Id is 41
+End Thread Id is 42
+End Thread Id is 43
+End Thread Id is 44
+End Thread Id is 45
+End Thread Id is 46
+End Thread Id is 47
+End Thread Id is 48
+End Thread Id is 49
+End Thread Id is 50
+End Thread Id is 51
+End Thread Id is 52
+End Thread Id is 53
+End Thread Id is 54
+End Thread Id is 55
+End Thread Id is 56
+End Thread Id is 57
+End Thread Id is 58
+End Thread Id is 59
+End Thread Id is 60
+End Thread Id is 61
+End Thread Id is 62
+End Thread Id is 63
+19, 72212148
+21, 72212148
+19, 72212148
+19, 72212148
+20, 72212148
+20, 72212148
+20, 72212148
+21, 72212148
+21, 72212148
+21, 72212148
+21, 72212148
+20, 72212148
+19, 72212148
+18, 72212148
+21, 72212148
+19, 72212148
+17, 72212148
+20, 72212148
+18, 72212148
+20, 72212148
+20, 72212148
+20, 72212148
+21, 72212148
+21, 72212148
+21, 72212148
+20, 72212148
+20, 72212148
+20, 72212148
+18, 72212148
+20, 72212148
+21, 72212148
+19, 72212148
+End Thread Id is 7872
+End Thread Id is 7873
+End Thread Id is 7874
+End Thread Id is 7875
+End Thread Id is 7876
+End Thread Id is 7877
+End Thread Id is 7878
+End Thread Id is 7879
+End Thread Id is 7880
+End Thread Id is 7881
+End Thread Id is 7882
+End Thread Id is 7883
+End Thread Id is 7884
+End Thread Id is 7885
+End Thread Id is 7886
+End Thread Id is 7887
+End Thread Id is 7888
+End Thread Id is 7889
+End Thread Id is 7890
+End Thread Id is 7891
+End Thread Id is 7892
+End Thread Id is 7893
+End Thread Id is 7894
+End Thread Id is 7895
+End Thread Id is 7896
+End Thread Id is 7897
+End Thread Id is 7898
+End Thread Id is 7899
+End Thread Id is 7900
+End Thread Id is 7901
+End Thread Id is 7902
+End Thread Id is 7903
+20, 107754654
+18, 107754654
+21, 107754654
+21, 107754654
+19, 107754654
+18, 107754654
+20, 107754654
+21, 107754654
+20, 107754654
+18, 107754654
+20, 107754654
+20, 107754654
+20, 107754654
+21, 107754654
+20, 107754654
+21, 107754654
+20, 107754654
+21, 107754654
+20, 107754654
+21, 107754654
+20, 107754654
+19, 107754654
+20, 107754654
+20, 107754654
+21, 107754654
+21, 107754654
+20, 107754654
+21, 107754654
+19, 107754654
+19, 107754654
+20, 107754654
+21, 107754654
+18, 95877525
+21, 95877525
+20, 95877525
+20, 95877525
+21, 95877525
+20, 95877525
+19, 95877525
+19, 95877525
+19, 95877525
+19, 95877525
+19, 95877525
+19, 95877525
+20, 95877525
+20, 95877525
+20, 95877525
+20, 95877525
+19, 95877525
+19, 95877525
+20, 95877525
+20, 95877525
+20, 95877525
+20, 95877525
+20, 95877525
+21, 95877525
+21, 95877525
+21, 95877525
+20, 95877525
+19, 95877525
+21, 95877525
+19, 95877525
+19, 95877525
+20, 95877525
+19, 113063058
+20, 113063058
+19, 113063058
+19, 113063058
+21, 113063058
+20, 113063058
+20, 113063058
+21, 113063058
+20, 113063058
+21, 113063058
+19, 113063058
+21, 113063058
+18, 113063058
+19, 113063058
+21, 113063058
+20, 113063058
+20, 113063058
+21, 113063058
+20, 113063058
+21, 113063058
+19, 113063058
+21, 113063058
+20, 113063058
+20, 113063058
+21, 113063058
+21, 113063058
+21, 113063058
+20, 113063058
+19, 113063058
+21, 113063058
+21, 113063058
+20, 113063058
+End Thread Id is 2752
+End Thread Id is 2753
+End Thread Id is 2754
+End Thread Id is 2755
+End Thread Id is 2756
+End Thread Id is 2757
+End Thread Id is 2758
+End Thread Id is 2759
+End Thread Id is 2760
+End Thread Id is 2761
+End Thread Id is 2762
+End Thread Id is 2763
+End Thread Id is 2764
+End Thread Id is 2765
+End Thread Id is 2766
+End Thread Id is 2767
+End Thread Id is 2768
+End Thread Id is 2769
+End Thread Id is 2770
+End Thread Id is 2771
+End Thread Id is 2772
+End Thread Id is 2773
+End Thread Id is 2774
+End Thread Id is 2775
+End Thread Id is 2776
+End Thread Id is 2777
+End Thread Id is 2778
+End Thread Id is 2779
+End Thread Id is 2780
+End Thread Id is 2781
+End Thread Id is 2782
+End Thread Id is 2783
+End Thread Id is 7904
+End Thread Id is 7905
+End Thread Id is 7906
+End Thread Id is 7907
+End Thread Id is 7908
+End Thread Id is 7909
+End Thread Id is 7910
+End Thread Id is 7911
+End Thread Id is 7912
+End Thread Id is 7913
+End Thread Id is 7914
+End Thread Id is 7915
+End Thread Id is 7916
+End Thread Id is 7917
+End Thread Id is 7918
+End Thread Id is 7919
+End Thread Id is 7920
+End Thread Id is 7921
+End Thread Id is 7922
+End Thread Id is 7923
+End Thread Id is 7924
+End Thread Id is 7925
+End Thread Id is 7926
+End Thread Id is 7927
+End Thread Id is 7928
+End Thread Id is 7929
+End Thread Id is 7930
+End Thread Id is 7931
+End Thread Id is 7932
+End Thread Id is 7933
+End Thread Id is 7934
+End Thread Id is 7935
+19, 75604091
+20, 75604091
+21, 75604091
+20, 75604091
+20, 75604091
+19, 75604091
+21, 75604091
+18, 75604091
+20, 75604091
+19, 75604091
+17, 75604091
+20, 75604091
+21, 75604091
+20, 75604091
+20, 75604091
+20, 75604091
+21, 75604091
+19, 75604091
+20, 75604091
+21, 75604091
+20, 75604091
+21, 75604091
+20, 75604091
+20, 75604091
+20, 75604091
+19, 75604091
+21, 75604091
+21, 75604091
+20, 75604091
+21, 75604091
+18, 75604091
+20, 75604091
+End Thread Id is 96
+End Thread Id is 97
+End Thread Id is 98
+End Thread Id is 99
+End Thread Id is 100
+End Thread Id is 101
+End Thread Id is 102
+End Thread Id is 103
+End Thread Id is 104
+End Thread Id is 105
+End Thread Id is 106
+End Thread Id is 107
+End Thread Id is 108
+End Thread Id is 109
+End Thread Id is 110
+End Thread Id is 111
+End Thread Id is 112
+End Thread Id is 113
+End Thread Id is 114
+End Thread Id is 115
+End Thread Id is 116
+End Thread Id is 117
+End Thread Id is 118
+End Thread Id is 119
+End Thread Id is 120
+End Thread Id is 121
+End Thread Id is 122
+End Thread Id is 123
+End Thread Id is 124
+End Thread Id is 125
+End Thread Id is 126
+End Thread Id is 127
+End Thread Id is 2624
+End Thread Id is 2625
+End Thread Id is 2626
+End Thread Id is 2627
+End Thread Id is 2628
+End Thread Id is 2629
+End Thread Id is 2630
+End Thread Id is 2631
+End Thread Id is 2632
+End Thread Id is 2633
+End Thread Id is 2634
+End Thread Id is 2635
+End Thread Id is 2636
+End Thread Id is 2637
+End Thread Id is 2638
+End Thread Id is 2639
+End Thread Id is 2640
+End Thread Id is 2641
+End Thread Id is 2642
+End Thread Id is 2643
+End Thread Id is 2644
+End Thread Id is 2645
+End Thread Id is 2646
+End Thread Id is 2647
+End Thread Id is 2648
+End Thread Id is 2649
+End Thread Id is 2650
+End Thread Id is 2651
+End Thread Id is 2652
+End Thread Id is 2653
+End Thread Id is 2654
+End Thread Id is 2655
+20, 113691537
+19, 113691537
+20, 113691537
+21, 113691537
+19, 113691537
+18, 113691537
+19, 113691537
+17, 113691537
+20, 113691537
+21, 113691537
+19, 113691537
+20, 113691537
+19, 113691537
+19, 113691537
+19, 113691537
+21, 113691537
+21, 113691537
+19, 113691537
+20, 113691537
+19, 113691537
+21, 113691537
+19, 113691537
+20, 113691537
+18, 113691537
+17, 113691537
+18, 113691537
+20, 113691537
+21, 113691537
+18, 113691537
+21, 113691537
+19, 113691537
+20, 113691537
+End Thread Id is 5184
+End Thread Id is 5185
+End Thread Id is 5186
+End Thread Id is 5187
+End Thread Id is 5188
+End Thread Id is 5189
+End Thread Id is 5190
+End Thread Id is 5191
+End Thread Id is 5192
+End Thread Id is 5193
+End Thread Id is 5194
+End Thread Id is 5195
+End Thread Id is 5196
+End Thread Id is 5197
+End Thread Id is 5198
+End Thread Id is 5199
+End Thread Id is 5200
+End Thread Id is 5201
+End Thread Id is 5202
+End Thread Id is 5203
+End Thread Id is 5204
+End Thread Id is 5205
+End Thread Id is 5206
+End Thread Id is 5207
+End Thread Id is 5208
+End Thread Id is 5209
+End Thread Id is 5210
+End Thread Id is 5211
+End Thread Id is 5212
+End Thread Id is 5213
+End Thread Id is 5214
+End Thread Id is 5215
+INFO: Time (ms) for KF track fitting on device 0 : 218.734069
+INFO: Total Wall clock time (ms) for KF track fitting: 218.821854
+------------------------  ending  -----------------------

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libActscore.a  CMakeFiles/Actscore.dir/src/MagneticField/BFieldMapUtils.cpp.o CMakeFiles/Actscore.dir/src/MagneticField/SolenoidBField.cpp.o CMakeFiles/Actscore.dir/src/Plugins/BFieldOptions.cpp.o CMakeFiles/Actscore.dir/src/Plugins/BFieldUtils.cpp.o
+/usr/bin/ranlib libActscore.a

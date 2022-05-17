@@ -460,6 +460,8 @@ int main(int argc, char *argv[]) {
                                   streamDataBytes[FitData::FitStatus],
                                   cudaMemcpyHostToDevice, stream[i]));
         // Use shared memory for one track if requested
+        std::size_t bufsize = 100000000; 
+        cudaDeviceSetLimit ( cudaLimitPrintfFifoSize , bufsize);
         if (useSharedMemory) {
           fitKernelBlockPerTrack<<<grid, block, 0, stream[i]>>>(
               d_kFitter, d_sourcelinks, d_boundStates, d_targetSurfaces,
@@ -472,6 +474,8 @@ int main(int argc, char *argv[]) {
               nSurfaces, streamTracks, offset);
         }
 
+        // cudaDeviceSynchronize();
+        // cudaDeviceReset();
         // Copy the fitted states to host
         GPUERRCHK(cudaMemcpyAsync(&fitStates[offset * nSurfaces],
                                   &d_fitStates[offset * nSurfaces],
