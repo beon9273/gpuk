@@ -1,0 +1,6 @@
+INFO: float precision operand used.
+INFO: Creating 10 boundless plane surfaces
+
+INFO: Time (ms) to run simulation: 0.101517
+INFO: Time (ms) to run KF track fitting for 1 with 56 OMP threads: 4.89899
+------------------------  ending  -----------------------
