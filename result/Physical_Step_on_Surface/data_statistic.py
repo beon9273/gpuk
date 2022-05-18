@@ -2,7 +2,6 @@ import os
 import xlsxwriter
 from collections import defaultdict
 
-
 def data_collection(f):
     data = defaultdict(lambda : defaultdict(list))
     with open(f, 'rt') as myfile:
@@ -42,9 +41,6 @@ def write_to_csv(data):
         worksheet.write(row_pin, col_pin+6, sum(cycles) / len(cycles))
 
     workbook.close()
-
-
-
 
 if __name__ == '__main__':
     file_name = "surface_step_collection.log"
