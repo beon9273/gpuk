@@ -228,9 +228,12 @@ template <typename propagator_state_t>
 ACTS_DEVICE_FUNC bool
 Acts::EigenStepper<B>::step(propagator_state_t &state) const {
   // Construt a stepping data here
+  // printf("EigenInverter in usage");
+  // std::cout << "EigenInverter in usage" << std::endl;
   detail::StepData sd;
   // Default constructor will result in wrong value on GPU
   ActsScalar error_estimate = 0.;
+
 
   // First Runge-Kutta point (at current position)
   sd.B_first = getField(state.stepping, state.stepping.pos);

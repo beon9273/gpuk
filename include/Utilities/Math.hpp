@@ -103,10 +103,12 @@ ACTS_DEVICE_FUNC void invert(const ActsMatrixX<P> *em, ActsMatrixX<P> *result) {
 template <typename P, typename T = double>
 ACTS_DEVICE_FUNC ActsMatrixX<P> calculateInverse(ActsMatrixX<P> m) {
 #ifdef __CUDA_ARCH__
+  printf("CustomerInverter in usage");
   ActsMatrixX<P> result(m.rows(), m.cols());
   invert<T, P>(&m, &result);
   return result;
 #else
+  std::cout << "EigenInverter in usage" << std::endl;
   return m.inverse();
 #endif
 }
