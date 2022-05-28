@@ -72,6 +72,6 @@ Warning! Generated particle rejected!
 Warning! Generated particle rejected!
 Warning! Generated particle rejected!
 
-INFO: Time (ms) to run simulation: 18709.1
-INFO: Time (ms) to run KF track fitting for 100000 with 8 OMP threads: 3231.91
+INFO: Time (ms) to run simulation: 23037.7
+INFO: Time (ms) to run KF track fitting for 100000 with 8 OMP threads: 7068.49
 ------------------------  ending  -----------------------

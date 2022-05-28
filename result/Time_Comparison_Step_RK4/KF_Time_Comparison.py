@@ -20,10 +20,10 @@ def generate_label(key):
     device, method = label[0], label[-1]
     L = ""
     if device == "GPU":
-        L += "[Tesla_T4]"
+        L += "[A100]"
         L += "CustomerInverter"
     else:
-        L += "[Intel_Xeon_Gold_6230]"
+        L += "[Intel_Xeon_Gold_6330]"
         L += method
     return L
 
