@@ -1,4 +1,4 @@
-The system is: Linux - 3.10.0-1160.36.2.el7.x86_64 - x86_64
+The system is: Linux - 4.18.0-348.20.1.el8_5.x86_64 - x86_64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++ 
 Build flags: 
@@ -29,8 +29,8 @@ The output was:
 #$ _TARGET_DIR_=targets/x86_64-linux
 #$ TOP=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/..
 #$ NVVMIR_LIBRARY_DIR=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/libdevice
-#$ LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../lib:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib64:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib:/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib
-#$ PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/uufs/chpc.utah.edu/sys/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/bin
+#$ LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../lib:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib64:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib:/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib
+#$ PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/uufs/chpc.utah.edu/sys/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/.dotnet/tools:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1305734/bin
 #$ INCLUDES="-I/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include"  
 #$ LIBRARIES=  "-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib/stubs" "-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib"
 #$ CUDAFE_FLAGS=
@@ -54,7 +54,7 @@ Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" 
 The CUDA compiler identification is NVIDIA, found in "/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/3.15.3/CompilerIdCUDA/a.out"
 
 Parsed CUDA nvcc implicit link information from above output:
-  found 'PATH=' string: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/uufs/chpc.utah.edu/sys/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/bin]
+  found 'PATH=' string: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/uufs/chpc.utah.edu/sys/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/.dotnet/tools:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1305734/bin]
   found 'LIBRARIES=' string: ["-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib/stubs" "-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib"]
   considering line: [#$ rm tmp/a_dlink.reg.c]
   considering line: [gcc -D__CUDA_ARCH__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=3 -D__CUDACC_VER_BUILD__=58 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=3 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
@@ -100,7 +100,7 @@ Parsed CUDA nvcc implicit link information from above output:
 
 
 Parsed CUDA nvcc include information from above output:
-  found 'PATH=' string: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/uufs/chpc.utah.edu/sys/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/bin]
+  found 'PATH=' string: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../nvvm/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin:/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin:/uufs/chpc.utah.edu/common/home/u1305734/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/uufs/chpc.utah.edu/common/home/u1305734/.conda/envs/Genesis/bin:/uufs/chpc.utah.edu/sys/installdir/miniconda3/4.3.31/condabin:/uufs/chpc.utah.edu/sys/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1305734/.dotnet/tools:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1305734/bin]
   found 'LIBRARIES=' string: ["-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib/stubs" "-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/lib"]
   considering line: [#$ rm tmp/a_dlink.reg.c]
   considering line: [gcc -D__CUDA_ARCH__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=3 -D__CUDACC_VER_BUILD__=58 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=3 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
@@ -149,24 +149,24 @@ Parsed CUDA nvcc include information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_35712/fast && /usr/bin/gmake -f CMakeFiles/cmTC_35712.dir/build.make CMakeFiles/cmTC_35712.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_35712.dir/testCXXCompiler.cxx.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++     -o CMakeFiles/cmTC_35712.dir/testCXXCompiler.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_35712
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35712.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++       CMakeFiles/cmTC_35712.dir/testCXXCompiler.cxx.o  -o cmTC_35712 
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_7c9e0/fast && /usr/bin/gmake -f CMakeFiles/cmTC_7c9e0.dir/build.make CMakeFiles/cmTC_7c9e0.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c9e0.dir/testCXXCompiler.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++     -o CMakeFiles/cmTC_7c9e0.dir/testCXXCompiler.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_7c9e0
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c9e0.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++       CMakeFiles/cmTC_7c9e0.dir/testCXXCompiler.cxx.o  -o cmTC_7c9e0 
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_1c61a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_1c61a.dir/build.make CMakeFiles/cmTC_1c61a.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -v -o CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_3f45a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_3f45a.dir/build.make CMakeFiles/cmTC_3f45a.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -v -o CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++
 Target: x86_64-pc-linux-gnu
@@ -174,8 +174,8 @@ Configured with: ../../../srcdir/gcc/10.2.0/configure --prefix=/uufs/chpc.utah.e
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/u1305734/4467774/ccTF3KRx.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/u1305734/4588561/ccJk8mtq.s
 GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP
 
@@ -197,15 +197,15 @@ GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/u1305734/4467774/ccTF3KRx.s
-GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/u1305734/4588561/ccJk8mtq.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_1c61a
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c61a.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++      -v CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1c61a 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_3f45a
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f45a.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++      -v CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3f45a 
 Using built-in specs.
 COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++
 COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
@@ -216,10 +216,10 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1c61a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccw3HnPz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1c61a /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1c61a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f45a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccCkn4OM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3f45a /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f45a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
@@ -250,10 +250,10 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_1c61a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_1c61a.dir/build.make CMakeFiles/cmTC_1c61a.dir/build]
-  ignore line: [gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -v -o CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_3f45a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_3f45a.dir/build.make CMakeFiles/cmTC_3f45a.dir/build]
+  ignore line: [gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -v -o CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++]
   ignore line: [Target: x86_64-pc-linux-gnu]
@@ -261,8 +261,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/u1305734/4467774/ccTF3KRx.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/u1305734/4588561/ccJk8mtq.s]
   ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP]
   ignore line: []
@@ -284,15 +284,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/u1305734/4467774/ccTF3KRx.s]
-  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/u1305734/4588561/ccJk8mtq.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_1c61a]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c61a.dir/link.txt --verbose=1]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++      -v CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1c61a ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_3f45a]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f45a.dir/link.txt --verbose=1]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++      -v CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3f45a ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
@@ -303,13 +303,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 10.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1c61a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccw3HnPz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1c61a /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f45a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccCkn4OM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3f45a /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccw3HnPz.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccCkn4OM.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -321,7 +321,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1c61a] ==> ignore
+    arg [cmTC_3f45a] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
@@ -330,7 +330,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
-    arg [CMakeFiles/cmTC_1c61a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_3f45a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -353,24 +353,24 @@ Parsed CXX implicit link information from above output:
 Determining if the CUDA compiler works passed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_0a249/fast && /usr/bin/gmake -f CMakeFiles/cmTC_0a249.dir/build.make CMakeFiles/cmTC_0a249.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CUDA object CMakeFiles/cmTC_0a249.dir/main.cu.o
-/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc     -x cu -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/main.cu -o CMakeFiles/cmTC_0a249.dir/main.cu.o
-Linking CUDA executable cmTC_0a249
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a249.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++   CMakeFiles/cmTC_0a249.dir/main.cu.o -o cmTC_0a249  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_94932/fast && /usr/bin/gmake -f CMakeFiles/cmTC_94932.dir/build.make CMakeFiles/cmTC_94932.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_94932.dir/main.cu.o
+/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc     -x cu -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/main.cu -o CMakeFiles/cmTC_94932.dir/main.cu.o
+Linking CUDA executable cmTC_94932
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94932.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++   CMakeFiles/cmTC_94932.dir/main.cu.o -o cmTC_94932  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CUDA compiler ABI info compiled with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_1a487/fast && /usr/bin/gmake -f CMakeFiles/cmTC_1a487.dir/build.make CMakeFiles/cmTC_1a487.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CUDA object CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o
-/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc    -Xcompiler=-v -x cu -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o
+Run Build Command(s):/usr/bin/gmake cmTC_b9461/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b9461.dir/build.make CMakeFiles/cmTC_b9461.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o
+/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc    -Xcompiler=-v -x cu -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o
 Using built-in specs.
 COLLECT_GCC=gcc
 Target: x86_64-pc-linux-gnu
@@ -378,8 +378,8 @@ Configured with: ../../../srcdir/gcc/10.2.0/configure --prefix=/uufs/chpc.utah.e
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64
 ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
@@ -395,7 +395,7 @@ ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/li
 End of search list.
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
 Using built-in specs.
 COLLECT_GCC=gcc
 Target: x86_64-pc-linux-gnu
@@ -403,8 +403,8 @@ Configured with: ../../../srcdir/gcc/10.2.0/configure --prefix=/uufs/chpc.utah.e
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64
+COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64
 ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
@@ -420,7 +420,7 @@ ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/li
 End of search list.
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
 Using built-in specs.
 COLLECT_GCC=gcc
 Target: x86_64-pc-linux-gnu
@@ -428,8 +428,8 @@ Configured with: ../../../srcdir/gcc/10.2.0/configure --prefix=/uufs/chpc.utah.e
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_00051050_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -version -o /scratch/local/u1305734/4467774/ccl5k5tU.s
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_00080007_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -version -o /scratch/local/u1305734/4588561/ccMAuiXJ.s
 GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP
 
@@ -452,15 +452,15 @@ GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6
-COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
- as -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o /scratch/local/u1305734/4467774/ccl5k5tU.s
-GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+ as -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o /scratch/local/u1305734/4588561/ccMAuiXJ.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
-Linking CUDA executable cmTC_1a487
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a487.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++  -v CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -o cmTC_1a487  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+Linking CUDA executable cmTC_b9461
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9461.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++  -v CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -o cmTC_b9461  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
 Using built-in specs.
 COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++
 COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
@@ -471,10 +471,10 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a487' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccYrDw23.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1a487 /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a487' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b9461' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/cczeiSPa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b9461 /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b9461' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
@@ -507,10 +507,10 @@ Parsed CUDA implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_1a487/fast && /usr/bin/gmake -f CMakeFiles/cmTC_1a487.dir/build.make CMakeFiles/cmTC_1a487.dir/build]
-  ignore line: [gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
-  ignore line: [Building CUDA object CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc    -Xcompiler=-v -x cu -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_b9461/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b9461.dir/build.make CMakeFiles/cmTC_b9461.dir/build]
+  ignore line: [gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
+  ignore line: [Building CUDA object CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc    -Xcompiler=-v -x cu -c /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=gcc]
   ignore line: [Target: x86_64-pc-linux-gnu]
@@ -518,8 +518,8 @@ Parsed CUDA implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64]
   ignore line: [ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
@@ -535,7 +535,7 @@ Parsed CUDA implicit link information from above output:
   ignore line: [End of search list.]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=gcc]
   ignore line: [Target: x86_64-pc-linux-gnu]
@@ -543,8 +543,8 @@ Parsed CUDA implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64]
+  ignore line: [COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -E -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=58 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=3 -include cuda_runtime.h /uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64]
   ignore line: [ignoring nonexistent directory "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
@@ -560,7 +560,7 @@ Parsed CUDA implicit link information from above output:
   ignore line: [End of search list.]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4467774/tmpxft_00051050_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
+  ignore line: [COLLECT_GCC_OPTIONS='-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=58' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=3' '-include' 'cuda_runtime.h' '-m64' '-o' '/scratch/local/u1305734/4588561/tmpxft_00080007_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=gcc]
   ignore line: [Target: x86_64-pc-linux-gnu]
@@ -568,8 +568,8 @@ Parsed CUDA implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /scratch/local/u1305734/4467774/tmpxft_00051050_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_00051050_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -version -o /scratch/local/u1305734/4467774/ccl5k5tU.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /scratch/local/u1305734/4588561/tmpxft_00080007_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_00080007_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -version -o /scratch/local/u1305734/4588561/ccMAuiXJ.s]
   ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP]
   ignore line: []
@@ -592,15 +592,15 @@ Parsed CUDA implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o /scratch/local/u1305734/4467774/ccl5k5tU.s]
-  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o /scratch/local/u1305734/4588561/ccMAuiXJ.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CUDA executable cmTC_1a487]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a487.dir/link.txt --verbose=1]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++  -v CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -o cmTC_1a487  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CUDA executable cmTC_b9461]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9461.dir/link.txt --verbose=1]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++  -v CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -o cmTC_b9461  -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs" -L"/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/g++]
   ignore line: [COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
@@ -611,13 +611,13 @@ Parsed CUDA implicit link information from above output:
   ignore line: [gcc version 10.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a487' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccYrDw23.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1a487 /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b9461' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs' '-L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/cczeiSPa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b9461 /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib/stubs -L/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/targets/x86_64-linux/lib -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4467774/ccYrDw23.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4588561/cczeiSPa.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -629,7 +629,7 @@ Parsed CUDA implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1a487] ==> ignore
+    arg [cmTC_b9461] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
@@ -640,7 +640,7 @@ Parsed CUDA implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
-    arg [CMakeFiles/cmTC_1a487.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+    arg [CMakeFiles/cmTC_b9461.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
     arg [-lcudadevrt] ==> lib [cudadevrt]
     arg [-lcudart_static] ==> lib [cudart_static]
     arg [-lrt] ==> lib [rt]
@@ -670,38 +670,38 @@ Parsed CUDA implicit link information from above output:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6456d/fast && /usr/bin/gmake -f CMakeFiles/cmTC_6456d.dir/build.make CMakeFiles/cmTC_6456d.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6456d.dir/CheckIncludeFile.cxx.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++     -o CMakeFiles/cmTC_6456d.dir/CheckIncludeFile.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_6456d
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6456d.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++       CMakeFiles/cmTC_6456d.dir/CheckIncludeFile.cxx.o  -o cmTC_6456d 
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_51040/fast && /usr/bin/gmake -f CMakeFiles/cmTC_51040.dir/build.make CMakeFiles/cmTC_51040.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_51040.dir/CheckIncludeFile.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++     -o CMakeFiles/cmTC_51040.dir/CheckIncludeFile.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_51040
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51040.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++       CMakeFiles/cmTC_51040.dir/CheckIncludeFile.cxx.o  -o cmTC_51040 
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_11b5e/fast && /usr/bin/gmake -f CMakeFiles/cmTC_11b5e.dir/build.make CMakeFiles/cmTC_11b5e.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_11b5e.dir/CheckFunctionExists.cxx.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_11b5e.dir/CheckFunctionExists.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_11b5e
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b5e.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_11b5e.dir/CheckFunctionExists.cxx.o  -o cmTC_11b5e -lpthread 
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_b8cd9/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b8cd9.dir/build.make CMakeFiles/cmTC_b8cd9.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b8cd9.dir/CheckFunctionExists.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b8cd9.dir/CheckFunctionExists.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_b8cd9
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8cd9.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b8cd9.dir/CheckFunctionExists.cxx.o  -o cmTC_b8cd9 -lpthread 
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_2fe8f/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2fe8f.dir/build.make CMakeFiles/cmTC_2fe8f.dir/build
-gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_2193b/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2193b.dir/build.make CMakeFiles/cmTC_2193b.dir/build
+gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++
 Target: x86_64-pc-linux-gnu
@@ -709,8 +709,8 @@ Configured with: ../../../srcdir/gcc/10.2.0/configure --prefix=/uufs/chpc.utah.e
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /scratch/local/u1305734/4467774/ccp4PvFV.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /scratch/local/u1305734/4588561/ccgqVox0.s
 GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP
 
@@ -732,15 +732,15 @@ GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o /scratch/local/u1305734/4467774/ccp4PvFV.s
-GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o /scratch/local/u1305734/4588561/ccgqVox0.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking CXX executable cmTC_2fe8f
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fe8f.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -fopenmp -v    CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o  -o cmTC_2fe8f -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_2193b
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2193b.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -fopenmp -v    CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o  -o cmTC_2193b -v 
 Using built-in specs.
 COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++
 COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
@@ -752,10 +752,10 @@ gcc version 10.2.0 (GCC)
 COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
 Reading specs from /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2fe8f' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/cc0KlCj1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2fe8f /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2fe8f' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-gmake[1]: Leaving directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2193b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccSzRpLm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2193b /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2193b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
 
 
 
@@ -763,10 +763,10 @@ Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_2fe8f/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2fe8f.dir/build.make CMakeFiles/cmTC_2fe8f.dir/build]
-  ignore line: [gmake[1]: Entering directory `/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_2193b/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2193b.dir/build.make CMakeFiles/cmTC_2193b.dir/build]
+  ignore line: [gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++]
   ignore line: [Target: x86_64-pc-linux-gnu]
@@ -774,8 +774,8 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /scratch/local/u1305734/4467774/ccp4PvFV.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /scratch/local/u1305734/4588561/ccgqVox0.s]
   ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.17-5-g57dc5ff-GMP]
   ignore line: []
@@ -797,15 +797,15 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 650c72099cb38ccfff4f97859c0d05d6]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o /scratch/local/u1305734/4467774/ccp4PvFV.s]
-  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o /scratch/local/u1305734/4588561/ccgqVox0.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-108.el8_5.1]
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_2fe8f]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fe8f.dir/link.txt --verbose=1]
-  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -fopenmp -v    CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o  -o cmTC_2fe8f -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_2193b]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2193b.dir/link.txt --verbose=1]
+  ignore line: [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -fopenmp -v    CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o  -o cmTC_2193b -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
@@ -817,13 +817,13 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2fe8f' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4467774/cc0KlCj1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2fe8f /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_2193b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccSzRpLm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2193b /lib/../lib64/crt1.o /lib/../lib64/crti.o /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /lib/../lib64/crtn.o]
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4467774/cc0KlCj1.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/scratch/local/u1305734/4588561/ccSzRpLm.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -836,7 +836,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2fe8f] ==> ignore
+    arg [cmTC_2193b] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
@@ -845,7 +845,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
-    arg [CMakeFiles/cmTC_2fe8f.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_2193b.dir/OpenMPTryFlag.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgomp] ==> lib [gomp]

@@ -4605,334 +4605,336 @@ static inline double4 make_double4(double x, double y, double z, double w)
 double4 t; (t.x) = x; (t.y) = y; (t.z) = z; (t.w) = w; return t; 
 # 311
 } 
-# 27 "/usr/include/string.h" 3
+# 28 "/usr/include/string.h" 3
 extern "C" {
-# 42 "/usr/include/string.h" 3
+# 43 "/usr/include/string.h" 3
 extern void *memcpy(void *__restrict__ __dest, const void *__restrict__ __src, size_t __n) throw()
-# 43
+# 44
  __attribute((__nonnull__(1, 2))); 
-# 46
-extern void *memmove(void * __dest, const void * __src, size_t __n) throw()
 # 47
+extern void *memmove(void * __dest, const void * __src, size_t __n) throw()
+# 48
  __attribute((__nonnull__(1, 2))); 
 # 54
 extern void *memccpy(void *__restrict__ __dest, const void *__restrict__ __src, int __c, size_t __n) throw()
 # 56
  __attribute((__nonnull__(1, 2))); 
-# 62
+# 61
 extern void *memset(void * __s, int __c, size_t __n) throw() __attribute((__nonnull__(1))); 
-# 65
+# 64
 extern int memcmp(const void * __s1, const void * __s2, size_t __n) throw()
-# 66
+# 65
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 70
+# 69
 extern "C++" {
-# 72
+# 71
 extern void *memchr(void * __s, int __c, size_t __n) throw() __asm__("memchr")
+# 72
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
 # 73
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 74
 extern const void *memchr(const void * __s, int __c, size_t __n) throw() __asm__("memchr")
-# 75
+# 74
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 90 "/usr/include/string.h" 3
+# 89 "/usr/include/string.h" 3
 }
-# 101
+# 99 "/usr/include/string.h" 3
 extern "C++" void *rawmemchr(void * __s, int __c) throw() __asm__("rawmemchr")
+# 100
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 101
+extern "C++" const void *rawmemchr(const void * __s, int __c) throw() __asm__("rawmemchr")
 # 102
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 103
-extern "C++" const void *rawmemchr(const void * __s, int __c) throw() __asm__("rawmemchr")
-# 104
+# 110
+extern "C++" void *memrchr(void * __s, int __c, size_t __n) throw() __asm__("memrchr")
+# 111
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
 # 112
-extern "C++" void *memrchr(void * __s, int __c, size_t __n) throw() __asm__("memrchr")
+extern "C++" const void *memrchr(const void * __s, int __c, size_t __n) throw() __asm__("memrchr")
 # 113
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 114
-extern "C++" const void *memrchr(const void * __s, int __c, size_t __n) throw() __asm__("memrchr")
-# 115
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 125
+# 122 "/usr/include/string.h" 3
 extern char *strcpy(char *__restrict__ __dest, const char *__restrict__ __src) throw()
-# 126
+# 123
  __attribute((__nonnull__(1, 2))); 
-# 128
+# 125
 extern char *strncpy(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
+# 127
+ __attribute((__nonnull__(1, 2))); 
 # 130
+extern char *strcat(char *__restrict__ __dest, const char *__restrict__ __src) throw()
+# 131
  __attribute((__nonnull__(1, 2))); 
 # 133
-extern char *strcat(char *__restrict__ __dest, const char *__restrict__ __src) throw()
+extern char *strncat(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
 # 134
  __attribute((__nonnull__(1, 2))); 
-# 136
-extern char *strncat(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
 # 137
- __attribute((__nonnull__(1, 2))); 
-# 140
 extern int strcmp(const char * __s1, const char * __s2) throw()
+# 138
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 140
+extern int strncmp(const char * __s1, const char * __s2, size_t __n) throw()
 # 141
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 143
-extern int strncmp(const char * __s1, const char * __s2, size_t __n) throw()
 # 144
+extern int strcoll(const char * __s1, const char * __s2) throw()
+# 145
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
 # 147
-extern int strcoll(const char * __s1, const char * __s2) throw()
-# 148
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 150
 extern size_t strxfrm(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
-# 152
+# 149
  __attribute((__nonnull__(2))); 
-# 39 "/usr/include/xlocale.h" 3
-typedef 
-# 27
+# 28 "/usr/include/bits/types/__locale_t.h" 3
 struct __locale_struct { 
-# 30
+# 31
 struct __locale_data *__locales[13]; 
-# 33
-const unsigned short *__ctype_b; 
 # 34
-const int *__ctype_tolower; 
+const unsigned short *__ctype_b; 
 # 35
+const int *__ctype_tolower; 
+# 36
 const int *__ctype_toupper; 
-# 38
-const char *__names[13]; 
 # 39
-} *__locale_t; 
+const char *__names[13]; 
+# 40
+}; 
 # 42
+typedef __locale_struct *__locale_t; 
+# 24 "/usr/include/bits/types/locale_t.h" 3
 typedef __locale_t locale_t; 
-# 162 "/usr/include/string.h" 3
-extern int strcoll_l(const char * __s1, const char * __s2, __locale_t __l) throw()
-# 163
+# 156 "/usr/include/string.h" 3
+extern int strcoll_l(const char * __s1, const char * __s2, locale_t __l) throw()
+# 157
  __attribute((__pure__)) __attribute((__nonnull__(1, 2, 3))); 
-# 165
-extern size_t strxfrm_l(char * __dest, const char * __src, size_t __n, __locale_t __l) throw()
-# 166
+# 160
+extern size_t strxfrm_l(char * __dest, const char * __src, size_t __n, locale_t __l) throw()
+# 161
  __attribute((__nonnull__(2, 4))); 
-# 172
+# 167
 extern char *strdup(const char * __s) throw()
-# 173
+# 168
  __attribute((__malloc__)) __attribute((__nonnull__(1))); 
-# 180
+# 175
 extern char *strndup(const char * __string, size_t __n) throw()
-# 181
+# 176
  __attribute((__malloc__)) __attribute((__nonnull__(1))); 
-# 210 "/usr/include/string.h" 3
+# 204 "/usr/include/string.h" 3
 extern "C++" {
-# 212
+# 206
 extern char *strchr(char * __s, int __c) throw() __asm__("strchr")
-# 213
+# 207
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 214
+# 208
 extern const char *strchr(const char * __s, int __c) throw() __asm__("strchr")
-# 215
+# 209
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 230 "/usr/include/string.h" 3
+# 224 "/usr/include/string.h" 3
 }
-# 237
+# 231
 extern "C++" {
-# 239
+# 233
 extern char *strrchr(char * __s, int __c) throw() __asm__("strrchr")
-# 240
+# 234
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 241
+# 235
 extern const char *strrchr(const char * __s, int __c) throw() __asm__("strrchr")
-# 242
+# 236
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 257 "/usr/include/string.h" 3
+# 251 "/usr/include/string.h" 3
 }
-# 268
+# 261 "/usr/include/string.h" 3
 extern "C++" char *strchrnul(char * __s, int __c) throw() __asm__("strchrnul")
-# 269
+# 262
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 270
+# 263
 extern "C++" const char *strchrnul(const char * __s, int __c) throw() __asm__("strchrnul")
-# 271
+# 264
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 281
+# 273 "/usr/include/string.h" 3
 extern size_t strcspn(const char * __s, const char * __reject) throw()
-# 282
+# 274
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 277
+extern size_t strspn(const char * __s, const char * __accept) throw()
+# 278
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 281
+extern "C++" {
+# 283
+extern char *strpbrk(char * __s, const char * __accept) throw() __asm__("strpbrk")
+# 284
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
 # 285
-extern size_t strspn(const char * __s, const char * __accept) throw()
+extern const char *strpbrk(const char * __s, const char * __accept) throw() __asm__("strpbrk")
 # 286
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 289
-extern "C++" {
-# 291
-extern char *strpbrk(char * __s, const char * __accept) throw() __asm__("strpbrk")
-# 292
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 293
-extern const char *strpbrk(const char * __s, const char * __accept) throw() __asm__("strpbrk")
-# 294
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 309 "/usr/include/string.h" 3
+# 301 "/usr/include/string.h" 3
 }
-# 316
+# 308
 extern "C++" {
-# 318
+# 310
 extern char *strstr(char * __haystack, const char * __needle) throw() __asm__("strstr")
-# 319
+# 311
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 320
+# 312
 extern const char *strstr(const char * __haystack, const char * __needle) throw() __asm__("strstr")
-# 321
+# 313
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 336 "/usr/include/string.h" 3
+# 328 "/usr/include/string.h" 3
 }
-# 344
+# 336
 extern char *strtok(char *__restrict__ __s, const char *__restrict__ __delim) throw()
-# 345
+# 337
  __attribute((__nonnull__(2))); 
-# 350
+# 341
 extern char *__strtok_r(char *__restrict__ __s, const char *__restrict__ __delim, char **__restrict__ __save_ptr) throw()
-# 353
+# 344
  __attribute((__nonnull__(2, 3))); 
-# 355
+# 346
 extern char *strtok_r(char *__restrict__ __s, const char *__restrict__ __delim, char **__restrict__ __save_ptr) throw()
-# 357
+# 348
  __attribute((__nonnull__(2, 3))); 
-# 363
+# 354
 extern "C++" char *strcasestr(char * __haystack, const char * __needle) throw() __asm__("strcasestr")
-# 364
+# 355
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 365
+# 356
 extern "C++" const char *strcasestr(const char * __haystack, const char * __needle) throw() __asm__("strcasestr")
-# 367
+# 358
  __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 378 "/usr/include/string.h" 3
+# 369 "/usr/include/string.h" 3
 extern void *memmem(const void * __haystack, size_t __haystacklen, const void * __needle, size_t __needlelen) throw()
-# 380
+# 371
  __attribute((__pure__)) __attribute((__nonnull__(1, 3))); 
-# 384
+# 375
 extern void *__mempcpy(void *__restrict__ __dest, const void *__restrict__ __src, size_t __n) throw()
-# 386
+# 377
  __attribute((__nonnull__(1, 2))); 
-# 387
+# 378
 extern void *mempcpy(void *__restrict__ __dest, const void *__restrict__ __src, size_t __n) throw()
-# 389
+# 380
  __attribute((__nonnull__(1, 2))); 
-# 395
+# 385
 extern size_t strlen(const char * __s) throw()
-# 396
+# 386
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 402
+# 391
 extern size_t strnlen(const char * __string, size_t __maxlen) throw()
-# 403
+# 392
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 409
+# 397
 extern char *strerror(int __errnum) throw(); 
-# 434 "/usr/include/string.h" 3
+# 421 "/usr/include/string.h" 3
 extern char *strerror_r(int __errnum, char * __buf, size_t __buflen) throw()
-# 435
+# 422
  __attribute((__nonnull__(2))); 
-# 441
-extern char *strerror_l(int __errnum, __locale_t __l) throw(); 
-# 447
-extern void __bzero(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
-# 451
-extern void bcopy(const void * __src, void * __dest, size_t __n) throw()
-# 452
- __attribute((__nonnull__(1, 2))); 
-# 455
-extern void bzero(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
-# 458
-extern int bcmp(const void * __s1, const void * __s2, size_t __n) throw()
-# 459
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 463
-extern "C++" {
-# 465
-extern char *index(char * __s, int __c) throw() __asm__("index")
-# 466
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 467
-extern const char *index(const char * __s, int __c) throw() __asm__("index")
-# 468
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 483 "/usr/include/string.h" 3
-}
-# 491
-extern "C++" {
-# 493
-extern char *rindex(char * __s, int __c) throw() __asm__("rindex")
-# 494
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 495
-extern const char *rindex(const char * __s, int __c) throw() __asm__("rindex")
-# 496
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 511 "/usr/include/string.h" 3
-}
-# 519
-extern int ffs(int __i) throw() __attribute((const)); 
-# 524
-extern int ffsl(long __l) throw() __attribute((const)); 
-# 526
-__extension__ extern int ffsll(long long __ll) throw()
-# 527
- __attribute((const)); 
-# 532
-extern int strcasecmp(const char * __s1, const char * __s2) throw()
-# 533
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 536
-extern int strncasecmp(const char * __s1, const char * __s2, size_t __n) throw()
-# 537
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 543
-extern int strcasecmp_l(const char * __s1, const char * __s2, __locale_t __loc) throw()
-# 545
- __attribute((__pure__)) __attribute((__nonnull__(1, 2, 3))); 
-# 547
-extern int strncasecmp_l(const char * __s1, const char * __s2, size_t __n, __locale_t __loc) throw()
-# 549
- __attribute((__pure__)) __attribute((__nonnull__(1, 2, 4))); 
-# 555
-extern char *strsep(char **__restrict__ __stringp, const char *__restrict__ __delim) throw()
-# 557
- __attribute((__nonnull__(1, 2))); 
-# 562
-extern char *strsignal(int __sig) throw(); 
-# 565
-extern char *__stpcpy(char *__restrict__ __dest, const char *__restrict__ __src) throw()
-# 566
- __attribute((__nonnull__(1, 2))); 
-# 567
-extern char *stpcpy(char *__restrict__ __dest, const char *__restrict__ __src) throw()
-# 568
- __attribute((__nonnull__(1, 2))); 
-# 572
-extern char *__stpncpy(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
-# 574
- __attribute((__nonnull__(1, 2))); 
-# 575
-extern char *stpncpy(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
-# 577
- __attribute((__nonnull__(1, 2))); 
-# 582
-extern int strverscmp(const char * __s1, const char * __s2) throw()
-# 583
- __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
-# 586
-extern char *strfry(char * __string) throw() __attribute((__nonnull__(1))); 
-# 589
-extern void *memfrob(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
-# 597
-extern "C++" char *basename(char * __filename) throw() __asm__("basename")
-# 598
- __attribute((__nonnull__(1))); 
-# 599
-extern "C++" const char *basename(const char * __filename) throw() __asm__("basename")
-# 600
- __attribute((__nonnull__(1))); 
-# 642 "/usr/include/string.h" 3
-}
-# 29 "/usr/include/time.h" 3
+# 428
+extern char *strerror_l(int __errnum, locale_t __l) throw(); 
+# 30 "/usr/include/strings.h" 3
 extern "C" {
+# 34
+extern int bcmp(const void * __s1, const void * __s2, size_t __n) throw()
+# 35
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 38
+extern void bcopy(const void * __src, void * __dest, size_t __n) throw()
+# 39
+ __attribute((__nonnull__(1, 2))); 
+# 42
+extern void bzero(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
+# 46
+extern "C++" {
+# 48
+extern char *index(char * __s, int __c) throw() __asm__("index")
+# 49
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 50
+extern const char *index(const char * __s, int __c) throw() __asm__("index")
+# 51
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 66 "/usr/include/strings.h" 3
+}
+# 74
+extern "C++" {
+# 76
+extern char *rindex(char * __s, int __c) throw() __asm__("rindex")
+# 77
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 78
+extern const char *rindex(const char * __s, int __c) throw() __asm__("rindex")
+# 79
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 94 "/usr/include/strings.h" 3
+}
+# 104 "/usr/include/strings.h" 3
+extern int ffs(int __i) throw() __attribute((const)); 
+# 110
+extern int ffsl(long __l) throw() __attribute((const)); 
+# 111
+__extension__ extern int ffsll(long long __ll) throw()
+# 112
+ __attribute((const)); 
+# 116
+extern int strcasecmp(const char * __s1, const char * __s2) throw()
+# 117
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 120
+extern int strncasecmp(const char * __s1, const char * __s2, size_t __n) throw()
+# 121
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 128
+extern int strcasecmp_l(const char * __s1, const char * __s2, locale_t __loc) throw()
+# 129
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2, 3))); 
+# 133
+extern int strncasecmp_l(const char * __s1, const char * __s2, size_t __n, locale_t __loc) throw()
+# 135
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2, 4))); 
+# 138
+}
+# 436 "/usr/include/string.h" 3
+extern void explicit_bzero(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
+# 440
+extern char *strsep(char **__restrict__ __stringp, const char *__restrict__ __delim) throw()
+# 442
+ __attribute((__nonnull__(1, 2))); 
+# 447
+extern char *strsignal(int __sig) throw(); 
+# 450
+extern char *__stpcpy(char *__restrict__ __dest, const char *__restrict__ __src) throw()
+# 451
+ __attribute((__nonnull__(1, 2))); 
+# 452
+extern char *stpcpy(char *__restrict__ __dest, const char *__restrict__ __src) throw()
+# 453
+ __attribute((__nonnull__(1, 2))); 
+# 457
+extern char *__stpncpy(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
+# 459
+ __attribute((__nonnull__(1, 2))); 
+# 460
+extern char *stpncpy(char *__restrict__ __dest, const char *__restrict__ __src, size_t __n) throw()
+# 462
+ __attribute((__nonnull__(1, 2))); 
+# 467
+extern int strverscmp(const char * __s1, const char * __s2) throw()
+# 468
+ __attribute((__pure__)) __attribute((__nonnull__(1, 2))); 
+# 471
+extern char *strfry(char * __string) throw() __attribute((__nonnull__(1))); 
+# 474
+extern void *memfrob(void * __s, size_t __n) throw() __attribute((__nonnull__(1))); 
+# 482
+extern "C++" char *basename(char * __filename) throw() __asm__("basename")
+# 483
+ __attribute((__nonnull__(1))); 
+# 484
+extern "C++" const char *basename(const char * __filename) throw() __asm__("basename")
+# 485
+ __attribute((__nonnull__(1))); 
+# 499 "/usr/include/string.h" 3
+}
 # 30 "/usr/include/bits/types.h" 3
 typedef unsigned char __u_char; 
 # 31
@@ -4957,293 +4959,315 @@ typedef unsigned __uint32_t;
 typedef signed long __int64_t; 
 # 44
 typedef unsigned long __uint64_t; 
+# 51
+typedef __int8_t __int_least8_t; 
 # 52
-typedef long __quad_t; 
+typedef __uint8_t __uint_least8_t; 
 # 53
+typedef __int16_t __int_least16_t; 
+# 54
+typedef __uint16_t __uint_least16_t; 
+# 55
+typedef __int32_t __int_least32_t; 
+# 56
+typedef __uint32_t __uint_least32_t; 
+# 57
+typedef __int64_t __int_least64_t; 
+# 58
+typedef __uint64_t __uint_least64_t; 
+# 62
+typedef long __quad_t; 
+# 63
 typedef unsigned long __u_quad_t; 
-# 133 "/usr/include/bits/types.h" 3
+# 71
+typedef long __intmax_t; 
+# 72
+typedef unsigned long __uintmax_t; 
+# 143 "/usr/include/bits/types.h" 3
 typedef unsigned long __dev_t; 
-# 134
-typedef unsigned __uid_t; 
-# 135
-typedef unsigned __gid_t; 
-# 136
-typedef unsigned long __ino_t; 
-# 137
-typedef unsigned long __ino64_t; 
-# 138
-typedef unsigned __mode_t; 
-# 139
-typedef unsigned long __nlink_t; 
-# 140
-typedef long __off_t; 
-# 141
-typedef long __off64_t; 
-# 142
-typedef int __pid_t; 
-# 143
-typedef struct { int __val[2]; } __fsid_t; 
 # 144
-typedef long __clock_t; 
+typedef unsigned __uid_t; 
 # 145
-typedef unsigned long __rlim_t; 
+typedef unsigned __gid_t; 
 # 146
-typedef unsigned long __rlim64_t; 
+typedef unsigned long __ino_t; 
 # 147
-typedef unsigned __id_t; 
+typedef unsigned long __ino64_t; 
 # 148
-typedef long __time_t; 
+typedef unsigned __mode_t; 
 # 149
-typedef unsigned __useconds_t; 
+typedef unsigned long __nlink_t; 
 # 150
-typedef long __suseconds_t; 
+typedef long __off_t; 
+# 151
+typedef long __off64_t; 
 # 152
-typedef int __daddr_t; 
+typedef int __pid_t; 
 # 153
-typedef int __key_t; 
+typedef struct { int __val[2]; } __fsid_t; 
+# 154
+typedef long __clock_t; 
+# 155
+typedef unsigned long __rlim_t; 
 # 156
-typedef int __clockid_t; 
+typedef unsigned long __rlim64_t; 
+# 157
+typedef unsigned __id_t; 
+# 158
+typedef long __time_t; 
 # 159
-typedef void *__timer_t; 
+typedef unsigned __useconds_t; 
+# 160
+typedef long __suseconds_t; 
 # 162
-typedef long __blksize_t; 
-# 167
-typedef long __blkcnt_t; 
-# 168
-typedef long __blkcnt64_t; 
-# 171
-typedef unsigned long __fsblkcnt_t; 
+typedef int __daddr_t; 
+# 163
+typedef int __key_t; 
+# 166
+typedef int __clockid_t; 
+# 169
+typedef void *__timer_t; 
 # 172
-typedef unsigned long __fsblkcnt64_t; 
-# 175
-typedef unsigned long __fsfilcnt_t; 
-# 176
-typedef unsigned long __fsfilcnt64_t; 
-# 179
-typedef long __fsword_t; 
+typedef long __blksize_t; 
+# 177
+typedef long __blkcnt_t; 
+# 178
+typedef long __blkcnt64_t; 
 # 181
-typedef long __ssize_t; 
-# 184
-typedef long __syscall_slong_t; 
+typedef unsigned long __fsblkcnt_t; 
+# 182
+typedef unsigned long __fsblkcnt64_t; 
+# 185
+typedef unsigned long __fsfilcnt_t; 
 # 186
-typedef unsigned long __syscall_ulong_t; 
-# 190
-typedef __off64_t __loff_t; 
+typedef unsigned long __fsfilcnt64_t; 
+# 189
+typedef long __fsword_t; 
 # 191
-typedef __quad_t *__qaddr_t; 
-# 192
+typedef long __ssize_t; 
+# 194
+typedef long __syscall_slong_t; 
+# 196
+typedef unsigned long __syscall_ulong_t; 
+# 200
+typedef __off64_t __loff_t; 
+# 201
 typedef char *__caddr_t; 
-# 195
+# 204
 typedef long __intptr_t; 
-# 198
+# 207
 typedef unsigned __socklen_t; 
-# 30 "/usr/include/bits/time.h" 3
+# 212
+typedef int __sig_atomic_t; 
+# 8 "/usr/include/bits/types/struct_timeval.h" 3
 struct timeval { 
-# 32
+# 10
 __time_t tv_sec; 
-# 33
+# 11
 __suseconds_t tv_usec; 
-# 34
+# 12
 }; 
-# 25 "/usr/include/bits/timex.h" 3
+# 26 "/usr/include/bits/timex.h" 3
 struct timex { 
-# 27
-unsigned modes; 
 # 28
-__syscall_slong_t offset; 
+unsigned modes; 
 # 29
-__syscall_slong_t freq; 
+__syscall_slong_t offset; 
 # 30
-__syscall_slong_t maxerror; 
+__syscall_slong_t freq; 
 # 31
-__syscall_slong_t esterror; 
+__syscall_slong_t maxerror; 
 # 32
-int status; 
+__syscall_slong_t esterror; 
 # 33
-__syscall_slong_t constant; 
+int status; 
 # 34
-__syscall_slong_t precision; 
+__syscall_slong_t constant; 
 # 35
-__syscall_slong_t tolerance; 
+__syscall_slong_t precision; 
 # 36
-timeval time; 
+__syscall_slong_t tolerance; 
 # 37
-__syscall_slong_t tick; 
+timeval time; 
 # 38
-__syscall_slong_t ppsfreq; 
+__syscall_slong_t tick; 
 # 39
-__syscall_slong_t jitter; 
+__syscall_slong_t ppsfreq; 
 # 40
-int shift; 
+__syscall_slong_t jitter; 
 # 41
-__syscall_slong_t stabil; 
+int shift; 
 # 42
-__syscall_slong_t jitcnt; 
+__syscall_slong_t stabil; 
 # 43
-__syscall_slong_t calcnt; 
+__syscall_slong_t jitcnt; 
 # 44
-__syscall_slong_t errcnt; 
+__syscall_slong_t calcnt; 
 # 45
+__syscall_slong_t errcnt; 
+# 46
 __syscall_slong_t stbcnt; 
-# 47
+# 48
 int tai; 
-# 50
-int:32; int:32; int:32; int:32; 
 # 51
 int:32; int:32; int:32; int:32; 
 # 52
-int:32; int:32; int:32; 
+int:32; int:32; int:32; int:32; 
 # 53
+int:32; int:32; int:32; 
+# 54
 }; 
-# 90 "/usr/include/bits/time.h" 3
+# 75 "/usr/include/bits/time.h" 3
 extern "C" {
-# 93
+# 78
 extern int clock_adjtime(__clockid_t __clock_id, timex * __utx) throw(); 
-# 95
+# 80
 }
-# 59 "/usr/include/time.h" 3
+# 7 "/usr/include/bits/types/clock_t.h" 3
 typedef __clock_t clock_t; 
-# 75 "/usr/include/time.h" 3
+# 7 "/usr/include/bits/types/time_t.h" 3
 typedef __time_t time_t; 
-# 91 "/usr/include/time.h" 3
-typedef __clockid_t clockid_t; 
-# 103 "/usr/include/time.h" 3
-typedef __timer_t timer_t; 
-# 120 "/usr/include/time.h" 3
-struct timespec { 
-# 122
-__time_t tv_sec; 
-# 123
-__syscall_slong_t tv_nsec; 
-# 124
-}; 
-# 133
+# 7 "/usr/include/bits/types/struct_tm.h" 3
 struct tm { 
-# 135
+# 9
 int tm_sec; 
-# 136
+# 10
 int tm_min; 
-# 137
+# 11
 int tm_hour; 
-# 138
+# 12
 int tm_mday; 
-# 139
+# 13
 int tm_mon; 
-# 140
+# 14
 int tm_year; 
-# 141
+# 15
 int tm_wday; 
-# 142
+# 16
 int tm_yday; 
-# 143
+# 17
 int tm_isdst; 
-# 146
+# 20
 long tm_gmtoff; 
-# 147
+# 21
 const char *tm_zone; 
-# 152
+# 26
 }; 
-# 161
+# 9 "/usr/include/bits/types/struct_timespec.h" 3
+struct timespec { 
+# 11
+__time_t tv_sec; 
+# 12
+__syscall_slong_t tv_nsec; 
+# 13
+}; 
+# 7 "/usr/include/bits/types/clockid_t.h" 3
+typedef __clockid_t clockid_t; 
+# 7 "/usr/include/bits/types/timer_t.h" 3
+typedef __timer_t timer_t; 
+# 8 "/usr/include/bits/types/struct_itimerspec.h" 3
 struct itimerspec { 
-# 163
+# 10
 timespec it_interval; 
-# 164
+# 11
 timespec it_value; 
-# 165
+# 12
 }; 
-# 168
+# 49 "/usr/include/time.h" 3
 struct sigevent; 
-# 174
+# 54
 typedef __pid_t pid_t; 
-# 189 "/usr/include/time.h" 3
+# 68 "/usr/include/time.h" 3
+extern "C" {
+# 72
 extern clock_t clock() throw(); 
-# 192
+# 75
 extern time_t time(time_t * __timer) throw(); 
-# 195
+# 78
 extern double difftime(time_t __time1, time_t __time0) throw()
-# 196
+# 79
  __attribute((const)); 
-# 199
+# 82
 extern time_t mktime(tm * __tp) throw(); 
-# 205
+# 88
 extern size_t strftime(char *__restrict__ __s, size_t __maxsize, const char *__restrict__ __format, const tm *__restrict__ __tp) throw(); 
-# 213
+# 95
 extern char *strptime(const char *__restrict__ __s, const char *__restrict__ __fmt, tm * __tp) throw(); 
-# 223
-extern size_t strftime_l(char *__restrict__ __s, size_t __maxsize, const char *__restrict__ __format, const tm *__restrict__ __tp, __locale_t __loc) throw(); 
-# 230
-extern char *strptime_l(const char *__restrict__ __s, const char *__restrict__ __fmt, tm * __tp, __locale_t __loc) throw(); 
-# 239
+# 104
+extern size_t strftime_l(char *__restrict__ __s, size_t __maxsize, const char *__restrict__ __format, const tm *__restrict__ __tp, locale_t __loc) throw(); 
+# 111
+extern char *strptime_l(const char *__restrict__ __s, const char *__restrict__ __fmt, tm * __tp, locale_t __loc) throw(); 
+# 119
 extern tm *gmtime(const time_t * __timer) throw(); 
-# 243
+# 123
 extern tm *localtime(const time_t * __timer) throw(); 
-# 249
+# 128
 extern tm *gmtime_r(const time_t *__restrict__ __timer, tm *__restrict__ __tp) throw(); 
-# 254
+# 133
 extern tm *localtime_r(const time_t *__restrict__ __timer, tm *__restrict__ __tp) throw(); 
-# 261
+# 139
 extern char *asctime(const tm * __tp) throw(); 
-# 264
+# 142
 extern char *ctime(const time_t * __timer) throw(); 
-# 272
+# 149
 extern char *asctime_r(const tm *__restrict__ __tp, char *__restrict__ __buf) throw(); 
-# 276
+# 153
 extern char *ctime_r(const time_t *__restrict__ __timer, char *__restrict__ __buf) throw(); 
-# 282
+# 159
 extern char *__tzname[2]; 
-# 283
+# 160
 extern int __daylight; 
-# 284
+# 161
 extern long __timezone; 
-# 289
+# 166
 extern char *tzname[2]; 
-# 293
+# 170
 extern void tzset() throw(); 
-# 297
+# 174
 extern int daylight; 
-# 298
+# 175
 extern long timezone; 
-# 304
+# 181
 extern int stime(const time_t * __when) throw(); 
-# 319 "/usr/include/time.h" 3
+# 196 "/usr/include/time.h" 3
 extern time_t timegm(tm * __tp) throw(); 
-# 322
+# 199
 extern time_t timelocal(tm * __tp) throw(); 
-# 325
+# 202
 extern int dysize(int __year) throw() __attribute((const)); 
-# 334 "/usr/include/time.h" 3
+# 211 "/usr/include/time.h" 3
 extern int nanosleep(const timespec * __requested_time, timespec * __remaining); 
-# 339
+# 216
 extern int clock_getres(clockid_t __clock_id, timespec * __res) throw(); 
-# 342
+# 219
 extern int clock_gettime(clockid_t __clock_id, timespec * __tp) throw(); 
-# 345
+# 222
 extern int clock_settime(clockid_t __clock_id, const timespec * __tp) throw(); 
-# 353
+# 230
 extern int clock_nanosleep(clockid_t __clock_id, int __flags, const timespec * __req, timespec * __rem); 
-# 358
+# 235
 extern int clock_getcpuclockid(pid_t __pid, clockid_t * __clock_id) throw(); 
-# 363
+# 240
 extern int timer_create(clockid_t __clock_id, sigevent *__restrict__ __evp, timer_t *__restrict__ __timerid) throw(); 
-# 368
+# 245
 extern int timer_delete(timer_t __timerid) throw(); 
-# 371
+# 248
 extern int timer_settime(timer_t __timerid, int __flags, const itimerspec *__restrict__ __value, itimerspec *__restrict__ __ovalue) throw(); 
-# 376
+# 253
 extern int timer_gettime(timer_t __timerid, itimerspec * __value) throw(); 
-# 380
+# 257
 extern int timer_getoverrun(timer_t __timerid) throw(); 
-# 386
+# 263
 extern int timespec_get(timespec * __ts, int __base) throw()
-# 387
+# 264
  __attribute((__nonnull__(1))); 
-# 403 "/usr/include/time.h" 3
+# 280 "/usr/include/time.h" 3
 extern int getdate_err; 
-# 412 "/usr/include/time.h" 3
+# 289 "/usr/include/time.h" 3
 extern tm *getdate(const char * __string); 
-# 426 "/usr/include/time.h" 3
+# 303 "/usr/include/time.h" 3
 extern int getdate_r(const char *__restrict__ __string, tm *__restrict__ __resbufp); 
-# 430
+# 307
 }
 # 88 "/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/../targets/x86_64-linux/include/crt/common_functions.h"
 extern "C" {
@@ -6219,719 +6243,1917 @@ typedef __typeof__(((_Tp2() + _Up2()) + _Vp2()) + _Wp2()) __type;
 }
 # 219
 }
-# 29 "/usr/include/math.h" 3
+# 34 "/usr/include/math.h" 3
 extern "C" {
-# 28 "/usr/include/bits/mathdef.h" 3
-typedef float float_t; 
-# 29
-typedef double double_t; 
-# 54 "/usr/include/bits/mathcalls.h" 3
-extern double acos(double __x) throw(); extern double __acos(double __x) throw(); 
-# 56
-extern double asin(double __x) throw(); extern double __asin(double __x) throw(); 
-# 58
-extern double atan(double __x) throw(); extern double __atan(double __x) throw(); 
-# 60
-extern double atan2(double __y, double __x) throw(); extern double __atan2(double __y, double __x) throw(); 
-# 63
-extern double cos(double __x) throw(); extern double __cos(double __x) throw(); 
-# 65
-extern double sin(double __x) throw(); extern double __sin(double __x) throw(); 
-# 67
-extern double tan(double __x) throw(); extern double __tan(double __x) throw(); 
-# 72
-extern double cosh(double __x) throw(); extern double __cosh(double __x) throw(); 
-# 74
-extern double sinh(double __x) throw(); extern double __sinh(double __x) throw(); 
-# 76
-extern double tanh(double __x) throw(); extern double __tanh(double __x) throw(); 
-# 81
-extern void sincos(double __x, double * __sinx, double * __cosx) throw(); extern void __sincos(double __x, double * __sinx, double * __cosx) throw(); 
-# 88
-extern double acosh(double __x) throw(); extern double __acosh(double __x) throw(); 
-# 90
-extern double asinh(double __x) throw(); extern double __asinh(double __x) throw(); 
-# 92
-extern double atanh(double __x) throw(); extern double __atanh(double __x) throw(); 
-# 100
-extern double exp(double __x) throw(); extern double __exp(double __x) throw(); 
-# 103
-extern double frexp(double __x, int * __exponent) throw(); extern double __frexp(double __x, int * __exponent) throw(); 
-# 106
-extern double ldexp(double __x, int __exponent) throw(); extern double __ldexp(double __x, int __exponent) throw(); 
-# 109
-extern double log(double __x) throw(); extern double __log(double __x) throw(); 
-# 112
-extern double log10(double __x) throw(); extern double __log10(double __x) throw(); 
-# 115
-extern double modf(double __x, double * __iptr) throw(); extern double __modf(double __x, double * __iptr) throw()
-# 116
- __attribute((__nonnull__(2))); 
-# 121
-extern double exp10(double __x) throw(); extern double __exp10(double __x) throw(); 
-# 123
-extern double pow10(double __x) throw(); extern double __pow10(double __x) throw(); 
-# 129
-extern double expm1(double __x) throw(); extern double __expm1(double __x) throw(); 
-# 132
-extern double log1p(double __x) throw(); extern double __log1p(double __x) throw(); 
-# 135
-extern double logb(double __x) throw(); extern double __logb(double __x) throw(); 
-# 142
-extern double exp2(double __x) throw(); extern double __exp2(double __x) throw(); 
-# 145
-extern double log2(double __x) throw(); extern double __log2(double __x) throw(); 
-# 154
-extern double pow(double __x, double __y) throw(); extern double __pow(double __x, double __y) throw(); 
-# 157
-extern double sqrt(double __x) throw(); extern double __sqrt(double __x) throw(); 
-# 163
-extern double hypot(double __x, double __y) throw(); extern double __hypot(double __x, double __y) throw(); 
-# 170
-extern double cbrt(double __x) throw(); extern double __cbrt(double __x) throw(); 
-# 179
-extern double ceil(double __x) throw() __attribute((const)); extern double __ceil(double __x) throw() __attribute((const)); 
-# 182
-extern double fabs(double __x) throw() __attribute((const)); extern double __fabs(double __x) throw() __attribute((const)); 
-# 185
-extern double floor(double __x) throw() __attribute((const)); extern double __floor(double __x) throw() __attribute((const)); 
-# 188
-extern double fmod(double __x, double __y) throw(); extern double __fmod(double __x, double __y) throw(); 
-# 193
-extern int __isinf(double __value) throw() __attribute((const)); 
-# 196
-extern int __finite(double __value) throw() __attribute((const)); 
-# 202
-extern int isinf(double __value) throw() __attribute((const)); 
-# 205
-extern int finite(double __value) throw() __attribute((const)); 
-# 208
-extern double drem(double __x, double __y) throw(); extern double __drem(double __x, double __y) throw(); 
-# 212
-extern double significand(double __x) throw(); extern double __significand(double __x) throw(); 
-# 218
-extern double copysign(double __x, double __y) throw() __attribute((const)); extern double __copysign(double __x, double __y) throw() __attribute((const)); 
-# 225
-extern double nan(const char * __tagb) throw() __attribute((const)); extern double __nan(const char * __tagb) throw() __attribute((const)); 
-# 231
-extern int __isnan(double __value) throw() __attribute((const)); 
-# 235
-extern int isnan(double __value) throw() __attribute((const)); 
-# 238
-extern double j0(double) throw(); extern double __j0(double) throw(); 
-# 239
-extern double j1(double) throw(); extern double __j1(double) throw(); 
-# 240
-extern double jn(int, double) throw(); extern double __jn(int, double) throw(); 
-# 241
-extern double y0(double) throw(); extern double __y0(double) throw(); 
-# 242
-extern double y1(double) throw(); extern double __y1(double) throw(); 
-# 243
-extern double yn(int, double) throw(); extern double __yn(int, double) throw(); 
-# 250
-extern double erf(double) throw(); extern double __erf(double) throw(); 
-# 251
-extern double erfc(double) throw(); extern double __erfc(double) throw(); 
-# 252
-extern double lgamma(double) throw(); extern double __lgamma(double) throw(); 
-# 259
-extern double tgamma(double) throw(); extern double __tgamma(double) throw(); 
-# 265
-extern double gamma(double) throw(); extern double __gamma(double) throw(); 
-# 272
-extern double lgamma_r(double, int * __signgamp) throw(); extern double __lgamma_r(double, int * __signgamp) throw(); 
-# 280
-extern double rint(double __x) throw(); extern double __rint(double __x) throw(); 
-# 283
-extern double nextafter(double __x, double __y) throw() __attribute((const)); extern double __nextafter(double __x, double __y) throw() __attribute((const)); 
-# 285
-extern double nexttoward(double __x, long double __y) throw() __attribute((const)); extern double __nexttoward(double __x, long double __y) throw() __attribute((const)); 
-# 289
-extern double remainder(double __x, double __y) throw(); extern double __remainder(double __x, double __y) throw(); 
-# 293
-extern double scalbn(double __x, int __n) throw(); extern double __scalbn(double __x, int __n) throw(); 
-# 297
-extern int ilogb(double __x) throw(); extern int __ilogb(double __x) throw(); 
-# 302
-extern double scalbln(double __x, long __n) throw(); extern double __scalbln(double __x, long __n) throw(); 
-# 306
-extern double nearbyint(double __x) throw(); extern double __nearbyint(double __x) throw(); 
-# 310
-extern double round(double __x) throw() __attribute((const)); extern double __round(double __x) throw() __attribute((const)); 
-# 314
-extern double trunc(double __x) throw() __attribute((const)); extern double __trunc(double __x) throw() __attribute((const)); 
-# 319
-extern double remquo(double __x, double __y, int * __quo) throw(); extern double __remquo(double __x, double __y, int * __quo) throw(); 
-# 326
-extern long lrint(double __x) throw(); extern long __lrint(double __x) throw(); 
-# 327
-extern long long llrint(double __x) throw(); extern long long __llrint(double __x) throw(); 
-# 331
-extern long lround(double __x) throw(); extern long __lround(double __x) throw(); 
-# 332
-extern long long llround(double __x) throw(); extern long long __llround(double __x) throw(); 
-# 336
-extern double fdim(double __x, double __y) throw(); extern double __fdim(double __x, double __y) throw(); 
-# 339
-extern double fmax(double __x, double __y) throw() __attribute((const)); extern double __fmax(double __x, double __y) throw() __attribute((const)); 
-# 342
-extern double fmin(double __x, double __y) throw() __attribute((const)); extern double __fmin(double __x, double __y) throw() __attribute((const)); 
-# 346
-extern int __fpclassify(double __value) throw()
-# 347
- __attribute((const)); 
-# 350
-extern int __signbit(double __value) throw()
-# 351
- __attribute((const)); 
-# 355
-extern double fma(double __x, double __y, double __z) throw(); extern double __fma(double __x, double __y, double __z) throw(); 
-# 364
-extern double scalb(double __x, double __n) throw(); extern double __scalb(double __x, double __n) throw(); 
-# 54 "/usr/include/bits/mathcalls.h" 3
-extern float acosf(float __x) throw(); extern float __acosf(float __x) throw(); 
-# 56
-extern float asinf(float __x) throw(); extern float __asinf(float __x) throw(); 
-# 58
-extern float atanf(float __x) throw(); extern float __atanf(float __x) throw(); 
-# 60
-extern float atan2f(float __y, float __x) throw(); extern float __atan2f(float __y, float __x) throw(); 
-# 63
-extern float cosf(float __x) throw(); 
-# 65
-extern float sinf(float __x) throw(); 
-# 67
-extern float tanf(float __x) throw(); 
-# 72
-extern float coshf(float __x) throw(); extern float __coshf(float __x) throw(); 
-# 74
-extern float sinhf(float __x) throw(); extern float __sinhf(float __x) throw(); 
-# 76
-extern float tanhf(float __x) throw(); extern float __tanhf(float __x) throw(); 
-# 81
-extern void sincosf(float __x, float * __sinx, float * __cosx) throw(); 
-# 88
-extern float acoshf(float __x) throw(); extern float __acoshf(float __x) throw(); 
-# 90
-extern float asinhf(float __x) throw(); extern float __asinhf(float __x) throw(); 
-# 92
-extern float atanhf(float __x) throw(); extern float __atanhf(float __x) throw(); 
-# 100
-extern float expf(float __x) throw(); 
-# 103
-extern float frexpf(float __x, int * __exponent) throw(); extern float __frexpf(float __x, int * __exponent) throw(); 
-# 106
-extern float ldexpf(float __x, int __exponent) throw(); extern float __ldexpf(float __x, int __exponent) throw(); 
-# 109
-extern float logf(float __x) throw(); 
-# 112
-extern float log10f(float __x) throw(); 
-# 115
-extern float modff(float __x, float * __iptr) throw(); extern float __modff(float __x, float * __iptr) throw()
-# 116
- __attribute((__nonnull__(2))); 
-# 121
-extern float exp10f(float __x) throw(); 
-# 123
-extern float pow10f(float __x) throw(); extern float __pow10f(float __x) throw(); 
-# 129
-extern float expm1f(float __x) throw(); extern float __expm1f(float __x) throw(); 
-# 132
-extern float log1pf(float __x) throw(); extern float __log1pf(float __x) throw(); 
-# 135
-extern float logbf(float __x) throw(); extern float __logbf(float __x) throw(); 
-# 142
-extern float exp2f(float __x) throw(); extern float __exp2f(float __x) throw(); 
-# 145
-extern float log2f(float __x) throw(); 
-# 154
-extern float powf(float __x, float __y) throw(); 
-# 157
-extern float sqrtf(float __x) throw(); extern float __sqrtf(float __x) throw(); 
-# 163
-extern float hypotf(float __x, float __y) throw(); extern float __hypotf(float __x, float __y) throw(); 
-# 170
-extern float cbrtf(float __x) throw(); extern float __cbrtf(float __x) throw(); 
-# 179
-extern float ceilf(float __x) throw() __attribute((const)); extern float __ceilf(float __x) throw() __attribute((const)); 
-# 182
-extern float fabsf(float __x) throw() __attribute((const)); extern float __fabsf(float __x) throw() __attribute((const)); 
-# 185
-extern float floorf(float __x) throw() __attribute((const)); extern float __floorf(float __x) throw() __attribute((const)); 
-# 188
-extern float fmodf(float __x, float __y) throw(); extern float __fmodf(float __x, float __y) throw(); 
-# 193
-extern int __isinff(float __value) throw() __attribute((const)); 
-# 196
-extern int __finitef(float __value) throw() __attribute((const)); 
-# 202
-extern int isinff(float __value) throw() __attribute((const)); 
-# 205
-extern int finitef(float __value) throw() __attribute((const)); 
-# 208
-extern float dremf(float __x, float __y) throw(); extern float __dremf(float __x, float __y) throw(); 
-# 212
-extern float significandf(float __x) throw(); extern float __significandf(float __x) throw(); 
-# 218
-extern float copysignf(float __x, float __y) throw() __attribute((const)); extern float __copysignf(float __x, float __y) throw() __attribute((const)); 
-# 225
-extern float nanf(const char * __tagb) throw() __attribute((const)); extern float __nanf(const char * __tagb) throw() __attribute((const)); 
-# 231
-extern int __isnanf(float __value) throw() __attribute((const)); 
-# 235
-extern int isnanf(float __value) throw() __attribute((const)); 
-# 238
-extern float j0f(float) throw(); extern float __j0f(float) throw(); 
-# 239
-extern float j1f(float) throw(); extern float __j1f(float) throw(); 
-# 240
-extern float jnf(int, float) throw(); extern float __jnf(int, float) throw(); 
-# 241
-extern float y0f(float) throw(); extern float __y0f(float) throw(); 
-# 242
-extern float y1f(float) throw(); extern float __y1f(float) throw(); 
-# 243
-extern float ynf(int, float) throw(); extern float __ynf(int, float) throw(); 
-# 250
-extern float erff(float) throw(); extern float __erff(float) throw(); 
-# 251
-extern float erfcf(float) throw(); extern float __erfcf(float) throw(); 
-# 252
-extern float lgammaf(float) throw(); extern float __lgammaf(float) throw(); 
-# 259
-extern float tgammaf(float) throw(); extern float __tgammaf(float) throw(); 
-# 265
-extern float gammaf(float) throw(); extern float __gammaf(float) throw(); 
-# 272
-extern float lgammaf_r(float, int * __signgamp) throw(); extern float __lgammaf_r(float, int * __signgamp) throw(); 
-# 280
-extern float rintf(float __x) throw(); extern float __rintf(float __x) throw(); 
-# 283
-extern float nextafterf(float __x, float __y) throw() __attribute((const)); extern float __nextafterf(float __x, float __y) throw() __attribute((const)); 
-# 285
-extern float nexttowardf(float __x, long double __y) throw() __attribute((const)); extern float __nexttowardf(float __x, long double __y) throw() __attribute((const)); 
-# 289
-extern float remainderf(float __x, float __y) throw(); extern float __remainderf(float __x, float __y) throw(); 
-# 293
-extern float scalbnf(float __x, int __n) throw(); extern float __scalbnf(float __x, int __n) throw(); 
-# 297
-extern int ilogbf(float __x) throw(); extern int __ilogbf(float __x) throw(); 
-# 302
-extern float scalblnf(float __x, long __n) throw(); extern float __scalblnf(float __x, long __n) throw(); 
-# 306
-extern float nearbyintf(float __x) throw(); extern float __nearbyintf(float __x) throw(); 
-# 310
-extern float roundf(float __x) throw() __attribute((const)); extern float __roundf(float __x) throw() __attribute((const)); 
-# 314
-extern float truncf(float __x) throw() __attribute((const)); extern float __truncf(float __x) throw() __attribute((const)); 
-# 319
-extern float remquof(float __x, float __y, int * __quo) throw(); extern float __remquof(float __x, float __y, int * __quo) throw(); 
-# 326
-extern long lrintf(float __x) throw(); extern long __lrintf(float __x) throw(); 
-# 327
-extern long long llrintf(float __x) throw(); extern long long __llrintf(float __x) throw(); 
-# 331
-extern long lroundf(float __x) throw(); extern long __lroundf(float __x) throw(); 
-# 332
-extern long long llroundf(float __x) throw(); extern long long __llroundf(float __x) throw(); 
-# 336
-extern float fdimf(float __x, float __y) throw(); extern float __fdimf(float __x, float __y) throw(); 
-# 339
-extern float fmaxf(float __x, float __y) throw() __attribute((const)); extern float __fmaxf(float __x, float __y) throw() __attribute((const)); 
-# 342
-extern float fminf(float __x, float __y) throw() __attribute((const)); extern float __fminf(float __x, float __y) throw() __attribute((const)); 
-# 346
-extern int __fpclassifyf(float __value) throw()
-# 347
- __attribute((const)); 
-# 350
-extern int __signbitf(float __value) throw()
-# 351
- __attribute((const)); 
-# 355
-extern float fmaf(float __x, float __y, float __z) throw(); extern float __fmaf(float __x, float __y, float __z) throw(); 
-# 364
-extern float scalbf(float __x, float __n) throw(); extern float __scalbf(float __x, float __n) throw(); 
-# 54 "/usr/include/bits/mathcalls.h" 3
-extern long double acosl(long double __x) throw(); extern long double __acosl(long double __x) throw(); 
-# 56
-extern long double asinl(long double __x) throw(); extern long double __asinl(long double __x) throw(); 
-# 58
-extern long double atanl(long double __x) throw(); extern long double __atanl(long double __x) throw(); 
-# 60
-extern long double atan2l(long double __y, long double __x) throw(); extern long double __atan2l(long double __y, long double __x) throw(); 
-# 63
-extern long double cosl(long double __x) throw(); extern long double __cosl(long double __x) throw(); 
-# 65
-extern long double sinl(long double __x) throw(); extern long double __sinl(long double __x) throw(); 
-# 67
-extern long double tanl(long double __x) throw(); extern long double __tanl(long double __x) throw(); 
-# 72
-extern long double coshl(long double __x) throw(); extern long double __coshl(long double __x) throw(); 
-# 74
-extern long double sinhl(long double __x) throw(); extern long double __sinhl(long double __x) throw(); 
-# 76
-extern long double tanhl(long double __x) throw(); extern long double __tanhl(long double __x) throw(); 
-# 81
-extern void sincosl(long double __x, long double * __sinx, long double * __cosx) throw(); extern void __sincosl(long double __x, long double * __sinx, long double * __cosx) throw(); 
-# 88
-extern long double acoshl(long double __x) throw(); extern long double __acoshl(long double __x) throw(); 
-# 90
-extern long double asinhl(long double __x) throw(); extern long double __asinhl(long double __x) throw(); 
-# 92
-extern long double atanhl(long double __x) throw(); extern long double __atanhl(long double __x) throw(); 
-# 100
-extern long double expl(long double __x) throw(); extern long double __expl(long double __x) throw(); 
-# 103
-extern long double frexpl(long double __x, int * __exponent) throw(); extern long double __frexpl(long double __x, int * __exponent) throw(); 
-# 106
-extern long double ldexpl(long double __x, int __exponent) throw(); extern long double __ldexpl(long double __x, int __exponent) throw(); 
-# 109
-extern long double logl(long double __x) throw(); extern long double __logl(long double __x) throw(); 
-# 112
-extern long double log10l(long double __x) throw(); extern long double __log10l(long double __x) throw(); 
-# 115
-extern long double modfl(long double __x, long double * __iptr) throw(); extern long double __modfl(long double __x, long double * __iptr) throw()
-# 116
- __attribute((__nonnull__(2))); 
-# 121
-extern long double exp10l(long double __x) throw(); extern long double __exp10l(long double __x) throw(); 
-# 123
-extern long double pow10l(long double __x) throw(); extern long double __pow10l(long double __x) throw(); 
-# 129
-extern long double expm1l(long double __x) throw(); extern long double __expm1l(long double __x) throw(); 
-# 132
-extern long double log1pl(long double __x) throw(); extern long double __log1pl(long double __x) throw(); 
-# 135
-extern long double logbl(long double __x) throw(); extern long double __logbl(long double __x) throw(); 
-# 142
-extern long double exp2l(long double __x) throw(); extern long double __exp2l(long double __x) throw(); 
-# 145
-extern long double log2l(long double __x) throw(); extern long double __log2l(long double __x) throw(); 
-# 154
-extern long double powl(long double __x, long double __y) throw(); extern long double __powl(long double __x, long double __y) throw(); 
-# 157
-extern long double sqrtl(long double __x) throw(); extern long double __sqrtl(long double __x) throw(); 
-# 163
-extern long double hypotl(long double __x, long double __y) throw(); extern long double __hypotl(long double __x, long double __y) throw(); 
-# 170
-extern long double cbrtl(long double __x) throw(); extern long double __cbrtl(long double __x) throw(); 
-# 179
-extern long double ceill(long double __x) throw() __attribute((const)); extern long double __ceill(long double __x) throw() __attribute((const)); 
-# 182
-extern long double fabsl(long double __x) throw() __attribute((const)); extern long double __fabsl(long double __x) throw() __attribute((const)); 
-# 185
-extern long double floorl(long double __x) throw() __attribute((const)); extern long double __floorl(long double __x) throw() __attribute((const)); 
-# 188
-extern long double fmodl(long double __x, long double __y) throw(); extern long double __fmodl(long double __x, long double __y) throw(); 
-# 193
-extern int __isinfl(long double __value) throw() __attribute((const)); 
-# 196
-extern int __finitel(long double __value) throw() __attribute((const)); 
-# 202
-extern int isinfl(long double __value) throw() __attribute((const)); 
-# 205
-extern int finitel(long double __value) throw() __attribute((const)); 
-# 208
-extern long double dreml(long double __x, long double __y) throw(); extern long double __dreml(long double __x, long double __y) throw(); 
-# 212
-extern long double significandl(long double __x) throw(); extern long double __significandl(long double __x) throw(); 
-# 218
-extern long double copysignl(long double __x, long double __y) throw() __attribute((const)); extern long double __copysignl(long double __x, long double __y) throw() __attribute((const)); 
-# 225
-extern long double nanl(const char * __tagb) throw() __attribute((const)); extern long double __nanl(const char * __tagb) throw() __attribute((const)); 
-# 231
-extern int __isnanl(long double __value) throw() __attribute((const)); 
-# 235
-extern int isnanl(long double __value) throw() __attribute((const)); 
-# 238
-extern long double j0l(long double) throw(); extern long double __j0l(long double) throw(); 
-# 239
-extern long double j1l(long double) throw(); extern long double __j1l(long double) throw(); 
-# 240
-extern long double jnl(int, long double) throw(); extern long double __jnl(int, long double) throw(); 
-# 241
-extern long double y0l(long double) throw(); extern long double __y0l(long double) throw(); 
-# 242
-extern long double y1l(long double) throw(); extern long double __y1l(long double) throw(); 
-# 243
-extern long double ynl(int, long double) throw(); extern long double __ynl(int, long double) throw(); 
-# 250
-extern long double erfl(long double) throw(); extern long double __erfl(long double) throw(); 
-# 251
-extern long double erfcl(long double) throw(); extern long double __erfcl(long double) throw(); 
-# 252
-extern long double lgammal(long double) throw(); extern long double __lgammal(long double) throw(); 
-# 259
-extern long double tgammal(long double) throw(); extern long double __tgammal(long double) throw(); 
-# 265
-extern long double gammal(long double) throw(); extern long double __gammal(long double) throw(); 
-# 272
-extern long double lgammal_r(long double, int * __signgamp) throw(); extern long double __lgammal_r(long double, int * __signgamp) throw(); 
-# 280
-extern long double rintl(long double __x) throw(); extern long double __rintl(long double __x) throw(); 
-# 283
-extern long double nextafterl(long double __x, long double __y) throw() __attribute((const)); extern long double __nextafterl(long double __x, long double __y) throw() __attribute((const)); 
-# 285
-extern long double nexttowardl(long double __x, long double __y) throw() __attribute((const)); extern long double __nexttowardl(long double __x, long double __y) throw() __attribute((const)); 
-# 289
-extern long double remainderl(long double __x, long double __y) throw(); extern long double __remainderl(long double __x, long double __y) throw(); 
-# 293
-extern long double scalbnl(long double __x, int __n) throw(); extern long double __scalbnl(long double __x, int __n) throw(); 
-# 297
-extern int ilogbl(long double __x) throw(); extern int __ilogbl(long double __x) throw(); 
-# 302
-extern long double scalblnl(long double __x, long __n) throw(); extern long double __scalblnl(long double __x, long __n) throw(); 
-# 306
-extern long double nearbyintl(long double __x) throw(); extern long double __nearbyintl(long double __x) throw(); 
-# 310
-extern long double roundl(long double __x) throw() __attribute((const)); extern long double __roundl(long double __x) throw() __attribute((const)); 
-# 314
-extern long double truncl(long double __x) throw() __attribute((const)); extern long double __truncl(long double __x) throw() __attribute((const)); 
-# 319
-extern long double remquol(long double __x, long double __y, int * __quo) throw(); extern long double __remquol(long double __x, long double __y, int * __quo) throw(); 
-# 326
-extern long lrintl(long double __x) throw(); extern long __lrintl(long double __x) throw(); 
-# 327
-extern long long llrintl(long double __x) throw(); extern long long __llrintl(long double __x) throw(); 
-# 331
-extern long lroundl(long double __x) throw(); extern long __lroundl(long double __x) throw(); 
-# 332
-extern long long llroundl(long double __x) throw(); extern long long __llroundl(long double __x) throw(); 
-# 336
-extern long double fdiml(long double __x, long double __y) throw(); extern long double __fdiml(long double __x, long double __y) throw(); 
-# 339
-extern long double fmaxl(long double __x, long double __y) throw() __attribute((const)); extern long double __fmaxl(long double __x, long double __y) throw() __attribute((const)); 
-# 342
-extern long double fminl(long double __x, long double __y) throw() __attribute((const)); extern long double __fminl(long double __x, long double __y) throw() __attribute((const)); 
-# 346
-extern int __fpclassifyl(long double __value) throw()
-# 347
- __attribute((const)); 
-# 350
-extern int __signbitl(long double __value) throw()
-# 351
- __attribute((const)); 
-# 355
-extern long double fmal(long double __x, long double __y, long double __z) throw(); extern long double __fmal(long double __x, long double __y, long double __z) throw(); 
-# 364
-extern long double scalbl(long double __x, long double __n) throw(); extern long double __scalbl(long double __x, long double __n) throw(); 
+# 74 "/usr/include/bits/floatn.h" 3
+typedef float __complex__ __cfloat128 __attribute((__mode__(__TC__))); 
+# 86 "/usr/include/bits/floatn.h" 3
+typedef __float128 _Float128; 
+# 214 "/usr/include/bits/floatn-common.h" 3
+typedef float _Float32; 
+# 251 "/usr/include/bits/floatn-common.h" 3
+typedef double _Float64; 
+# 268 "/usr/include/bits/floatn-common.h" 3
+typedef double _Float32x; 
+# 285 "/usr/include/bits/floatn-common.h" 3
+typedef long double _Float64x; 
 # 149 "/usr/include/math.h" 3
-extern int signgam; 
-# 191 "/usr/include/math.h" 3
-enum { 
-# 192
-FP_NAN, 
-# 195
-FP_INFINITE, 
-# 198
-FP_ZERO, 
-# 201
-FP_SUBNORMAL, 
-# 204
-FP_NORMAL
-# 207
-}; 
-# 295 "/usr/include/math.h" 3
-typedef 
-# 289
-enum { 
-# 290
-_IEEE_ = (-1), 
-# 291
-_SVID_ = 0, 
-# 292
-_XOPEN_, 
-# 293
-_POSIX_, 
-# 294
-_ISOC_
-# 295
-} _LIB_VERSION_TYPE; 
-# 300
-extern _LIB_VERSION_TYPE _LIB_VERSION; 
-# 311 "/usr/include/math.h" 3
-struct __exception { 
-# 316
-int type; 
-# 317
-char *name; 
-# 318
-double arg1; 
-# 319
-double arg2; 
-# 320
-double retval; 
-# 321
-}; 
-# 324
-extern int matherr(__exception * __exc) throw(); 
-# 475 "/usr/include/math.h" 3
-}
-# 34 "/usr/include/stdlib.h" 3
-extern "C" {
-# 45 "/usr/include/bits/byteswap.h" 3
-static inline unsigned __bswap_32(unsigned __bsx) 
-# 46
-{ 
-# 47
-return __builtin_bswap32(__bsx); 
-# 48
-} 
-# 109 "/usr/include/bits/byteswap.h" 3
-static inline __uint64_t __bswap_64(__uint64_t __bsx) 
-# 110
-{ 
-# 111
-return __builtin_bswap64(__bsx); 
-# 112
-} 
-# 66 "/usr/include/bits/waitstatus.h" 3
-union wait { 
-# 68
-int w_status; 
-# 70
-struct { 
-# 72
-unsigned __w_termsig:7; 
-# 73
-unsigned __w_coredump:1; 
-# 74
-unsigned __w_retcode:8; 
-# 75
-unsigned:16; 
-# 83
-} __wait_terminated; 
-# 85
-struct { 
-# 87
-unsigned __w_stopval:8; 
-# 88
-unsigned __w_stopsig:8; 
-# 89
-unsigned:16; 
-# 96
-} __wait_stopped; 
-# 97
-}; 
-# 101 "/usr/include/stdlib.h" 3
-typedef 
-# 98
-struct { 
-# 99
-int quot; 
-# 100
-int rem; 
-# 101
-} div_t; 
-# 109
-typedef 
-# 106
-struct { 
-# 107
-long quot; 
-# 108
-long rem; 
-# 109
-} ldiv_t; 
-# 121
-__extension__ typedef 
-# 118
-struct { 
-# 119
-long long quot; 
-# 120
-long long rem; 
-# 121
-} lldiv_t; 
-# 139 "/usr/include/stdlib.h" 3
-extern size_t __ctype_get_mb_cur_max() throw(); 
-# 144
-extern double atof(const char * __nptr) throw()
-# 145
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 147
-extern int atoi(const char * __nptr) throw()
-# 148
- __attribute((__pure__)) __attribute((__nonnull__(1))); 
+typedef float float_t; 
 # 150
+typedef double double_t; 
+# 238 "/usr/include/math.h" 3
+enum { 
+# 239
+FP_INT_UPWARD, 
+# 242
+FP_INT_DOWNWARD, 
+# 245
+FP_INT_TOWARDZERO, 
+# 248
+FP_INT_TONEARESTFROMZERO, 
+# 251
+FP_INT_TONEAREST
+# 254
+}; 
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3
+extern int __fpclassify(double __value) throw()
+# 22
+ __attribute((const)); 
+# 25
+extern int __signbit(double __value) throw()
+# 26
+ __attribute((const)); 
+# 30
+extern int __isinf(double __value) throw() __attribute((const)); 
+# 33
+extern int __finite(double __value) throw() __attribute((const)); 
+# 36
+extern int __isnan(double __value) throw() __attribute((const)); 
+# 39
+extern int __iseqsig(double __x, double __y) throw(); 
+# 42
+extern int __issignaling(double __value) throw()
+# 43
+ __attribute((const)); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern double acos(double __x) throw(); extern double __acos(double __x) throw(); 
+# 55
+extern double asin(double __x) throw(); extern double __asin(double __x) throw(); 
+# 57
+extern double atan(double __x) throw(); extern double __atan(double __x) throw(); 
+# 59
+extern double atan2(double __y, double __x) throw(); extern double __atan2(double __y, double __x) throw(); 
+# 62
+extern double cos(double __x) throw(); extern double __cos(double __x) throw(); 
+# 64
+extern double sin(double __x) throw(); extern double __sin(double __x) throw(); 
+# 66
+extern double tan(double __x) throw(); extern double __tan(double __x) throw(); 
+# 71
+extern double cosh(double __x) throw(); extern double __cosh(double __x) throw(); 
+# 73
+extern double sinh(double __x) throw(); extern double __sinh(double __x) throw(); 
+# 75
+extern double tanh(double __x) throw(); extern double __tanh(double __x) throw(); 
+# 79
+extern void sincos(double __x, double * __sinx, double * __cosx) throw(); extern void __sincos(double __x, double * __sinx, double * __cosx) throw(); 
+# 85
+extern double acosh(double __x) throw(); extern double __acosh(double __x) throw(); 
+# 87
+extern double asinh(double __x) throw(); extern double __asinh(double __x) throw(); 
+# 89
+extern double atanh(double __x) throw(); extern double __atanh(double __x) throw(); 
+# 95
+extern double exp(double __x) throw(); extern double __exp(double __x) throw(); 
+# 98
+extern double frexp(double __x, int * __exponent) throw(); extern double __frexp(double __x, int * __exponent) throw(); 
+# 101
+extern double ldexp(double __x, int __exponent) throw(); extern double __ldexp(double __x, int __exponent) throw(); 
+# 104
+extern double log(double __x) throw(); extern double __log(double __x) throw(); 
+# 107
+extern double log10(double __x) throw(); extern double __log10(double __x) throw(); 
+# 110
+extern double modf(double __x, double * __iptr) throw(); extern double __modf(double __x, double * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern double exp10(double __x) throw(); extern double __exp10(double __x) throw(); 
+# 119
+extern double expm1(double __x) throw(); extern double __expm1(double __x) throw(); 
+# 122
+extern double log1p(double __x) throw(); extern double __log1p(double __x) throw(); 
+# 125
+extern double logb(double __x) throw(); extern double __logb(double __x) throw(); 
+# 130
+extern double exp2(double __x) throw(); extern double __exp2(double __x) throw(); 
+# 133
+extern double log2(double __x) throw(); extern double __log2(double __x) throw(); 
+# 140
+extern double pow(double __x, double __y) throw(); extern double __pow(double __x, double __y) throw(); 
+# 143
+extern double sqrt(double __x) throw(); extern double __sqrt(double __x) throw(); 
+# 147
+extern double hypot(double __x, double __y) throw(); extern double __hypot(double __x, double __y) throw(); 
+# 152
+extern double cbrt(double __x) throw(); extern double __cbrt(double __x) throw(); 
+# 159
+extern double ceil(double __x) throw() __attribute((const)); extern double __ceil(double __x) throw() __attribute((const)); 
+# 162
+extern double fabs(double __x) throw() __attribute((const)); extern double __fabs(double __x) throw() __attribute((const)); 
+# 165
+extern double floor(double __x) throw() __attribute((const)); extern double __floor(double __x) throw() __attribute((const)); 
+# 168
+extern double fmod(double __x, double __y) throw(); extern double __fmod(double __x, double __y) throw(); 
+# 182 "/usr/include/bits/mathcalls.h" 3
+extern int finite(double __value) throw() __attribute((const)); 
+# 185
+extern double drem(double __x, double __y) throw(); extern double __drem(double __x, double __y) throw(); 
+# 189
+extern double significand(double __x) throw(); extern double __significand(double __x) throw(); 
+# 196
+extern double copysign(double __x, double __y) throw() __attribute((const)); extern double __copysign(double __x, double __y) throw() __attribute((const)); 
+# 201
+extern double nan(const char * __tagb) throw(); extern double __nan(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern double j0(double) throw(); extern double __j0(double) throw(); 
+# 218
+extern double j1(double) throw(); extern double __j1(double) throw(); 
+# 219
+extern double jn(int, double) throw(); extern double __jn(int, double) throw(); 
+# 220
+extern double y0(double) throw(); extern double __y0(double) throw(); 
+# 221
+extern double y1(double) throw(); extern double __y1(double) throw(); 
+# 222
+extern double yn(int, double) throw(); extern double __yn(int, double) throw(); 
+# 228
+extern double erf(double) throw(); extern double __erf(double) throw(); 
+# 229
+extern double erfc(double) throw(); extern double __erfc(double) throw(); 
+# 230
+extern double lgamma(double) throw(); extern double __lgamma(double) throw(); 
+# 235
+extern double tgamma(double) throw(); extern double __tgamma(double) throw(); 
+# 241
+extern double gamma(double) throw(); extern double __gamma(double) throw(); 
+# 249
+extern double lgamma_r(double, int * __signgamp) throw(); extern double __lgamma_r(double, int * __signgamp) throw(); 
+# 256
+extern double rint(double __x) throw(); extern double __rint(double __x) throw(); 
+# 259
+extern double nextafter(double __x, double __y) throw(); extern double __nextafter(double __x, double __y) throw(); 
+# 261
+extern double nexttoward(double __x, long double __y) throw(); extern double __nexttoward(double __x, long double __y) throw(); 
+# 266
+extern double nextdown(double __x) throw(); extern double __nextdown(double __x) throw(); 
+# 268
+extern double nextup(double __x) throw(); extern double __nextup(double __x) throw(); 
+# 272
+extern double remainder(double __x, double __y) throw(); extern double __remainder(double __x, double __y) throw(); 
+# 276
+extern double scalbn(double __x, int __n) throw(); extern double __scalbn(double __x, int __n) throw(); 
+# 280
+extern int ilogb(double __x) throw(); extern int __ilogb(double __x) throw(); 
+# 285
+extern long llogb(double __x) throw(); extern long __llogb(double __x) throw(); 
+# 290
+extern double scalbln(double __x, long __n) throw(); extern double __scalbln(double __x, long __n) throw(); 
+# 294
+extern double nearbyint(double __x) throw(); extern double __nearbyint(double __x) throw(); 
+# 298
+extern double round(double __x) throw() __attribute((const)); extern double __round(double __x) throw() __attribute((const)); 
+# 302
+extern double trunc(double __x) throw() __attribute((const)); extern double __trunc(double __x) throw() __attribute((const)); 
+# 307
+extern double remquo(double __x, double __y, int * __quo) throw(); extern double __remquo(double __x, double __y, int * __quo) throw(); 
+# 314
+extern long lrint(double __x) throw(); extern long __lrint(double __x) throw(); 
+# 316
+__extension__ extern long long llrint(double __x) throw(); extern long long __llrint(double __x) throw(); 
+# 320
+extern long lround(double __x) throw(); extern long __lround(double __x) throw(); 
+# 322
+__extension__ extern long long llround(double __x) throw(); extern long long __llround(double __x) throw(); 
+# 326
+extern double fdim(double __x, double __y) throw(); extern double __fdim(double __x, double __y) throw(); 
+# 329
+extern double fmax(double __x, double __y) throw() __attribute((const)); extern double __fmax(double __x, double __y) throw() __attribute((const)); 
+# 332
+extern double fmin(double __x, double __y) throw() __attribute((const)); extern double __fmin(double __x, double __y) throw() __attribute((const)); 
+# 335
+extern double fma(double __x, double __y, double __z) throw(); extern double __fma(double __x, double __y, double __z) throw(); 
+# 340
+extern double roundeven(double __x) throw() __attribute((const)); extern double __roundeven(double __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfp(double __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfp(double __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfp(double __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfp(double __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpx(double __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpx(double __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpx(double __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpx(double __x, int __round, unsigned __width) throw(); 
+# 365
+extern double fmaxmag(double __x, double __y) throw() __attribute((const)); extern double __fmaxmag(double __x, double __y) throw() __attribute((const)); 
+# 368
+extern double fminmag(double __x, double __y) throw() __attribute((const)); extern double __fminmag(double __x, double __y) throw() __attribute((const)); 
+# 371
+extern int totalorder(double __x, double __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermag(double __x, double __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalize(double * __cx, const double * __x) throw(); 
+# 382
+extern double getpayload(const double * __x) throw(); extern double __getpayload(const double * __x) throw(); 
+# 385
+extern int setpayload(double * __x, double __payload) throw(); 
+# 388
+extern int setpayloadsig(double * __x, double __payload) throw(); 
+# 396
+extern double scalb(double __x, double __n) throw(); extern double __scalb(double __x, double __n) throw(); 
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3
+extern int __fpclassifyf(float __value) throw()
+# 22
+ __attribute((const)); 
+# 25
+extern int __signbitf(float __value) throw()
+# 26
+ __attribute((const)); 
+# 30
+extern int __isinff(float __value) throw() __attribute((const)); 
+# 33
+extern int __finitef(float __value) throw() __attribute((const)); 
+# 36
+extern int __isnanf(float __value) throw() __attribute((const)); 
+# 39
+extern int __iseqsigf(float __x, float __y) throw(); 
+# 42
+extern int __issignalingf(float __value) throw()
+# 43
+ __attribute((const)); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern float acosf(float __x) throw(); extern float __acosf(float __x) throw(); 
+# 55
+extern float asinf(float __x) throw(); extern float __asinf(float __x) throw(); 
+# 57
+extern float atanf(float __x) throw(); extern float __atanf(float __x) throw(); 
+# 59
+extern float atan2f(float __y, float __x) throw(); extern float __atan2f(float __y, float __x) throw(); 
+# 62
+extern float cosf(float __x) throw(); 
+# 64
+extern float sinf(float __x) throw(); 
+# 66
+extern float tanf(float __x) throw(); 
+# 71
+extern float coshf(float __x) throw(); extern float __coshf(float __x) throw(); 
+# 73
+extern float sinhf(float __x) throw(); extern float __sinhf(float __x) throw(); 
+# 75
+extern float tanhf(float __x) throw(); extern float __tanhf(float __x) throw(); 
+# 79
+extern void sincosf(float __x, float * __sinx, float * __cosx) throw(); 
+# 85
+extern float acoshf(float __x) throw(); extern float __acoshf(float __x) throw(); 
+# 87
+extern float asinhf(float __x) throw(); extern float __asinhf(float __x) throw(); 
+# 89
+extern float atanhf(float __x) throw(); extern float __atanhf(float __x) throw(); 
+# 95
+extern float expf(float __x) throw(); 
+# 98
+extern float frexpf(float __x, int * __exponent) throw(); extern float __frexpf(float __x, int * __exponent) throw(); 
+# 101
+extern float ldexpf(float __x, int __exponent) throw(); extern float __ldexpf(float __x, int __exponent) throw(); 
+# 104
+extern float logf(float __x) throw(); 
+# 107
+extern float log10f(float __x) throw(); 
+# 110
+extern float modff(float __x, float * __iptr) throw(); extern float __modff(float __x, float * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern float exp10f(float __x) throw(); 
+# 119
+extern float expm1f(float __x) throw(); extern float __expm1f(float __x) throw(); 
+# 122
+extern float log1pf(float __x) throw(); extern float __log1pf(float __x) throw(); 
+# 125
+extern float logbf(float __x) throw(); extern float __logbf(float __x) throw(); 
+# 130
+extern float exp2f(float __x) throw(); extern float __exp2f(float __x) throw(); 
+# 133
+extern float log2f(float __x) throw(); 
+# 140
+extern float powf(float __x, float __y) throw(); 
+# 143
+extern float sqrtf(float __x) throw(); extern float __sqrtf(float __x) throw(); 
+# 147
+extern float hypotf(float __x, float __y) throw(); extern float __hypotf(float __x, float __y) throw(); 
+# 152
+extern float cbrtf(float __x) throw(); extern float __cbrtf(float __x) throw(); 
+# 159
+extern float ceilf(float __x) throw() __attribute((const)); extern float __ceilf(float __x) throw() __attribute((const)); 
+# 162
+extern float fabsf(float __x) throw() __attribute((const)); extern float __fabsf(float __x) throw() __attribute((const)); 
+# 165
+extern float floorf(float __x) throw() __attribute((const)); extern float __floorf(float __x) throw() __attribute((const)); 
+# 168
+extern float fmodf(float __x, float __y) throw(); extern float __fmodf(float __x, float __y) throw(); 
+# 177 "/usr/include/bits/mathcalls.h" 3
+extern int isinff(float __value) throw() __attribute((const)); 
+# 182
+extern int finitef(float __value) throw() __attribute((const)); 
+# 185
+extern float dremf(float __x, float __y) throw(); extern float __dremf(float __x, float __y) throw(); 
+# 189
+extern float significandf(float __x) throw(); extern float __significandf(float __x) throw(); 
+# 196
+extern float copysignf(float __x, float __y) throw() __attribute((const)); extern float __copysignf(float __x, float __y) throw() __attribute((const)); 
+# 201
+extern float nanf(const char * __tagb) throw(); extern float __nanf(const char * __tagb) throw(); 
+# 211 "/usr/include/bits/mathcalls.h" 3
+extern int isnanf(float __value) throw() __attribute((const)); 
+# 217
+extern float j0f(float) throw(); extern float __j0f(float) throw(); 
+# 218
+extern float j1f(float) throw(); extern float __j1f(float) throw(); 
+# 219
+extern float jnf(int, float) throw(); extern float __jnf(int, float) throw(); 
+# 220
+extern float y0f(float) throw(); extern float __y0f(float) throw(); 
+# 221
+extern float y1f(float) throw(); extern float __y1f(float) throw(); 
+# 222
+extern float ynf(int, float) throw(); extern float __ynf(int, float) throw(); 
+# 228
+extern float erff(float) throw(); extern float __erff(float) throw(); 
+# 229
+extern float erfcf(float) throw(); extern float __erfcf(float) throw(); 
+# 230
+extern float lgammaf(float) throw(); extern float __lgammaf(float) throw(); 
+# 235
+extern float tgammaf(float) throw(); extern float __tgammaf(float) throw(); 
+# 241
+extern float gammaf(float) throw(); extern float __gammaf(float) throw(); 
+# 249
+extern float lgammaf_r(float, int * __signgamp) throw(); extern float __lgammaf_r(float, int * __signgamp) throw(); 
+# 256
+extern float rintf(float __x) throw(); extern float __rintf(float __x) throw(); 
+# 259
+extern float nextafterf(float __x, float __y) throw(); extern float __nextafterf(float __x, float __y) throw(); 
+# 261
+extern float nexttowardf(float __x, long double __y) throw(); extern float __nexttowardf(float __x, long double __y) throw(); 
+# 266
+extern float nextdownf(float __x) throw(); extern float __nextdownf(float __x) throw(); 
+# 268
+extern float nextupf(float __x) throw(); extern float __nextupf(float __x) throw(); 
+# 272
+extern float remainderf(float __x, float __y) throw(); extern float __remainderf(float __x, float __y) throw(); 
+# 276
+extern float scalbnf(float __x, int __n) throw(); extern float __scalbnf(float __x, int __n) throw(); 
+# 280
+extern int ilogbf(float __x) throw(); extern int __ilogbf(float __x) throw(); 
+# 285
+extern long llogbf(float __x) throw(); extern long __llogbf(float __x) throw(); 
+# 290
+extern float scalblnf(float __x, long __n) throw(); extern float __scalblnf(float __x, long __n) throw(); 
+# 294
+extern float nearbyintf(float __x) throw(); extern float __nearbyintf(float __x) throw(); 
+# 298
+extern float roundf(float __x) throw() __attribute((const)); extern float __roundf(float __x) throw() __attribute((const)); 
+# 302
+extern float truncf(float __x) throw() __attribute((const)); extern float __truncf(float __x) throw() __attribute((const)); 
+# 307
+extern float remquof(float __x, float __y, int * __quo) throw(); extern float __remquof(float __x, float __y, int * __quo) throw(); 
+# 314
+extern long lrintf(float __x) throw(); extern long __lrintf(float __x) throw(); 
+# 316
+__extension__ extern long long llrintf(float __x) throw(); extern long long __llrintf(float __x) throw(); 
+# 320
+extern long lroundf(float __x) throw(); extern long __lroundf(float __x) throw(); 
+# 322
+__extension__ extern long long llroundf(float __x) throw(); extern long long __llroundf(float __x) throw(); 
+# 326
+extern float fdimf(float __x, float __y) throw(); extern float __fdimf(float __x, float __y) throw(); 
+# 329
+extern float fmaxf(float __x, float __y) throw() __attribute((const)); extern float __fmaxf(float __x, float __y) throw() __attribute((const)); 
+# 332
+extern float fminf(float __x, float __y) throw() __attribute((const)); extern float __fminf(float __x, float __y) throw() __attribute((const)); 
+# 335
+extern float fmaf(float __x, float __y, float __z) throw(); extern float __fmaf(float __x, float __y, float __z) throw(); 
+# 340
+extern float roundevenf(float __x) throw() __attribute((const)); extern float __roundevenf(float __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf(float __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf(float __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf(float __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf(float __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf(float __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf(float __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf(float __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf(float __x, int __round, unsigned __width) throw(); 
+# 365
+extern float fmaxmagf(float __x, float __y) throw() __attribute((const)); extern float __fmaxmagf(float __x, float __y) throw() __attribute((const)); 
+# 368
+extern float fminmagf(float __x, float __y) throw() __attribute((const)); extern float __fminmagf(float __x, float __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf(float __x, float __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf(float __x, float __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef(float * __cx, const float * __x) throw(); 
+# 382
+extern float getpayloadf(const float * __x) throw(); extern float __getpayloadf(const float * __x) throw(); 
+# 385
+extern int setpayloadf(float * __x, float __payload) throw(); 
+# 388
+extern int setpayloadsigf(float * __x, float __payload) throw(); 
+# 396
+extern float scalbf(float __x, float __n) throw(); extern float __scalbf(float __x, float __n) throw(); 
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3
+extern int __fpclassifyl(long double __value) throw()
+# 22
+ __attribute((const)); 
+# 25
+extern int __signbitl(long double __value) throw()
+# 26
+ __attribute((const)); 
+# 30
+extern int __isinfl(long double __value) throw() __attribute((const)); 
+# 33
+extern int __finitel(long double __value) throw() __attribute((const)); 
+# 36
+extern int __isnanl(long double __value) throw() __attribute((const)); 
+# 39
+extern int __iseqsigl(long double __x, long double __y) throw(); 
+# 42
+extern int __issignalingl(long double __value) throw()
+# 43
+ __attribute((const)); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern long double acosl(long double __x) throw(); extern long double __acosl(long double __x) throw(); 
+# 55
+extern long double asinl(long double __x) throw(); extern long double __asinl(long double __x) throw(); 
+# 57
+extern long double atanl(long double __x) throw(); extern long double __atanl(long double __x) throw(); 
+# 59
+extern long double atan2l(long double __y, long double __x) throw(); extern long double __atan2l(long double __y, long double __x) throw(); 
+# 62
+extern long double cosl(long double __x) throw(); extern long double __cosl(long double __x) throw(); 
+# 64
+extern long double sinl(long double __x) throw(); extern long double __sinl(long double __x) throw(); 
+# 66
+extern long double tanl(long double __x) throw(); extern long double __tanl(long double __x) throw(); 
+# 71
+extern long double coshl(long double __x) throw(); extern long double __coshl(long double __x) throw(); 
+# 73
+extern long double sinhl(long double __x) throw(); extern long double __sinhl(long double __x) throw(); 
+# 75
+extern long double tanhl(long double __x) throw(); extern long double __tanhl(long double __x) throw(); 
+# 79
+extern void sincosl(long double __x, long double * __sinx, long double * __cosx) throw(); extern void __sincosl(long double __x, long double * __sinx, long double * __cosx) throw(); 
+# 85
+extern long double acoshl(long double __x) throw(); extern long double __acoshl(long double __x) throw(); 
+# 87
+extern long double asinhl(long double __x) throw(); extern long double __asinhl(long double __x) throw(); 
+# 89
+extern long double atanhl(long double __x) throw(); extern long double __atanhl(long double __x) throw(); 
+# 95
+extern long double expl(long double __x) throw(); extern long double __expl(long double __x) throw(); 
+# 98
+extern long double frexpl(long double __x, int * __exponent) throw(); extern long double __frexpl(long double __x, int * __exponent) throw(); 
+# 101
+extern long double ldexpl(long double __x, int __exponent) throw(); extern long double __ldexpl(long double __x, int __exponent) throw(); 
+# 104
+extern long double logl(long double __x) throw(); extern long double __logl(long double __x) throw(); 
+# 107
+extern long double log10l(long double __x) throw(); extern long double __log10l(long double __x) throw(); 
+# 110
+extern long double modfl(long double __x, long double * __iptr) throw(); extern long double __modfl(long double __x, long double * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern long double exp10l(long double __x) throw(); extern long double __exp10l(long double __x) throw(); 
+# 119
+extern long double expm1l(long double __x) throw(); extern long double __expm1l(long double __x) throw(); 
+# 122
+extern long double log1pl(long double __x) throw(); extern long double __log1pl(long double __x) throw(); 
+# 125
+extern long double logbl(long double __x) throw(); extern long double __logbl(long double __x) throw(); 
+# 130
+extern long double exp2l(long double __x) throw(); extern long double __exp2l(long double __x) throw(); 
+# 133
+extern long double log2l(long double __x) throw(); extern long double __log2l(long double __x) throw(); 
+# 140
+extern long double powl(long double __x, long double __y) throw(); extern long double __powl(long double __x, long double __y) throw(); 
+# 143
+extern long double sqrtl(long double __x) throw(); extern long double __sqrtl(long double __x) throw(); 
+# 147
+extern long double hypotl(long double __x, long double __y) throw(); extern long double __hypotl(long double __x, long double __y) throw(); 
+# 152
+extern long double cbrtl(long double __x) throw(); extern long double __cbrtl(long double __x) throw(); 
+# 159
+extern long double ceill(long double __x) throw() __attribute((const)); extern long double __ceill(long double __x) throw() __attribute((const)); 
+# 162
+extern long double fabsl(long double __x) throw() __attribute((const)); extern long double __fabsl(long double __x) throw() __attribute((const)); 
+# 165
+extern long double floorl(long double __x) throw() __attribute((const)); extern long double __floorl(long double __x) throw() __attribute((const)); 
+# 168
+extern long double fmodl(long double __x, long double __y) throw(); extern long double __fmodl(long double __x, long double __y) throw(); 
+# 177 "/usr/include/bits/mathcalls.h" 3
+extern int isinfl(long double __value) throw() __attribute((const)); 
+# 182
+extern int finitel(long double __value) throw() __attribute((const)); 
+# 185
+extern long double dreml(long double __x, long double __y) throw(); extern long double __dreml(long double __x, long double __y) throw(); 
+# 189
+extern long double significandl(long double __x) throw(); extern long double __significandl(long double __x) throw(); 
+# 196
+extern long double copysignl(long double __x, long double __y) throw() __attribute((const)); extern long double __copysignl(long double __x, long double __y) throw() __attribute((const)); 
+# 201
+extern long double nanl(const char * __tagb) throw(); extern long double __nanl(const char * __tagb) throw(); 
+# 211 "/usr/include/bits/mathcalls.h" 3
+extern int isnanl(long double __value) throw() __attribute((const)); 
+# 217
+extern long double j0l(long double) throw(); extern long double __j0l(long double) throw(); 
+# 218
+extern long double j1l(long double) throw(); extern long double __j1l(long double) throw(); 
+# 219
+extern long double jnl(int, long double) throw(); extern long double __jnl(int, long double) throw(); 
+# 220
+extern long double y0l(long double) throw(); extern long double __y0l(long double) throw(); 
+# 221
+extern long double y1l(long double) throw(); extern long double __y1l(long double) throw(); 
+# 222
+extern long double ynl(int, long double) throw(); extern long double __ynl(int, long double) throw(); 
+# 228
+extern long double erfl(long double) throw(); extern long double __erfl(long double) throw(); 
+# 229
+extern long double erfcl(long double) throw(); extern long double __erfcl(long double) throw(); 
+# 230
+extern long double lgammal(long double) throw(); extern long double __lgammal(long double) throw(); 
+# 235
+extern long double tgammal(long double) throw(); extern long double __tgammal(long double) throw(); 
+# 241
+extern long double gammal(long double) throw(); extern long double __gammal(long double) throw(); 
+# 249
+extern long double lgammal_r(long double, int * __signgamp) throw(); extern long double __lgammal_r(long double, int * __signgamp) throw(); 
+# 256
+extern long double rintl(long double __x) throw(); extern long double __rintl(long double __x) throw(); 
+# 259
+extern long double nextafterl(long double __x, long double __y) throw(); extern long double __nextafterl(long double __x, long double __y) throw(); 
+# 261
+extern long double nexttowardl(long double __x, long double __y) throw(); extern long double __nexttowardl(long double __x, long double __y) throw(); 
+# 266
+extern long double nextdownl(long double __x) throw(); extern long double __nextdownl(long double __x) throw(); 
+# 268
+extern long double nextupl(long double __x) throw(); extern long double __nextupl(long double __x) throw(); 
+# 272
+extern long double remainderl(long double __x, long double __y) throw(); extern long double __remainderl(long double __x, long double __y) throw(); 
+# 276
+extern long double scalbnl(long double __x, int __n) throw(); extern long double __scalbnl(long double __x, int __n) throw(); 
+# 280
+extern int ilogbl(long double __x) throw(); extern int __ilogbl(long double __x) throw(); 
+# 285
+extern long llogbl(long double __x) throw(); extern long __llogbl(long double __x) throw(); 
+# 290
+extern long double scalblnl(long double __x, long __n) throw(); extern long double __scalblnl(long double __x, long __n) throw(); 
+# 294
+extern long double nearbyintl(long double __x) throw(); extern long double __nearbyintl(long double __x) throw(); 
+# 298
+extern long double roundl(long double __x) throw() __attribute((const)); extern long double __roundl(long double __x) throw() __attribute((const)); 
+# 302
+extern long double truncl(long double __x) throw() __attribute((const)); extern long double __truncl(long double __x) throw() __attribute((const)); 
+# 307
+extern long double remquol(long double __x, long double __y, int * __quo) throw(); extern long double __remquol(long double __x, long double __y, int * __quo) throw(); 
+# 314
+extern long lrintl(long double __x) throw(); extern long __lrintl(long double __x) throw(); 
+# 316
+__extension__ extern long long llrintl(long double __x) throw(); extern long long __llrintl(long double __x) throw(); 
+# 320
+extern long lroundl(long double __x) throw(); extern long __lroundl(long double __x) throw(); 
+# 322
+__extension__ extern long long llroundl(long double __x) throw(); extern long long __llroundl(long double __x) throw(); 
+# 326
+extern long double fdiml(long double __x, long double __y) throw(); extern long double __fdiml(long double __x, long double __y) throw(); 
+# 329
+extern long double fmaxl(long double __x, long double __y) throw() __attribute((const)); extern long double __fmaxl(long double __x, long double __y) throw() __attribute((const)); 
+# 332
+extern long double fminl(long double __x, long double __y) throw() __attribute((const)); extern long double __fminl(long double __x, long double __y) throw() __attribute((const)); 
+# 335
+extern long double fmal(long double __x, long double __y, long double __z) throw(); extern long double __fmal(long double __x, long double __y, long double __z) throw(); 
+# 340
+extern long double roundevenl(long double __x) throw() __attribute((const)); extern long double __roundevenl(long double __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpl(long double __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpl(long double __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpl(long double __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpl(long double __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxl(long double __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxl(long double __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxl(long double __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxl(long double __x, int __round, unsigned __width) throw(); 
+# 365
+extern long double fmaxmagl(long double __x, long double __y) throw() __attribute((const)); extern long double __fmaxmagl(long double __x, long double __y) throw() __attribute((const)); 
+# 368
+extern long double fminmagl(long double __x, long double __y) throw() __attribute((const)); extern long double __fminmagl(long double __x, long double __y) throw() __attribute((const)); 
+# 371
+extern int totalorderl(long double __x, long double __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagl(long double __x, long double __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizel(long double * __cx, const long double * __x) throw(); 
+# 382
+extern long double getpayloadl(const long double * __x) throw(); extern long double __getpayloadl(const long double * __x) throw(); 
+# 385
+extern int setpayloadl(long double * __x, long double __payload) throw(); 
+# 388
+extern int setpayloadsigl(long double * __x, long double __payload) throw(); 
+# 396
+extern long double scalbl(long double __x, long double __n) throw(); extern long double __scalbl(long double __x, long double __n) throw(); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern _Float32 acosf32(_Float32 __x) throw(); extern _Float32 __acosf32(_Float32 __x) throw(); 
+# 55
+extern _Float32 asinf32(_Float32 __x) throw(); extern _Float32 __asinf32(_Float32 __x) throw(); 
+# 57
+extern _Float32 atanf32(_Float32 __x) throw(); extern _Float32 __atanf32(_Float32 __x) throw(); 
+# 59
+extern _Float32 atan2f32(_Float32 __y, _Float32 __x) throw(); extern _Float32 __atan2f32(_Float32 __y, _Float32 __x) throw(); 
+# 62
+extern _Float32 cosf32(_Float32 __x) throw(); extern _Float32 __cosf32(_Float32 __x) throw(); 
+# 64
+extern _Float32 sinf32(_Float32 __x) throw(); extern _Float32 __sinf32(_Float32 __x) throw(); 
+# 66
+extern _Float32 tanf32(_Float32 __x) throw(); extern _Float32 __tanf32(_Float32 __x) throw(); 
+# 71
+extern _Float32 coshf32(_Float32 __x) throw(); extern _Float32 __coshf32(_Float32 __x) throw(); 
+# 73
+extern _Float32 sinhf32(_Float32 __x) throw(); extern _Float32 __sinhf32(_Float32 __x) throw(); 
+# 75
+extern _Float32 tanhf32(_Float32 __x) throw(); extern _Float32 __tanhf32(_Float32 __x) throw(); 
+# 79
+extern void sincosf32(_Float32 __x, _Float32 * __sinx, _Float32 * __cosx) throw(); extern void __sincosf32(_Float32 __x, _Float32 * __sinx, _Float32 * __cosx) throw(); 
+# 85
+extern _Float32 acoshf32(_Float32 __x) throw(); extern _Float32 __acoshf32(_Float32 __x) throw(); 
+# 87
+extern _Float32 asinhf32(_Float32 __x) throw(); extern _Float32 __asinhf32(_Float32 __x) throw(); 
+# 89
+extern _Float32 atanhf32(_Float32 __x) throw(); extern _Float32 __atanhf32(_Float32 __x) throw(); 
+# 95
+extern _Float32 expf32(_Float32 __x) throw(); extern _Float32 __expf32(_Float32 __x) throw(); 
+# 98
+extern _Float32 frexpf32(_Float32 __x, int * __exponent) throw(); extern _Float32 __frexpf32(_Float32 __x, int * __exponent) throw(); 
+# 101
+extern _Float32 ldexpf32(_Float32 __x, int __exponent) throw(); extern _Float32 __ldexpf32(_Float32 __x, int __exponent) throw(); 
+# 104
+extern _Float32 logf32(_Float32 __x) throw(); extern _Float32 __logf32(_Float32 __x) throw(); 
+# 107
+extern _Float32 log10f32(_Float32 __x) throw(); extern _Float32 __log10f32(_Float32 __x) throw(); 
+# 110
+extern _Float32 modff32(_Float32 __x, _Float32 * __iptr) throw(); extern _Float32 __modff32(_Float32 __x, _Float32 * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern _Float32 exp10f32(_Float32 __x) throw(); extern _Float32 __exp10f32(_Float32 __x) throw(); 
+# 119
+extern _Float32 expm1f32(_Float32 __x) throw(); extern _Float32 __expm1f32(_Float32 __x) throw(); 
+# 122
+extern _Float32 log1pf32(_Float32 __x) throw(); extern _Float32 __log1pf32(_Float32 __x) throw(); 
+# 125
+extern _Float32 logbf32(_Float32 __x) throw(); extern _Float32 __logbf32(_Float32 __x) throw(); 
+# 130
+extern _Float32 exp2f32(_Float32 __x) throw(); extern _Float32 __exp2f32(_Float32 __x) throw(); 
+# 133
+extern _Float32 log2f32(_Float32 __x) throw(); extern _Float32 __log2f32(_Float32 __x) throw(); 
+# 140
+extern _Float32 powf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __powf32(_Float32 __x, _Float32 __y) throw(); 
+# 143
+extern _Float32 sqrtf32(_Float32 __x) throw(); extern _Float32 __sqrtf32(_Float32 __x) throw(); 
+# 147
+extern _Float32 hypotf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __hypotf32(_Float32 __x, _Float32 __y) throw(); 
+# 152
+extern _Float32 cbrtf32(_Float32 __x) throw(); extern _Float32 __cbrtf32(_Float32 __x) throw(); 
+# 159
+extern _Float32 ceilf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __ceilf32(_Float32 __x) throw() __attribute((const)); 
+# 162
+extern _Float32 fabsf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __fabsf32(_Float32 __x) throw() __attribute((const)); 
+# 165
+extern _Float32 floorf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __floorf32(_Float32 __x) throw() __attribute((const)); 
+# 168
+extern _Float32 fmodf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __fmodf32(_Float32 __x, _Float32 __y) throw(); 
+# 196 "/usr/include/bits/mathcalls.h" 3
+extern _Float32 copysignf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); extern _Float32 __copysignf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); 
+# 201
+extern _Float32 nanf32(const char * __tagb) throw(); extern _Float32 __nanf32(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern _Float32 j0f32(_Float32) throw(); extern _Float32 __j0f32(_Float32) throw(); 
+# 218
+extern _Float32 j1f32(_Float32) throw(); extern _Float32 __j1f32(_Float32) throw(); 
+# 219
+extern _Float32 jnf32(int, _Float32) throw(); extern _Float32 __jnf32(int, _Float32) throw(); 
+# 220
+extern _Float32 y0f32(_Float32) throw(); extern _Float32 __y0f32(_Float32) throw(); 
+# 221
+extern _Float32 y1f32(_Float32) throw(); extern _Float32 __y1f32(_Float32) throw(); 
+# 222
+extern _Float32 ynf32(int, _Float32) throw(); extern _Float32 __ynf32(int, _Float32) throw(); 
+# 228
+extern _Float32 erff32(_Float32) throw(); extern _Float32 __erff32(_Float32) throw(); 
+# 229
+extern _Float32 erfcf32(_Float32) throw(); extern _Float32 __erfcf32(_Float32) throw(); 
+# 230
+extern _Float32 lgammaf32(_Float32) throw(); extern _Float32 __lgammaf32(_Float32) throw(); 
+# 235
+extern _Float32 tgammaf32(_Float32) throw(); extern _Float32 __tgammaf32(_Float32) throw(); 
+# 249 "/usr/include/bits/mathcalls.h" 3
+extern _Float32 lgammaf32_r(_Float32, int * __signgamp) throw(); extern _Float32 __lgammaf32_r(_Float32, int * __signgamp) throw(); 
+# 256
+extern _Float32 rintf32(_Float32 __x) throw(); extern _Float32 __rintf32(_Float32 __x) throw(); 
+# 259
+extern _Float32 nextafterf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __nextafterf32(_Float32 __x, _Float32 __y) throw(); 
+# 266
+extern _Float32 nextdownf32(_Float32 __x) throw(); extern _Float32 __nextdownf32(_Float32 __x) throw(); 
+# 268
+extern _Float32 nextupf32(_Float32 __x) throw(); extern _Float32 __nextupf32(_Float32 __x) throw(); 
+# 272
+extern _Float32 remainderf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __remainderf32(_Float32 __x, _Float32 __y) throw(); 
+# 276
+extern _Float32 scalbnf32(_Float32 __x, int __n) throw(); extern _Float32 __scalbnf32(_Float32 __x, int __n) throw(); 
+# 280
+extern int ilogbf32(_Float32 __x) throw(); extern int __ilogbf32(_Float32 __x) throw(); 
+# 285
+extern long llogbf32(_Float32 __x) throw(); extern long __llogbf32(_Float32 __x) throw(); 
+# 290
+extern _Float32 scalblnf32(_Float32 __x, long __n) throw(); extern _Float32 __scalblnf32(_Float32 __x, long __n) throw(); 
+# 294
+extern _Float32 nearbyintf32(_Float32 __x) throw(); extern _Float32 __nearbyintf32(_Float32 __x) throw(); 
+# 298
+extern _Float32 roundf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __roundf32(_Float32 __x) throw() __attribute((const)); 
+# 302
+extern _Float32 truncf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __truncf32(_Float32 __x) throw() __attribute((const)); 
+# 307
+extern _Float32 remquof32(_Float32 __x, _Float32 __y, int * __quo) throw(); extern _Float32 __remquof32(_Float32 __x, _Float32 __y, int * __quo) throw(); 
+# 314
+extern long lrintf32(_Float32 __x) throw(); extern long __lrintf32(_Float32 __x) throw(); 
+# 316
+__extension__ extern long long llrintf32(_Float32 __x) throw(); extern long long __llrintf32(_Float32 __x) throw(); 
+# 320
+extern long lroundf32(_Float32 __x) throw(); extern long __lroundf32(_Float32 __x) throw(); 
+# 322
+__extension__ extern long long llroundf32(_Float32 __x) throw(); extern long long __llroundf32(_Float32 __x) throw(); 
+# 326
+extern _Float32 fdimf32(_Float32 __x, _Float32 __y) throw(); extern _Float32 __fdimf32(_Float32 __x, _Float32 __y) throw(); 
+# 329
+extern _Float32 fmaxf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); extern _Float32 __fmaxf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); 
+# 332
+extern _Float32 fminf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); extern _Float32 __fminf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); 
+# 335
+extern _Float32 fmaf32(_Float32 __x, _Float32 __y, _Float32 __z) throw(); extern _Float32 __fmaf32(_Float32 __x, _Float32 __y, _Float32 __z) throw(); 
+# 340
+extern _Float32 roundevenf32(_Float32 __x) throw() __attribute((const)); extern _Float32 __roundevenf32(_Float32 __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf32(_Float32 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf32(_Float32 __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf32(_Float32 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf32(_Float32 __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf32(_Float32 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf32(_Float32 __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf32(_Float32 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf32(_Float32 __x, int __round, unsigned __width) throw(); 
+# 365
+extern _Float32 fmaxmagf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); extern _Float32 __fmaxmagf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); 
+# 368
+extern _Float32 fminmagf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); extern _Float32 __fminmagf32(_Float32 __x, _Float32 __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf32(_Float32 __x, _Float32 __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf32(_Float32 __x, _Float32 __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef32(_Float32 * __cx, const _Float32 * __x) throw(); 
+# 382
+extern _Float32 getpayloadf32(const _Float32 * __x) throw(); extern _Float32 __getpayloadf32(const _Float32 * __x) throw(); 
+# 385
+extern int setpayloadf32(_Float32 * __x, _Float32 __payload) throw(); 
+# 388
+extern int setpayloadsigf32(_Float32 * __x, _Float32 __payload) throw(); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern _Float64 acosf64(_Float64 __x) throw(); extern _Float64 __acosf64(_Float64 __x) throw(); 
+# 55
+extern _Float64 asinf64(_Float64 __x) throw(); extern _Float64 __asinf64(_Float64 __x) throw(); 
+# 57
+extern _Float64 atanf64(_Float64 __x) throw(); extern _Float64 __atanf64(_Float64 __x) throw(); 
+# 59
+extern _Float64 atan2f64(_Float64 __y, _Float64 __x) throw(); extern _Float64 __atan2f64(_Float64 __y, _Float64 __x) throw(); 
+# 62
+extern _Float64 cosf64(_Float64 __x) throw(); extern _Float64 __cosf64(_Float64 __x) throw(); 
+# 64
+extern _Float64 sinf64(_Float64 __x) throw(); extern _Float64 __sinf64(_Float64 __x) throw(); 
+# 66
+extern _Float64 tanf64(_Float64 __x) throw(); extern _Float64 __tanf64(_Float64 __x) throw(); 
+# 71
+extern _Float64 coshf64(_Float64 __x) throw(); extern _Float64 __coshf64(_Float64 __x) throw(); 
+# 73
+extern _Float64 sinhf64(_Float64 __x) throw(); extern _Float64 __sinhf64(_Float64 __x) throw(); 
+# 75
+extern _Float64 tanhf64(_Float64 __x) throw(); extern _Float64 __tanhf64(_Float64 __x) throw(); 
+# 79
+extern void sincosf64(_Float64 __x, _Float64 * __sinx, _Float64 * __cosx) throw(); extern void __sincosf64(_Float64 __x, _Float64 * __sinx, _Float64 * __cosx) throw(); 
+# 85
+extern _Float64 acoshf64(_Float64 __x) throw(); extern _Float64 __acoshf64(_Float64 __x) throw(); 
+# 87
+extern _Float64 asinhf64(_Float64 __x) throw(); extern _Float64 __asinhf64(_Float64 __x) throw(); 
+# 89
+extern _Float64 atanhf64(_Float64 __x) throw(); extern _Float64 __atanhf64(_Float64 __x) throw(); 
+# 95
+extern _Float64 expf64(_Float64 __x) throw(); extern _Float64 __expf64(_Float64 __x) throw(); 
+# 98
+extern _Float64 frexpf64(_Float64 __x, int * __exponent) throw(); extern _Float64 __frexpf64(_Float64 __x, int * __exponent) throw(); 
+# 101
+extern _Float64 ldexpf64(_Float64 __x, int __exponent) throw(); extern _Float64 __ldexpf64(_Float64 __x, int __exponent) throw(); 
+# 104
+extern _Float64 logf64(_Float64 __x) throw(); extern _Float64 __logf64(_Float64 __x) throw(); 
+# 107
+extern _Float64 log10f64(_Float64 __x) throw(); extern _Float64 __log10f64(_Float64 __x) throw(); 
+# 110
+extern _Float64 modff64(_Float64 __x, _Float64 * __iptr) throw(); extern _Float64 __modff64(_Float64 __x, _Float64 * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern _Float64 exp10f64(_Float64 __x) throw(); extern _Float64 __exp10f64(_Float64 __x) throw(); 
+# 119
+extern _Float64 expm1f64(_Float64 __x) throw(); extern _Float64 __expm1f64(_Float64 __x) throw(); 
+# 122
+extern _Float64 log1pf64(_Float64 __x) throw(); extern _Float64 __log1pf64(_Float64 __x) throw(); 
+# 125
+extern _Float64 logbf64(_Float64 __x) throw(); extern _Float64 __logbf64(_Float64 __x) throw(); 
+# 130
+extern _Float64 exp2f64(_Float64 __x) throw(); extern _Float64 __exp2f64(_Float64 __x) throw(); 
+# 133
+extern _Float64 log2f64(_Float64 __x) throw(); extern _Float64 __log2f64(_Float64 __x) throw(); 
+# 140
+extern _Float64 powf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __powf64(_Float64 __x, _Float64 __y) throw(); 
+# 143
+extern _Float64 sqrtf64(_Float64 __x) throw(); extern _Float64 __sqrtf64(_Float64 __x) throw(); 
+# 147
+extern _Float64 hypotf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __hypotf64(_Float64 __x, _Float64 __y) throw(); 
+# 152
+extern _Float64 cbrtf64(_Float64 __x) throw(); extern _Float64 __cbrtf64(_Float64 __x) throw(); 
+# 159
+extern _Float64 ceilf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __ceilf64(_Float64 __x) throw() __attribute((const)); 
+# 162
+extern _Float64 fabsf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __fabsf64(_Float64 __x) throw() __attribute((const)); 
+# 165
+extern _Float64 floorf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __floorf64(_Float64 __x) throw() __attribute((const)); 
+# 168
+extern _Float64 fmodf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __fmodf64(_Float64 __x, _Float64 __y) throw(); 
+# 196 "/usr/include/bits/mathcalls.h" 3
+extern _Float64 copysignf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); extern _Float64 __copysignf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); 
+# 201
+extern _Float64 nanf64(const char * __tagb) throw(); extern _Float64 __nanf64(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern _Float64 j0f64(_Float64) throw(); extern _Float64 __j0f64(_Float64) throw(); 
+# 218
+extern _Float64 j1f64(_Float64) throw(); extern _Float64 __j1f64(_Float64) throw(); 
+# 219
+extern _Float64 jnf64(int, _Float64) throw(); extern _Float64 __jnf64(int, _Float64) throw(); 
+# 220
+extern _Float64 y0f64(_Float64) throw(); extern _Float64 __y0f64(_Float64) throw(); 
+# 221
+extern _Float64 y1f64(_Float64) throw(); extern _Float64 __y1f64(_Float64) throw(); 
+# 222
+extern _Float64 ynf64(int, _Float64) throw(); extern _Float64 __ynf64(int, _Float64) throw(); 
+# 228
+extern _Float64 erff64(_Float64) throw(); extern _Float64 __erff64(_Float64) throw(); 
+# 229
+extern _Float64 erfcf64(_Float64) throw(); extern _Float64 __erfcf64(_Float64) throw(); 
+# 230
+extern _Float64 lgammaf64(_Float64) throw(); extern _Float64 __lgammaf64(_Float64) throw(); 
+# 235
+extern _Float64 tgammaf64(_Float64) throw(); extern _Float64 __tgammaf64(_Float64) throw(); 
+# 249 "/usr/include/bits/mathcalls.h" 3
+extern _Float64 lgammaf64_r(_Float64, int * __signgamp) throw(); extern _Float64 __lgammaf64_r(_Float64, int * __signgamp) throw(); 
+# 256
+extern _Float64 rintf64(_Float64 __x) throw(); extern _Float64 __rintf64(_Float64 __x) throw(); 
+# 259
+extern _Float64 nextafterf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __nextafterf64(_Float64 __x, _Float64 __y) throw(); 
+# 266
+extern _Float64 nextdownf64(_Float64 __x) throw(); extern _Float64 __nextdownf64(_Float64 __x) throw(); 
+# 268
+extern _Float64 nextupf64(_Float64 __x) throw(); extern _Float64 __nextupf64(_Float64 __x) throw(); 
+# 272
+extern _Float64 remainderf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __remainderf64(_Float64 __x, _Float64 __y) throw(); 
+# 276
+extern _Float64 scalbnf64(_Float64 __x, int __n) throw(); extern _Float64 __scalbnf64(_Float64 __x, int __n) throw(); 
+# 280
+extern int ilogbf64(_Float64 __x) throw(); extern int __ilogbf64(_Float64 __x) throw(); 
+# 285
+extern long llogbf64(_Float64 __x) throw(); extern long __llogbf64(_Float64 __x) throw(); 
+# 290
+extern _Float64 scalblnf64(_Float64 __x, long __n) throw(); extern _Float64 __scalblnf64(_Float64 __x, long __n) throw(); 
+# 294
+extern _Float64 nearbyintf64(_Float64 __x) throw(); extern _Float64 __nearbyintf64(_Float64 __x) throw(); 
+# 298
+extern _Float64 roundf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __roundf64(_Float64 __x) throw() __attribute((const)); 
+# 302
+extern _Float64 truncf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __truncf64(_Float64 __x) throw() __attribute((const)); 
+# 307
+extern _Float64 remquof64(_Float64 __x, _Float64 __y, int * __quo) throw(); extern _Float64 __remquof64(_Float64 __x, _Float64 __y, int * __quo) throw(); 
+# 314
+extern long lrintf64(_Float64 __x) throw(); extern long __lrintf64(_Float64 __x) throw(); 
+# 316
+__extension__ extern long long llrintf64(_Float64 __x) throw(); extern long long __llrintf64(_Float64 __x) throw(); 
+# 320
+extern long lroundf64(_Float64 __x) throw(); extern long __lroundf64(_Float64 __x) throw(); 
+# 322
+__extension__ extern long long llroundf64(_Float64 __x) throw(); extern long long __llroundf64(_Float64 __x) throw(); 
+# 326
+extern _Float64 fdimf64(_Float64 __x, _Float64 __y) throw(); extern _Float64 __fdimf64(_Float64 __x, _Float64 __y) throw(); 
+# 329
+extern _Float64 fmaxf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); extern _Float64 __fmaxf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); 
+# 332
+extern _Float64 fminf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); extern _Float64 __fminf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); 
+# 335
+extern _Float64 fmaf64(_Float64 __x, _Float64 __y, _Float64 __z) throw(); extern _Float64 __fmaf64(_Float64 __x, _Float64 __y, _Float64 __z) throw(); 
+# 340
+extern _Float64 roundevenf64(_Float64 __x) throw() __attribute((const)); extern _Float64 __roundevenf64(_Float64 __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf64(_Float64 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf64(_Float64 __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf64(_Float64 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf64(_Float64 __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf64(_Float64 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf64(_Float64 __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf64(_Float64 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf64(_Float64 __x, int __round, unsigned __width) throw(); 
+# 365
+extern _Float64 fmaxmagf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); extern _Float64 __fmaxmagf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); 
+# 368
+extern _Float64 fminmagf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); extern _Float64 __fminmagf64(_Float64 __x, _Float64 __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf64(_Float64 __x, _Float64 __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf64(_Float64 __x, _Float64 __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef64(_Float64 * __cx, const _Float64 * __x) throw(); 
+# 382
+extern _Float64 getpayloadf64(const _Float64 * __x) throw(); extern _Float64 __getpayloadf64(const _Float64 * __x) throw(); 
+# 385
+extern int setpayloadf64(_Float64 * __x, _Float64 __payload) throw(); 
+# 388
+extern int setpayloadsigf64(_Float64 * __x, _Float64 __payload) throw(); 
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3
+extern int __fpclassifyf128(_Float128 __value) throw()
+# 22
+ __attribute((const)); 
+# 25
+extern int __signbitf128(_Float128 __value) throw()
+# 26
+ __attribute((const)); 
+# 30
+extern int __isinff128(_Float128 __value) throw() __attribute((const)); 
+# 33
+extern int __finitef128(_Float128 __value) throw() __attribute((const)); 
+# 36
+extern int __isnanf128(_Float128 __value) throw() __attribute((const)); 
+# 39
+extern int __iseqsigf128(_Float128 __x, _Float128 __y) throw(); 
+# 42
+extern int __issignalingf128(_Float128 __value) throw()
+# 43
+ __attribute((const)); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern _Float128 acosf128(_Float128 __x) throw(); extern _Float128 __acosf128(_Float128 __x) throw(); 
+# 55
+extern _Float128 asinf128(_Float128 __x) throw(); extern _Float128 __asinf128(_Float128 __x) throw(); 
+# 57
+extern _Float128 atanf128(_Float128 __x) throw(); extern _Float128 __atanf128(_Float128 __x) throw(); 
+# 59
+extern _Float128 atan2f128(_Float128 __y, _Float128 __x) throw(); extern _Float128 __atan2f128(_Float128 __y, _Float128 __x) throw(); 
+# 62
+extern _Float128 cosf128(_Float128 __x) throw(); extern _Float128 __cosf128(_Float128 __x) throw(); 
+# 64
+extern _Float128 sinf128(_Float128 __x) throw(); extern _Float128 __sinf128(_Float128 __x) throw(); 
+# 66
+extern _Float128 tanf128(_Float128 __x) throw(); extern _Float128 __tanf128(_Float128 __x) throw(); 
+# 71
+extern _Float128 coshf128(_Float128 __x) throw(); extern _Float128 __coshf128(_Float128 __x) throw(); 
+# 73
+extern _Float128 sinhf128(_Float128 __x) throw(); extern _Float128 __sinhf128(_Float128 __x) throw(); 
+# 75
+extern _Float128 tanhf128(_Float128 __x) throw(); extern _Float128 __tanhf128(_Float128 __x) throw(); 
+# 79
+extern void sincosf128(_Float128 __x, _Float128 * __sinx, _Float128 * __cosx) throw(); extern void __sincosf128(_Float128 __x, _Float128 * __sinx, _Float128 * __cosx) throw(); 
+# 85
+extern _Float128 acoshf128(_Float128 __x) throw(); extern _Float128 __acoshf128(_Float128 __x) throw(); 
+# 87
+extern _Float128 asinhf128(_Float128 __x) throw(); extern _Float128 __asinhf128(_Float128 __x) throw(); 
+# 89
+extern _Float128 atanhf128(_Float128 __x) throw(); extern _Float128 __atanhf128(_Float128 __x) throw(); 
+# 95
+extern _Float128 expf128(_Float128 __x) throw(); extern _Float128 __expf128(_Float128 __x) throw(); 
+# 98
+extern _Float128 frexpf128(_Float128 __x, int * __exponent) throw(); extern _Float128 __frexpf128(_Float128 __x, int * __exponent) throw(); 
+# 101
+extern _Float128 ldexpf128(_Float128 __x, int __exponent) throw(); extern _Float128 __ldexpf128(_Float128 __x, int __exponent) throw(); 
+# 104
+extern _Float128 logf128(_Float128 __x) throw(); extern _Float128 __logf128(_Float128 __x) throw(); 
+# 107
+extern _Float128 log10f128(_Float128 __x) throw(); extern _Float128 __log10f128(_Float128 __x) throw(); 
+# 110
+extern _Float128 modff128(_Float128 __x, _Float128 * __iptr) throw(); extern _Float128 __modff128(_Float128 __x, _Float128 * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern _Float128 exp10f128(_Float128 __x) throw(); extern _Float128 __exp10f128(_Float128 __x) throw(); 
+# 119
+extern _Float128 expm1f128(_Float128 __x) throw(); extern _Float128 __expm1f128(_Float128 __x) throw(); 
+# 122
+extern _Float128 log1pf128(_Float128 __x) throw(); extern _Float128 __log1pf128(_Float128 __x) throw(); 
+# 125
+extern _Float128 logbf128(_Float128 __x) throw(); extern _Float128 __logbf128(_Float128 __x) throw(); 
+# 130
+extern _Float128 exp2f128(_Float128 __x) throw(); extern _Float128 __exp2f128(_Float128 __x) throw(); 
+# 133
+extern _Float128 log2f128(_Float128 __x) throw(); extern _Float128 __log2f128(_Float128 __x) throw(); 
+# 140
+extern _Float128 powf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __powf128(_Float128 __x, _Float128 __y) throw(); 
+# 143
+extern _Float128 sqrtf128(_Float128 __x) throw(); extern _Float128 __sqrtf128(_Float128 __x) throw(); 
+# 147
+extern _Float128 hypotf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __hypotf128(_Float128 __x, _Float128 __y) throw(); 
+# 152
+extern _Float128 cbrtf128(_Float128 __x) throw(); extern _Float128 __cbrtf128(_Float128 __x) throw(); 
+# 159
+extern _Float128 ceilf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __ceilf128(_Float128 __x) throw() __attribute((const)); 
+# 162
+extern _Float128 fabsf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __fabsf128(_Float128 __x) throw() __attribute((const)); 
+# 165
+extern _Float128 floorf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __floorf128(_Float128 __x) throw() __attribute((const)); 
+# 168
+extern _Float128 fmodf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __fmodf128(_Float128 __x, _Float128 __y) throw(); 
+# 196 "/usr/include/bits/mathcalls.h" 3
+extern _Float128 copysignf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); extern _Float128 __copysignf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); 
+# 201
+extern _Float128 nanf128(const char * __tagb) throw(); extern _Float128 __nanf128(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern _Float128 j0f128(_Float128) throw(); extern _Float128 __j0f128(_Float128) throw(); 
+# 218
+extern _Float128 j1f128(_Float128) throw(); extern _Float128 __j1f128(_Float128) throw(); 
+# 219
+extern _Float128 jnf128(int, _Float128) throw(); extern _Float128 __jnf128(int, _Float128) throw(); 
+# 220
+extern _Float128 y0f128(_Float128) throw(); extern _Float128 __y0f128(_Float128) throw(); 
+# 221
+extern _Float128 y1f128(_Float128) throw(); extern _Float128 __y1f128(_Float128) throw(); 
+# 222
+extern _Float128 ynf128(int, _Float128) throw(); extern _Float128 __ynf128(int, _Float128) throw(); 
+# 228
+extern _Float128 erff128(_Float128) throw(); extern _Float128 __erff128(_Float128) throw(); 
+# 229
+extern _Float128 erfcf128(_Float128) throw(); extern _Float128 __erfcf128(_Float128) throw(); 
+# 230
+extern _Float128 lgammaf128(_Float128) throw(); extern _Float128 __lgammaf128(_Float128) throw(); 
+# 235
+extern _Float128 tgammaf128(_Float128) throw(); extern _Float128 __tgammaf128(_Float128) throw(); 
+# 249 "/usr/include/bits/mathcalls.h" 3
+extern _Float128 lgammaf128_r(_Float128, int * __signgamp) throw(); extern _Float128 __lgammaf128_r(_Float128, int * __signgamp) throw(); 
+# 256
+extern _Float128 rintf128(_Float128 __x) throw(); extern _Float128 __rintf128(_Float128 __x) throw(); 
+# 259
+extern _Float128 nextafterf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __nextafterf128(_Float128 __x, _Float128 __y) throw(); 
+# 266
+extern _Float128 nextdownf128(_Float128 __x) throw(); extern _Float128 __nextdownf128(_Float128 __x) throw(); 
+# 268
+extern _Float128 nextupf128(_Float128 __x) throw(); extern _Float128 __nextupf128(_Float128 __x) throw(); 
+# 272
+extern _Float128 remainderf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __remainderf128(_Float128 __x, _Float128 __y) throw(); 
+# 276
+extern _Float128 scalbnf128(_Float128 __x, int __n) throw(); extern _Float128 __scalbnf128(_Float128 __x, int __n) throw(); 
+# 280
+extern int ilogbf128(_Float128 __x) throw(); extern int __ilogbf128(_Float128 __x) throw(); 
+# 285
+extern long llogbf128(_Float128 __x) throw(); extern long __llogbf128(_Float128 __x) throw(); 
+# 290
+extern _Float128 scalblnf128(_Float128 __x, long __n) throw(); extern _Float128 __scalblnf128(_Float128 __x, long __n) throw(); 
+# 294
+extern _Float128 nearbyintf128(_Float128 __x) throw(); extern _Float128 __nearbyintf128(_Float128 __x) throw(); 
+# 298
+extern _Float128 roundf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __roundf128(_Float128 __x) throw() __attribute((const)); 
+# 302
+extern _Float128 truncf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __truncf128(_Float128 __x) throw() __attribute((const)); 
+# 307
+extern _Float128 remquof128(_Float128 __x, _Float128 __y, int * __quo) throw(); extern _Float128 __remquof128(_Float128 __x, _Float128 __y, int * __quo) throw(); 
+# 314
+extern long lrintf128(_Float128 __x) throw(); extern long __lrintf128(_Float128 __x) throw(); 
+# 316
+__extension__ extern long long llrintf128(_Float128 __x) throw(); extern long long __llrintf128(_Float128 __x) throw(); 
+# 320
+extern long lroundf128(_Float128 __x) throw(); extern long __lroundf128(_Float128 __x) throw(); 
+# 322
+__extension__ extern long long llroundf128(_Float128 __x) throw(); extern long long __llroundf128(_Float128 __x) throw(); 
+# 326
+extern _Float128 fdimf128(_Float128 __x, _Float128 __y) throw(); extern _Float128 __fdimf128(_Float128 __x, _Float128 __y) throw(); 
+# 329
+extern _Float128 fmaxf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); extern _Float128 __fmaxf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); 
+# 332
+extern _Float128 fminf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); extern _Float128 __fminf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); 
+# 335
+extern _Float128 fmaf128(_Float128 __x, _Float128 __y, _Float128 __z) throw(); extern _Float128 __fmaf128(_Float128 __x, _Float128 __y, _Float128 __z) throw(); 
+# 340
+extern _Float128 roundevenf128(_Float128 __x) throw() __attribute((const)); extern _Float128 __roundevenf128(_Float128 __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf128(_Float128 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf128(_Float128 __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf128(_Float128 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf128(_Float128 __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf128(_Float128 __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf128(_Float128 __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf128(_Float128 __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf128(_Float128 __x, int __round, unsigned __width) throw(); 
+# 365
+extern _Float128 fmaxmagf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); extern _Float128 __fmaxmagf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); 
+# 368
+extern _Float128 fminmagf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); extern _Float128 __fminmagf128(_Float128 __x, _Float128 __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf128(_Float128 __x, _Float128 __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf128(_Float128 __x, _Float128 __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef128(_Float128 * __cx, const _Float128 * __x) throw(); 
+# 382
+extern _Float128 getpayloadf128(const _Float128 * __x) throw(); extern _Float128 __getpayloadf128(const _Float128 * __x) throw(); 
+# 385
+extern int setpayloadf128(_Float128 * __x, _Float128 __payload) throw(); 
+# 388
+extern int setpayloadsigf128(_Float128 * __x, _Float128 __payload) throw(); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern _Float32x acosf32x(_Float32x __x) throw(); extern _Float32x __acosf32x(_Float32x __x) throw(); 
+# 55
+extern _Float32x asinf32x(_Float32x __x) throw(); extern _Float32x __asinf32x(_Float32x __x) throw(); 
+# 57
+extern _Float32x atanf32x(_Float32x __x) throw(); extern _Float32x __atanf32x(_Float32x __x) throw(); 
+# 59
+extern _Float32x atan2f32x(_Float32x __y, _Float32x __x) throw(); extern _Float32x __atan2f32x(_Float32x __y, _Float32x __x) throw(); 
+# 62
+extern _Float32x cosf32x(_Float32x __x) throw(); extern _Float32x __cosf32x(_Float32x __x) throw(); 
+# 64
+extern _Float32x sinf32x(_Float32x __x) throw(); extern _Float32x __sinf32x(_Float32x __x) throw(); 
+# 66
+extern _Float32x tanf32x(_Float32x __x) throw(); extern _Float32x __tanf32x(_Float32x __x) throw(); 
+# 71
+extern _Float32x coshf32x(_Float32x __x) throw(); extern _Float32x __coshf32x(_Float32x __x) throw(); 
+# 73
+extern _Float32x sinhf32x(_Float32x __x) throw(); extern _Float32x __sinhf32x(_Float32x __x) throw(); 
+# 75
+extern _Float32x tanhf32x(_Float32x __x) throw(); extern _Float32x __tanhf32x(_Float32x __x) throw(); 
+# 79
+extern void sincosf32x(_Float32x __x, _Float32x * __sinx, _Float32x * __cosx) throw(); extern void __sincosf32x(_Float32x __x, _Float32x * __sinx, _Float32x * __cosx) throw(); 
+# 85
+extern _Float32x acoshf32x(_Float32x __x) throw(); extern _Float32x __acoshf32x(_Float32x __x) throw(); 
+# 87
+extern _Float32x asinhf32x(_Float32x __x) throw(); extern _Float32x __asinhf32x(_Float32x __x) throw(); 
+# 89
+extern _Float32x atanhf32x(_Float32x __x) throw(); extern _Float32x __atanhf32x(_Float32x __x) throw(); 
+# 95
+extern _Float32x expf32x(_Float32x __x) throw(); extern _Float32x __expf32x(_Float32x __x) throw(); 
+# 98
+extern _Float32x frexpf32x(_Float32x __x, int * __exponent) throw(); extern _Float32x __frexpf32x(_Float32x __x, int * __exponent) throw(); 
+# 101
+extern _Float32x ldexpf32x(_Float32x __x, int __exponent) throw(); extern _Float32x __ldexpf32x(_Float32x __x, int __exponent) throw(); 
+# 104
+extern _Float32x logf32x(_Float32x __x) throw(); extern _Float32x __logf32x(_Float32x __x) throw(); 
+# 107
+extern _Float32x log10f32x(_Float32x __x) throw(); extern _Float32x __log10f32x(_Float32x __x) throw(); 
+# 110
+extern _Float32x modff32x(_Float32x __x, _Float32x * __iptr) throw(); extern _Float32x __modff32x(_Float32x __x, _Float32x * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern _Float32x exp10f32x(_Float32x __x) throw(); extern _Float32x __exp10f32x(_Float32x __x) throw(); 
+# 119
+extern _Float32x expm1f32x(_Float32x __x) throw(); extern _Float32x __expm1f32x(_Float32x __x) throw(); 
+# 122
+extern _Float32x log1pf32x(_Float32x __x) throw(); extern _Float32x __log1pf32x(_Float32x __x) throw(); 
+# 125
+extern _Float32x logbf32x(_Float32x __x) throw(); extern _Float32x __logbf32x(_Float32x __x) throw(); 
+# 130
+extern _Float32x exp2f32x(_Float32x __x) throw(); extern _Float32x __exp2f32x(_Float32x __x) throw(); 
+# 133
+extern _Float32x log2f32x(_Float32x __x) throw(); extern _Float32x __log2f32x(_Float32x __x) throw(); 
+# 140
+extern _Float32x powf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __powf32x(_Float32x __x, _Float32x __y) throw(); 
+# 143
+extern _Float32x sqrtf32x(_Float32x __x) throw(); extern _Float32x __sqrtf32x(_Float32x __x) throw(); 
+# 147
+extern _Float32x hypotf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __hypotf32x(_Float32x __x, _Float32x __y) throw(); 
+# 152
+extern _Float32x cbrtf32x(_Float32x __x) throw(); extern _Float32x __cbrtf32x(_Float32x __x) throw(); 
+# 159
+extern _Float32x ceilf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __ceilf32x(_Float32x __x) throw() __attribute((const)); 
+# 162
+extern _Float32x fabsf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __fabsf32x(_Float32x __x) throw() __attribute((const)); 
+# 165
+extern _Float32x floorf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __floorf32x(_Float32x __x) throw() __attribute((const)); 
+# 168
+extern _Float32x fmodf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __fmodf32x(_Float32x __x, _Float32x __y) throw(); 
+# 196 "/usr/include/bits/mathcalls.h" 3
+extern _Float32x copysignf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); extern _Float32x __copysignf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); 
+# 201
+extern _Float32x nanf32x(const char * __tagb) throw(); extern _Float32x __nanf32x(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern _Float32x j0f32x(_Float32x) throw(); extern _Float32x __j0f32x(_Float32x) throw(); 
+# 218
+extern _Float32x j1f32x(_Float32x) throw(); extern _Float32x __j1f32x(_Float32x) throw(); 
+# 219
+extern _Float32x jnf32x(int, _Float32x) throw(); extern _Float32x __jnf32x(int, _Float32x) throw(); 
+# 220
+extern _Float32x y0f32x(_Float32x) throw(); extern _Float32x __y0f32x(_Float32x) throw(); 
+# 221
+extern _Float32x y1f32x(_Float32x) throw(); extern _Float32x __y1f32x(_Float32x) throw(); 
+# 222
+extern _Float32x ynf32x(int, _Float32x) throw(); extern _Float32x __ynf32x(int, _Float32x) throw(); 
+# 228
+extern _Float32x erff32x(_Float32x) throw(); extern _Float32x __erff32x(_Float32x) throw(); 
+# 229
+extern _Float32x erfcf32x(_Float32x) throw(); extern _Float32x __erfcf32x(_Float32x) throw(); 
+# 230
+extern _Float32x lgammaf32x(_Float32x) throw(); extern _Float32x __lgammaf32x(_Float32x) throw(); 
+# 235
+extern _Float32x tgammaf32x(_Float32x) throw(); extern _Float32x __tgammaf32x(_Float32x) throw(); 
+# 249 "/usr/include/bits/mathcalls.h" 3
+extern _Float32x lgammaf32x_r(_Float32x, int * __signgamp) throw(); extern _Float32x __lgammaf32x_r(_Float32x, int * __signgamp) throw(); 
+# 256
+extern _Float32x rintf32x(_Float32x __x) throw(); extern _Float32x __rintf32x(_Float32x __x) throw(); 
+# 259
+extern _Float32x nextafterf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __nextafterf32x(_Float32x __x, _Float32x __y) throw(); 
+# 266
+extern _Float32x nextdownf32x(_Float32x __x) throw(); extern _Float32x __nextdownf32x(_Float32x __x) throw(); 
+# 268
+extern _Float32x nextupf32x(_Float32x __x) throw(); extern _Float32x __nextupf32x(_Float32x __x) throw(); 
+# 272
+extern _Float32x remainderf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __remainderf32x(_Float32x __x, _Float32x __y) throw(); 
+# 276
+extern _Float32x scalbnf32x(_Float32x __x, int __n) throw(); extern _Float32x __scalbnf32x(_Float32x __x, int __n) throw(); 
+# 280
+extern int ilogbf32x(_Float32x __x) throw(); extern int __ilogbf32x(_Float32x __x) throw(); 
+# 285
+extern long llogbf32x(_Float32x __x) throw(); extern long __llogbf32x(_Float32x __x) throw(); 
+# 290
+extern _Float32x scalblnf32x(_Float32x __x, long __n) throw(); extern _Float32x __scalblnf32x(_Float32x __x, long __n) throw(); 
+# 294
+extern _Float32x nearbyintf32x(_Float32x __x) throw(); extern _Float32x __nearbyintf32x(_Float32x __x) throw(); 
+# 298
+extern _Float32x roundf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __roundf32x(_Float32x __x) throw() __attribute((const)); 
+# 302
+extern _Float32x truncf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __truncf32x(_Float32x __x) throw() __attribute((const)); 
+# 307
+extern _Float32x remquof32x(_Float32x __x, _Float32x __y, int * __quo) throw(); extern _Float32x __remquof32x(_Float32x __x, _Float32x __y, int * __quo) throw(); 
+# 314
+extern long lrintf32x(_Float32x __x) throw(); extern long __lrintf32x(_Float32x __x) throw(); 
+# 316
+__extension__ extern long long llrintf32x(_Float32x __x) throw(); extern long long __llrintf32x(_Float32x __x) throw(); 
+# 320
+extern long lroundf32x(_Float32x __x) throw(); extern long __lroundf32x(_Float32x __x) throw(); 
+# 322
+__extension__ extern long long llroundf32x(_Float32x __x) throw(); extern long long __llroundf32x(_Float32x __x) throw(); 
+# 326
+extern _Float32x fdimf32x(_Float32x __x, _Float32x __y) throw(); extern _Float32x __fdimf32x(_Float32x __x, _Float32x __y) throw(); 
+# 329
+extern _Float32x fmaxf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); extern _Float32x __fmaxf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); 
+# 332
+extern _Float32x fminf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); extern _Float32x __fminf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); 
+# 335
+extern _Float32x fmaf32x(_Float32x __x, _Float32x __y, _Float32x __z) throw(); extern _Float32x __fmaf32x(_Float32x __x, _Float32x __y, _Float32x __z) throw(); 
+# 340
+extern _Float32x roundevenf32x(_Float32x __x) throw() __attribute((const)); extern _Float32x __roundevenf32x(_Float32x __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf32x(_Float32x __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf32x(_Float32x __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf32x(_Float32x __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf32x(_Float32x __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf32x(_Float32x __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf32x(_Float32x __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf32x(_Float32x __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf32x(_Float32x __x, int __round, unsigned __width) throw(); 
+# 365
+extern _Float32x fmaxmagf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); extern _Float32x __fmaxmagf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); 
+# 368
+extern _Float32x fminmagf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); extern _Float32x __fminmagf32x(_Float32x __x, _Float32x __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf32x(_Float32x __x, _Float32x __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf32x(_Float32x __x, _Float32x __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef32x(_Float32x * __cx, const _Float32x * __x) throw(); 
+# 382
+extern _Float32x getpayloadf32x(const _Float32x * __x) throw(); extern _Float32x __getpayloadf32x(const _Float32x * __x) throw(); 
+# 385
+extern int setpayloadf32x(_Float32x * __x, _Float32x __payload) throw(); 
+# 388
+extern int setpayloadsigf32x(_Float32x * __x, _Float32x __payload) throw(); 
+# 53 "/usr/include/bits/mathcalls.h" 3
+extern _Float64x acosf64x(_Float64x __x) throw(); extern _Float64x __acosf64x(_Float64x __x) throw(); 
+# 55
+extern _Float64x asinf64x(_Float64x __x) throw(); extern _Float64x __asinf64x(_Float64x __x) throw(); 
+# 57
+extern _Float64x atanf64x(_Float64x __x) throw(); extern _Float64x __atanf64x(_Float64x __x) throw(); 
+# 59
+extern _Float64x atan2f64x(_Float64x __y, _Float64x __x) throw(); extern _Float64x __atan2f64x(_Float64x __y, _Float64x __x) throw(); 
+# 62
+extern _Float64x cosf64x(_Float64x __x) throw(); extern _Float64x __cosf64x(_Float64x __x) throw(); 
+# 64
+extern _Float64x sinf64x(_Float64x __x) throw(); extern _Float64x __sinf64x(_Float64x __x) throw(); 
+# 66
+extern _Float64x tanf64x(_Float64x __x) throw(); extern _Float64x __tanf64x(_Float64x __x) throw(); 
+# 71
+extern _Float64x coshf64x(_Float64x __x) throw(); extern _Float64x __coshf64x(_Float64x __x) throw(); 
+# 73
+extern _Float64x sinhf64x(_Float64x __x) throw(); extern _Float64x __sinhf64x(_Float64x __x) throw(); 
+# 75
+extern _Float64x tanhf64x(_Float64x __x) throw(); extern _Float64x __tanhf64x(_Float64x __x) throw(); 
+# 79
+extern void sincosf64x(_Float64x __x, _Float64x * __sinx, _Float64x * __cosx) throw(); extern void __sincosf64x(_Float64x __x, _Float64x * __sinx, _Float64x * __cosx) throw(); 
+# 85
+extern _Float64x acoshf64x(_Float64x __x) throw(); extern _Float64x __acoshf64x(_Float64x __x) throw(); 
+# 87
+extern _Float64x asinhf64x(_Float64x __x) throw(); extern _Float64x __asinhf64x(_Float64x __x) throw(); 
+# 89
+extern _Float64x atanhf64x(_Float64x __x) throw(); extern _Float64x __atanhf64x(_Float64x __x) throw(); 
+# 95
+extern _Float64x expf64x(_Float64x __x) throw(); extern _Float64x __expf64x(_Float64x __x) throw(); 
+# 98
+extern _Float64x frexpf64x(_Float64x __x, int * __exponent) throw(); extern _Float64x __frexpf64x(_Float64x __x, int * __exponent) throw(); 
+# 101
+extern _Float64x ldexpf64x(_Float64x __x, int __exponent) throw(); extern _Float64x __ldexpf64x(_Float64x __x, int __exponent) throw(); 
+# 104
+extern _Float64x logf64x(_Float64x __x) throw(); extern _Float64x __logf64x(_Float64x __x) throw(); 
+# 107
+extern _Float64x log10f64x(_Float64x __x) throw(); extern _Float64x __log10f64x(_Float64x __x) throw(); 
+# 110
+extern _Float64x modff64x(_Float64x __x, _Float64x * __iptr) throw(); extern _Float64x __modff64x(_Float64x __x, _Float64x * __iptr) throw() __attribute((__nonnull__(2))); 
+# 114
+extern _Float64x exp10f64x(_Float64x __x) throw(); extern _Float64x __exp10f64x(_Float64x __x) throw(); 
+# 119
+extern _Float64x expm1f64x(_Float64x __x) throw(); extern _Float64x __expm1f64x(_Float64x __x) throw(); 
+# 122
+extern _Float64x log1pf64x(_Float64x __x) throw(); extern _Float64x __log1pf64x(_Float64x __x) throw(); 
+# 125
+extern _Float64x logbf64x(_Float64x __x) throw(); extern _Float64x __logbf64x(_Float64x __x) throw(); 
+# 130
+extern _Float64x exp2f64x(_Float64x __x) throw(); extern _Float64x __exp2f64x(_Float64x __x) throw(); 
+# 133
+extern _Float64x log2f64x(_Float64x __x) throw(); extern _Float64x __log2f64x(_Float64x __x) throw(); 
+# 140
+extern _Float64x powf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __powf64x(_Float64x __x, _Float64x __y) throw(); 
+# 143
+extern _Float64x sqrtf64x(_Float64x __x) throw(); extern _Float64x __sqrtf64x(_Float64x __x) throw(); 
+# 147
+extern _Float64x hypotf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __hypotf64x(_Float64x __x, _Float64x __y) throw(); 
+# 152
+extern _Float64x cbrtf64x(_Float64x __x) throw(); extern _Float64x __cbrtf64x(_Float64x __x) throw(); 
+# 159
+extern _Float64x ceilf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __ceilf64x(_Float64x __x) throw() __attribute((const)); 
+# 162
+extern _Float64x fabsf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __fabsf64x(_Float64x __x) throw() __attribute((const)); 
+# 165
+extern _Float64x floorf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __floorf64x(_Float64x __x) throw() __attribute((const)); 
+# 168
+extern _Float64x fmodf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __fmodf64x(_Float64x __x, _Float64x __y) throw(); 
+# 196 "/usr/include/bits/mathcalls.h" 3
+extern _Float64x copysignf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); extern _Float64x __copysignf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); 
+# 201
+extern _Float64x nanf64x(const char * __tagb) throw(); extern _Float64x __nanf64x(const char * __tagb) throw(); 
+# 217 "/usr/include/bits/mathcalls.h" 3
+extern _Float64x j0f64x(_Float64x) throw(); extern _Float64x __j0f64x(_Float64x) throw(); 
+# 218
+extern _Float64x j1f64x(_Float64x) throw(); extern _Float64x __j1f64x(_Float64x) throw(); 
+# 219
+extern _Float64x jnf64x(int, _Float64x) throw(); extern _Float64x __jnf64x(int, _Float64x) throw(); 
+# 220
+extern _Float64x y0f64x(_Float64x) throw(); extern _Float64x __y0f64x(_Float64x) throw(); 
+# 221
+extern _Float64x y1f64x(_Float64x) throw(); extern _Float64x __y1f64x(_Float64x) throw(); 
+# 222
+extern _Float64x ynf64x(int, _Float64x) throw(); extern _Float64x __ynf64x(int, _Float64x) throw(); 
+# 228
+extern _Float64x erff64x(_Float64x) throw(); extern _Float64x __erff64x(_Float64x) throw(); 
+# 229
+extern _Float64x erfcf64x(_Float64x) throw(); extern _Float64x __erfcf64x(_Float64x) throw(); 
+# 230
+extern _Float64x lgammaf64x(_Float64x) throw(); extern _Float64x __lgammaf64x(_Float64x) throw(); 
+# 235
+extern _Float64x tgammaf64x(_Float64x) throw(); extern _Float64x __tgammaf64x(_Float64x) throw(); 
+# 249 "/usr/include/bits/mathcalls.h" 3
+extern _Float64x lgammaf64x_r(_Float64x, int * __signgamp) throw(); extern _Float64x __lgammaf64x_r(_Float64x, int * __signgamp) throw(); 
+# 256
+extern _Float64x rintf64x(_Float64x __x) throw(); extern _Float64x __rintf64x(_Float64x __x) throw(); 
+# 259
+extern _Float64x nextafterf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __nextafterf64x(_Float64x __x, _Float64x __y) throw(); 
+# 266
+extern _Float64x nextdownf64x(_Float64x __x) throw(); extern _Float64x __nextdownf64x(_Float64x __x) throw(); 
+# 268
+extern _Float64x nextupf64x(_Float64x __x) throw(); extern _Float64x __nextupf64x(_Float64x __x) throw(); 
+# 272
+extern _Float64x remainderf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __remainderf64x(_Float64x __x, _Float64x __y) throw(); 
+# 276
+extern _Float64x scalbnf64x(_Float64x __x, int __n) throw(); extern _Float64x __scalbnf64x(_Float64x __x, int __n) throw(); 
+# 280
+extern int ilogbf64x(_Float64x __x) throw(); extern int __ilogbf64x(_Float64x __x) throw(); 
+# 285
+extern long llogbf64x(_Float64x __x) throw(); extern long __llogbf64x(_Float64x __x) throw(); 
+# 290
+extern _Float64x scalblnf64x(_Float64x __x, long __n) throw(); extern _Float64x __scalblnf64x(_Float64x __x, long __n) throw(); 
+# 294
+extern _Float64x nearbyintf64x(_Float64x __x) throw(); extern _Float64x __nearbyintf64x(_Float64x __x) throw(); 
+# 298
+extern _Float64x roundf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __roundf64x(_Float64x __x) throw() __attribute((const)); 
+# 302
+extern _Float64x truncf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __truncf64x(_Float64x __x) throw() __attribute((const)); 
+# 307
+extern _Float64x remquof64x(_Float64x __x, _Float64x __y, int * __quo) throw(); extern _Float64x __remquof64x(_Float64x __x, _Float64x __y, int * __quo) throw(); 
+# 314
+extern long lrintf64x(_Float64x __x) throw(); extern long __lrintf64x(_Float64x __x) throw(); 
+# 316
+__extension__ extern long long llrintf64x(_Float64x __x) throw(); extern long long __llrintf64x(_Float64x __x) throw(); 
+# 320
+extern long lroundf64x(_Float64x __x) throw(); extern long __lroundf64x(_Float64x __x) throw(); 
+# 322
+__extension__ extern long long llroundf64x(_Float64x __x) throw(); extern long long __llroundf64x(_Float64x __x) throw(); 
+# 326
+extern _Float64x fdimf64x(_Float64x __x, _Float64x __y) throw(); extern _Float64x __fdimf64x(_Float64x __x, _Float64x __y) throw(); 
+# 329
+extern _Float64x fmaxf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); extern _Float64x __fmaxf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); 
+# 332
+extern _Float64x fminf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); extern _Float64x __fminf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); 
+# 335
+extern _Float64x fmaf64x(_Float64x __x, _Float64x __y, _Float64x __z) throw(); extern _Float64x __fmaf64x(_Float64x __x, _Float64x __y, _Float64x __z) throw(); 
+# 340
+extern _Float64x roundevenf64x(_Float64x __x) throw() __attribute((const)); extern _Float64x __roundevenf64x(_Float64x __x) throw() __attribute((const)); 
+# 344
+extern __intmax_t fromfpf64x(_Float64x __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpf64x(_Float64x __x, int __round, unsigned __width) throw(); 
+# 349
+extern __uintmax_t ufromfpf64x(_Float64x __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpf64x(_Float64x __x, int __round, unsigned __width) throw(); 
+# 355
+extern __intmax_t fromfpxf64x(_Float64x __x, int __round, unsigned __width) throw(); extern __intmax_t __fromfpxf64x(_Float64x __x, int __round, unsigned __width) throw(); 
+# 361
+extern __uintmax_t ufromfpxf64x(_Float64x __x, int __round, unsigned __width) throw(); extern __uintmax_t __ufromfpxf64x(_Float64x __x, int __round, unsigned __width) throw(); 
+# 365
+extern _Float64x fmaxmagf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); extern _Float64x __fmaxmagf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); 
+# 368
+extern _Float64x fminmagf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); extern _Float64x __fminmagf64x(_Float64x __x, _Float64x __y) throw() __attribute((const)); 
+# 371
+extern int totalorderf64x(_Float64x __x, _Float64x __y) throw()
+# 372
+ __attribute((const)); 
+# 375
+extern int totalordermagf64x(_Float64x __x, _Float64x __y) throw()
+# 376
+ __attribute((const)); 
+# 379
+extern int canonicalizef64x(_Float64x * __cx, const _Float64x * __x) throw(); 
+# 382
+extern _Float64x getpayloadf64x(const _Float64x * __x) throw(); extern _Float64x __getpayloadf64x(const _Float64x * __x) throw(); 
+# 385
+extern int setpayloadf64x(_Float64x * __x, _Float64x __payload) throw(); 
+# 388
+extern int setpayloadsigf64x(_Float64x * __x, _Float64x __payload) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern float fadd(double __x, double __y) throw(); 
+# 27
+extern float fdiv(double __x, double __y) throw(); 
+# 30
+extern float fmul(double __x, double __y) throw(); 
+# 33
+extern float fsub(double __x, double __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern float faddl(long double __x, long double __y) throw(); 
+# 27
+extern float fdivl(long double __x, long double __y) throw(); 
+# 30
+extern float fmull(long double __x, long double __y) throw(); 
+# 33
+extern float fsubl(long double __x, long double __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern double daddl(long double __x, long double __y) throw(); 
+# 27
+extern double ddivl(long double __x, long double __y) throw(); 
+# 30
+extern double dmull(long double __x, long double __y) throw(); 
+# 33
+extern double dsubl(long double __x, long double __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32 f32addf32x(_Float32x __x, _Float32x __y) throw(); 
+# 27
+extern _Float32 f32divf32x(_Float32x __x, _Float32x __y) throw(); 
+# 30
+extern _Float32 f32mulf32x(_Float32x __x, _Float32x __y) throw(); 
+# 33
+extern _Float32 f32subf32x(_Float32x __x, _Float32x __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32 f32addf64(_Float64 __x, _Float64 __y) throw(); 
+# 27
+extern _Float32 f32divf64(_Float64 __x, _Float64 __y) throw(); 
+# 30
+extern _Float32 f32mulf64(_Float64 __x, _Float64 __y) throw(); 
+# 33
+extern _Float32 f32subf64(_Float64 __x, _Float64 __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32 f32addf64x(_Float64x __x, _Float64x __y) throw(); 
+# 27
+extern _Float32 f32divf64x(_Float64x __x, _Float64x __y) throw(); 
+# 30
+extern _Float32 f32mulf64x(_Float64x __x, _Float64x __y) throw(); 
+# 33
+extern _Float32 f32subf64x(_Float64x __x, _Float64x __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32 f32addf128(_Float128 __x, _Float128 __y) throw(); 
+# 27
+extern _Float32 f32divf128(_Float128 __x, _Float128 __y) throw(); 
+# 30
+extern _Float32 f32mulf128(_Float128 __x, _Float128 __y) throw(); 
+# 33
+extern _Float32 f32subf128(_Float128 __x, _Float128 __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32x f32xaddf64(_Float64 __x, _Float64 __y) throw(); 
+# 27
+extern _Float32x f32xdivf64(_Float64 __x, _Float64 __y) throw(); 
+# 30
+extern _Float32x f32xmulf64(_Float64 __x, _Float64 __y) throw(); 
+# 33
+extern _Float32x f32xsubf64(_Float64 __x, _Float64 __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32x f32xaddf64x(_Float64x __x, _Float64x __y) throw(); 
+# 27
+extern _Float32x f32xdivf64x(_Float64x __x, _Float64x __y) throw(); 
+# 30
+extern _Float32x f32xmulf64x(_Float64x __x, _Float64x __y) throw(); 
+# 33
+extern _Float32x f32xsubf64x(_Float64x __x, _Float64x __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float32x f32xaddf128(_Float128 __x, _Float128 __y) throw(); 
+# 27
+extern _Float32x f32xdivf128(_Float128 __x, _Float128 __y) throw(); 
+# 30
+extern _Float32x f32xmulf128(_Float128 __x, _Float128 __y) throw(); 
+# 33
+extern _Float32x f32xsubf128(_Float128 __x, _Float128 __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float64 f64addf64x(_Float64x __x, _Float64x __y) throw(); 
+# 27
+extern _Float64 f64divf64x(_Float64x __x, _Float64x __y) throw(); 
+# 30
+extern _Float64 f64mulf64x(_Float64x __x, _Float64x __y) throw(); 
+# 33
+extern _Float64 f64subf64x(_Float64x __x, _Float64x __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float64 f64addf128(_Float128 __x, _Float128 __y) throw(); 
+# 27
+extern _Float64 f64divf128(_Float128 __x, _Float128 __y) throw(); 
+# 30
+extern _Float64 f64mulf128(_Float128 __x, _Float128 __y) throw(); 
+# 33
+extern _Float64 f64subf128(_Float128 __x, _Float128 __y) throw(); 
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3
+extern _Float64x f64xaddf128(_Float128 __x, _Float128 __y) throw(); 
+# 27
+extern _Float64x f64xdivf128(_Float128 __x, _Float128 __y) throw(); 
+# 30
+extern _Float64x f64xmulf128(_Float128 __x, _Float128 __y) throw(); 
+# 33
+extern _Float64x f64xsubf128(_Float128 __x, _Float128 __y) throw(); 
+# 773 "/usr/include/math.h" 3
+extern int signgam; 
+# 854 "/usr/include/math.h" 3
+enum { 
+# 855
+FP_NAN, 
+# 858
+FP_INFINITE, 
+# 861
+FP_ZERO, 
+# 864
+FP_SUBNORMAL, 
+# 867
+FP_NORMAL
+# 870
+}; 
+# 23 "/usr/include/bits/iscanonical.h" 3
+extern int __iscanonicall(long double __x) throw()
+# 24
+ __attribute((const)); 
+# 46 "/usr/include/bits/iscanonical.h" 3
+extern "C++" {
+# 47
+inline int iscanonical(float __val) { return (((void)((__typeof__(__val))__val)), 1); } 
+# 48
+inline int iscanonical(double __val) { return (((void)((__typeof__(__val))__val)), 1); } 
+# 49
+inline int iscanonical(long double __val) { return __iscanonicall(__val); } 
+# 51
+inline int iscanonical(_Float128 __val) { return (((void)((__typeof__(__val))__val)), 1); } 
+# 53
+}
+# 985 "/usr/include/math.h" 3
+extern "C++" {
+# 986
+inline int issignaling(float __val) { return __issignalingf(__val); } 
+# 987
+inline int issignaling(double __val) { return __issignaling(__val); } 
+# 989
+inline int issignaling(long double __val) 
+# 990
+{ 
+# 994
+return __issignalingl(__val); 
+# 996
+} 
+# 1000
+inline int issignaling(_Float128 __val) { return __issignalingf128(__val); } 
+# 1002
+}
+# 1016 "/usr/include/math.h" 3
+extern "C++" {
+# 1047 "/usr/include/math.h" 3
+template< class __T> inline bool 
+# 1048
+iszero(__T __val) 
+# 1049
+{ 
+# 1050
+return __val == 0; 
+# 1051
+} 
+# 1053
+}
+# 1498 "/usr/include/math.h" 3
+extern "C++" {
+# 1499
+template< class > struct __iseqsig_type; 
+# 1501
+template<> struct __iseqsig_type< float>  { 
+# 1503
+static int __call(float __x, float __y) throw() 
+# 1504
+{ 
+# 1505
+return __iseqsigf(__x, __y); 
+# 1506
+} 
+# 1507
+}; 
+# 1509
+template<> struct __iseqsig_type< double>  { 
+# 1511
+static int __call(double __x, double __y) throw() 
+# 1512
+{ 
+# 1513
+return __iseqsig(__x, __y); 
+# 1514
+} 
+# 1515
+}; 
+# 1517
+template<> struct __iseqsig_type< long double>  { 
+# 1519
+static int __call(long double __x, long double __y) throw() 
+# 1520
+{ 
+# 1522
+return __iseqsigl(__x, __y); 
+# 1526
+} 
+# 1527
+}; 
+# 1532
+template<> struct __iseqsig_type< __float128>  { 
+# 1534
+static int __call(_Float128 __x, _Float128 __y) throw() 
+# 1535
+{ 
+# 1536
+return __iseqsigf128(__x, __y); 
+# 1537
+} 
+# 1538
+}; 
+# 1541
+template< class _T1, class _T2> inline int 
+# 1543
+iseqsig(_T1 __x, _T2 __y) throw() 
+# 1544
+{ 
+# 1546
+typedef __decltype(((__x + __y) + (0.0F))) _T3; 
+# 1550
+return __iseqsig_type< __decltype(((__x + __y) + (0.0F)))> ::__call(__x, __y); 
+# 1551
+} 
+# 1553
+}
+# 1558
+}
+# 33 "/usr/include/stdlib.h" 3
+extern "C" {
+# 62 "/usr/include/stdlib.h" 3
+typedef 
+# 59
+struct { 
+# 60
+int quot; 
+# 61
+int rem; 
+# 62
+} div_t; 
+# 70
+typedef 
+# 67
+struct { 
+# 68
+long quot; 
+# 69
+long rem; 
+# 70
+} ldiv_t; 
+# 80
+__extension__ typedef 
+# 77
+struct { 
+# 78
+long long quot; 
+# 79
+long long rem; 
+# 80
+} lldiv_t; 
+# 97 "/usr/include/stdlib.h" 3
+extern size_t __ctype_get_mb_cur_max() throw(); 
+# 101
+extern double atof(const char * __nptr) throw()
+# 102
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 104
+extern int atoi(const char * __nptr) throw()
+# 105
+ __attribute((__pure__)) __attribute((__nonnull__(1))); 
+# 107
 extern long atol(const char * __nptr) throw()
-# 151
+# 108
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 157
+# 112
 __extension__ extern long long atoll(const char * __nptr) throw()
-# 158
+# 113
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
-# 164
+# 117
 extern double strtod(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 119
+ __attribute((__nonnull__(1))); 
+# 123
+extern float strtof(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 124
+ __attribute((__nonnull__(1))); 
+# 126
+extern long double strtold(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 128
+ __attribute((__nonnull__(1))); 
+# 140 "/usr/include/stdlib.h" 3
+extern _Float32 strtof32(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 142
+ __attribute((__nonnull__(1))); 
+# 146
+extern _Float64 strtof64(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 148
+ __attribute((__nonnull__(1))); 
+# 152
+extern _Float128 strtof128(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 154
+ __attribute((__nonnull__(1))); 
+# 158
+extern _Float32x strtof32x(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
+# 160
+ __attribute((__nonnull__(1))); 
+# 164
+extern _Float64x strtof64x(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
 # 166
  __attribute((__nonnull__(1))); 
-# 172
-extern float strtof(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
-# 173
- __attribute((__nonnull__(1))); 
-# 175
-extern long double strtold(const char *__restrict__ __nptr, char **__restrict__ __endptr) throw()
-# 177
- __attribute((__nonnull__(1))); 
-# 183
+# 176 "/usr/include/stdlib.h" 3
 extern long strtol(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
-# 185
+# 178
+ __attribute((__nonnull__(1))); 
+# 180
+extern unsigned long strtoul(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
+# 182
  __attribute((__nonnull__(1))); 
 # 187
-extern unsigned long strtoul(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
+__extension__ extern long long strtoq(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
 # 189
  __attribute((__nonnull__(1))); 
-# 195
-__extension__ extern long long strtoq(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
-# 197
+# 192
+__extension__ extern unsigned long long strtouq(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
+# 194
  __attribute((__nonnull__(1))); 
 # 200
-__extension__ extern unsigned long long strtouq(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
+__extension__ extern long long strtoll(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
 # 202
  __attribute((__nonnull__(1))); 
-# 209
-__extension__ extern long long strtoll(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
-# 211
- __attribute((__nonnull__(1))); 
-# 214
+# 205
 __extension__ extern unsigned long long strtoull(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base) throw()
-# 216
+# 207
  __attribute((__nonnull__(1))); 
-# 239 "/usr/include/stdlib.h" 3
-extern long strtol_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, __locale_t __loc) throw()
-# 241
- __attribute((__nonnull__(1, 4))); 
-# 243
-extern unsigned long strtoul_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, __locale_t __loc) throw()
+# 212
+extern int strfromd(char * __dest, size_t __size, const char * __format, double __f) throw()
+# 214
+ __attribute((__nonnull__(3))); 
+# 216
+extern int strfromf(char * __dest, size_t __size, const char * __format, float __f) throw()
+# 218
+ __attribute((__nonnull__(3))); 
+# 220
+extern int strfroml(char * __dest, size_t __size, const char * __format, long double __f) throw()
+# 222
+ __attribute((__nonnull__(3))); 
+# 232 "/usr/include/stdlib.h" 3
+extern int strfromf32(char * __dest, size_t __size, const char * __format, _Float32 __f) throw()
+# 234
+ __attribute((__nonnull__(3))); 
+# 238
+extern int strfromf64(char * __dest, size_t __size, const char * __format, _Float64 __f) throw()
+# 240
+ __attribute((__nonnull__(3))); 
+# 244
+extern int strfromf128(char * __dest, size_t __size, const char * __format, _Float128 __f) throw()
 # 246
- __attribute((__nonnull__(1, 4))); 
-# 249
-__extension__ extern long long strtoll_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, __locale_t __loc) throw()
+ __attribute((__nonnull__(3))); 
+# 250
+extern int strfromf32x(char * __dest, size_t __size, const char * __format, _Float32x __f) throw()
 # 252
- __attribute((__nonnull__(1, 4))); 
-# 255
-__extension__ extern unsigned long long strtoull_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, __locale_t __loc) throw()
+ __attribute((__nonnull__(3))); 
+# 256
+extern int strfromf64x(char * __dest, size_t __size, const char * __format, _Float64x __f) throw()
 # 258
+ __attribute((__nonnull__(3))); 
+# 274 "/usr/include/stdlib.h" 3
+extern long strtol_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, locale_t __loc) throw()
+# 276
  __attribute((__nonnull__(1, 4))); 
-# 260
-extern double strtod_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, __locale_t __loc) throw()
-# 262
+# 278
+extern unsigned long strtoul_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, locale_t __loc) throw()
+# 281
+ __attribute((__nonnull__(1, 4))); 
+# 284
+__extension__ extern long long strtoll_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, locale_t __loc) throw()
+# 287
+ __attribute((__nonnull__(1, 4))); 
+# 290
+__extension__ extern unsigned long long strtoull_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, int __base, locale_t __loc) throw()
+# 293
+ __attribute((__nonnull__(1, 4))); 
+# 295
+extern double strtod_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 297
  __attribute((__nonnull__(1, 3))); 
-# 264
-extern float strtof_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, __locale_t __loc) throw()
-# 266
+# 299
+extern float strtof_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 301
  __attribute((__nonnull__(1, 3))); 
-# 268
-extern long double strtold_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, __locale_t __loc) throw()
-# 271
+# 303
+extern long double strtold_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 306
  __attribute((__nonnull__(1, 3))); 
-# 305 "/usr/include/stdlib.h" 3
+# 316 "/usr/include/stdlib.h" 3
+extern _Float32 strtof32_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 319
+ __attribute((__nonnull__(1, 3))); 
+# 323
+extern _Float64 strtof64_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 326
+ __attribute((__nonnull__(1, 3))); 
+# 330
+extern _Float128 strtof128_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 333
+ __attribute((__nonnull__(1, 3))); 
+# 337
+extern _Float32x strtof32x_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 340
+ __attribute((__nonnull__(1, 3))); 
+# 344
+extern _Float64x strtof64x_l(const char *__restrict__ __nptr, char **__restrict__ __endptr, locale_t __loc) throw()
+# 347
+ __attribute((__nonnull__(1, 3))); 
+# 385 "/usr/include/stdlib.h" 3
 extern char *l64a(long __n) throw(); 
-# 308
+# 388
 extern long a64l(const char * __s) throw()
-# 309
+# 389
  __attribute((__pure__)) __attribute((__nonnull__(1))); 
 # 27 "/usr/include/sys/types.h" 3
 extern "C" {
@@ -6949,639 +8171,697 @@ typedef __quad_t quad_t;
 typedef __u_quad_t u_quad_t; 
 # 39
 typedef __fsid_t fsid_t; 
-# 44
+# 42
 typedef __loff_t loff_t; 
-# 48
+# 47
 typedef __ino_t ino_t; 
-# 55
+# 54
 typedef __ino64_t ino64_t; 
-# 60
+# 59
 typedef __dev_t dev_t; 
-# 65
+# 64
 typedef __gid_t gid_t; 
-# 70
+# 69
 typedef __mode_t mode_t; 
-# 75
+# 74
 typedef __nlink_t nlink_t; 
-# 80
+# 79
 typedef __uid_t uid_t; 
-# 86
+# 85
 typedef __off_t off_t; 
-# 93
-typedef __off64_t off64_t; 
-# 104 "/usr/include/sys/types.h" 3
-typedef __id_t id_t; 
-# 109
-typedef __ssize_t ssize_t; 
-# 115
-typedef __daddr_t daddr_t; 
-# 116
-typedef __caddr_t caddr_t; 
-# 122
-typedef __key_t key_t; 
-# 136 "/usr/include/sys/types.h" 3
-typedef __useconds_t useconds_t; 
-# 140
-typedef __suseconds_t suseconds_t; 
-# 150 "/usr/include/sys/types.h" 3
-typedef unsigned long ulong; 
-# 151
-typedef unsigned short ushort; 
-# 152
-typedef unsigned uint; 
-# 194 "/usr/include/sys/types.h" 3
-typedef signed char int8_t __attribute((__mode__(__QI__))); 
-# 195
-typedef short int16_t __attribute((__mode__(__HI__))); 
-# 196
-typedef int int32_t __attribute((__mode__(__SI__))); 
-# 197
-typedef long int64_t __attribute((__mode__(__DI__))); 
-# 200
-typedef unsigned char u_int8_t __attribute((__mode__(__QI__))); 
-# 201
-typedef unsigned short u_int16_t __attribute((__mode__(__HI__))); 
-# 202
-typedef unsigned u_int32_t __attribute((__mode__(__SI__))); 
-# 203
-typedef unsigned long u_int64_t __attribute((__mode__(__DI__))); 
-# 205
-typedef long register_t __attribute((__mode__(__word__))); 
-# 23 "/usr/include/bits/sigset.h" 3
-typedef int __sig_atomic_t; 
-# 31
-typedef 
-# 29
-struct { 
-# 30
-unsigned long __val[(1024) / ((8) * sizeof(unsigned long))]; 
-# 31
-} __sigset_t; 
-# 37 "/usr/include/sys/select.h" 3
-typedef __sigset_t sigset_t; 
-# 54 "/usr/include/sys/select.h" 3
-typedef long __fd_mask; 
-# 75 "/usr/include/sys/select.h" 3
-typedef 
-# 65
-struct { 
-# 69
-__fd_mask fds_bits[1024 / (8 * ((int)sizeof(__fd_mask)))]; 
-# 75
-} fd_set; 
-# 82
-typedef __fd_mask fd_mask; 
-# 96 "/usr/include/sys/select.h" 3
-extern "C" {
-# 106 "/usr/include/sys/select.h" 3
-extern int select(int __nfds, fd_set *__restrict__ __readfds, fd_set *__restrict__ __writefds, fd_set *__restrict__ __exceptfds, timeval *__restrict__ __timeout); 
-# 118 "/usr/include/sys/select.h" 3
-extern int pselect(int __nfds, fd_set *__restrict__ __readfds, fd_set *__restrict__ __writefds, fd_set *__restrict__ __exceptfds, const timespec *__restrict__ __timeout, const __sigset_t *__restrict__ __sigmask); 
-# 131 "/usr/include/sys/select.h" 3
-}
-# 29 "/usr/include/sys/sysmacros.h" 3
-extern "C" {
-# 32
-__extension__ extern unsigned gnu_dev_major(unsigned long long __dev) throw()
-# 33
- __attribute((const)); 
-# 35
-__extension__ extern unsigned gnu_dev_minor(unsigned long long __dev) throw()
-# 36
- __attribute((const)); 
-# 38
-__extension__ extern unsigned long long gnu_dev_makedev(unsigned __major, unsigned __minor) throw()
-# 40
- __attribute((const)); 
-# 63 "/usr/include/sys/sysmacros.h" 3
-}
-# 228 "/usr/include/sys/types.h" 3
-typedef __blksize_t blksize_t; 
-# 235
-typedef __blkcnt_t blkcnt_t; 
-# 239
-typedef __fsblkcnt_t fsblkcnt_t; 
-# 243
-typedef __fsfilcnt_t fsfilcnt_t; 
-# 262 "/usr/include/sys/types.h" 3
-typedef __blkcnt64_t blkcnt64_t; 
-# 263
-typedef __fsblkcnt64_t fsblkcnt64_t; 
-# 264
-typedef __fsfilcnt64_t fsfilcnt64_t; 
-# 60 "/usr/include/bits/pthreadtypes.h" 3
-typedef unsigned long pthread_t; 
-# 63
-union pthread_attr_t { 
-# 65
-char __size[56]; 
-# 66
-long __align; 
-# 67
-}; 
-# 69
-typedef pthread_attr_t pthread_attr_t; 
-# 79
-typedef 
-# 75
-struct __pthread_internal_list { 
-# 77
-__pthread_internal_list *__prev; 
-# 78
-__pthread_internal_list *__next; 
-# 79
-} __pthread_list_t; 
-# 128 "/usr/include/bits/pthreadtypes.h" 3
-typedef 
-# 91 "/usr/include/bits/pthreadtypes.h" 3
-union { 
 # 92
-struct __pthread_mutex_s { 
-# 94
-int __lock; 
-# 95
-unsigned __count; 
-# 96
-int __owner; 
-# 98
-unsigned __nusers; 
-# 102
-int __kind; 
-# 104
-short __spins; 
-# 105
-short __elision; 
-# 106
-__pthread_list_t __list; 
-# 125 "/usr/include/bits/pthreadtypes.h" 3
-} __data; 
-# 126
-char __size[40]; 
-# 127
-long __align; 
-# 128
-} pthread_mutex_t; 
-# 134
-typedef 
-# 131
-union { 
-# 132
-char __size[4]; 
-# 133
-int __align; 
-# 134
-} pthread_mutexattr_t; 
-# 154
-typedef 
-# 140
-union { 
-# 142
-struct { 
-# 143
-int __lock; 
-# 144
-unsigned __futex; 
-# 145
-__extension__ unsigned long long __total_seq; 
-# 146
-__extension__ unsigned long long __wakeup_seq; 
-# 147
-__extension__ unsigned long long __woken_seq; 
-# 148
-void *__mutex; 
+typedef __off64_t off64_t; 
+# 103 "/usr/include/sys/types.h" 3
+typedef __id_t id_t; 
+# 108
+typedef __ssize_t ssize_t; 
+# 114
+typedef __daddr_t daddr_t; 
+# 115
+typedef __caddr_t caddr_t; 
+# 121
+typedef __key_t key_t; 
+# 134 "/usr/include/sys/types.h" 3
+typedef __useconds_t useconds_t; 
+# 138
+typedef __suseconds_t suseconds_t; 
+# 148 "/usr/include/sys/types.h" 3
+typedef unsigned long ulong; 
 # 149
-unsigned __nwaiters; 
+typedef unsigned short ushort; 
 # 150
-unsigned __broadcast_seq; 
-# 151
-} __data; 
-# 152
-char __size[48]; 
-# 153
-__extension__ long long __align; 
-# 154
-} pthread_cond_t; 
-# 160
-typedef 
-# 157
-union { 
-# 158
-char __size[4]; 
+typedef unsigned uint; 
+# 24 "/usr/include/bits/stdint-intn.h" 3
+typedef __int8_t int8_t; 
+# 25
+typedef __int16_t int16_t; 
+# 26
+typedef __int32_t int32_t; 
+# 27
+typedef __int64_t int64_t; 
+# 158 "/usr/include/sys/types.h" 3
+typedef __uint8_t u_int8_t; 
 # 159
-int __align; 
+typedef __uint16_t u_int16_t; 
 # 160
-} pthread_condattr_t; 
+typedef __uint32_t u_int32_t; 
+# 161
+typedef __uint64_t u_int64_t; 
 # 164
-typedef unsigned pthread_key_t; 
-# 168
-typedef int pthread_once_t; 
-# 214 "/usr/include/bits/pthreadtypes.h" 3
+typedef long register_t __attribute((__mode__(__word__))); 
+# 34 "/usr/include/bits/byteswap.h" 3
+static inline __uint16_t __bswap_16(__uint16_t __bsx) 
+# 35
+{ 
+# 37
+return __builtin_bswap16(__bsx); 
+# 41
+} 
+# 49
+static inline __uint32_t __bswap_32(__uint32_t __bsx) 
+# 50
+{ 
+# 52
+return __builtin_bswap32(__bsx); 
+# 56
+} 
+# 70 "/usr/include/bits/byteswap.h" 3
+__extension__ static inline __uint64_t __bswap_64(__uint64_t __bsx) 
+# 71
+{ 
+# 73
+return __builtin_bswap64(__bsx); 
+# 77
+} 
+# 33 "/usr/include/bits/uintn-identity.h" 3
+static inline __uint16_t __uint16_identity(__uint16_t __x) 
+# 34
+{ 
+# 35
+return __x; 
+# 36
+} 
+# 39
+static inline __uint32_t __uint32_identity(__uint32_t __x) 
+# 40
+{ 
+# 41
+return __x; 
+# 42
+} 
+# 45
+static inline __uint64_t __uint64_identity(__uint64_t __x) 
+# 46
+{ 
+# 47
+return __x; 
+# 48
+} 
+# 8 "/usr/include/bits/types/__sigset_t.h" 3
 typedef 
-# 175 "/usr/include/bits/pthreadtypes.h" 3
-union { 
-# 178
+# 6
 struct { 
-# 179
-int __lock; 
-# 180
-unsigned __nr_readers; 
-# 181
-unsigned __readers_wakeup; 
-# 182
-unsigned __writer_wakeup; 
-# 183
-unsigned __nr_readers_queued; 
-# 184
-unsigned __nr_writers_queued; 
-# 185
-int __writer; 
-# 186
-int __shared; 
-# 187
-unsigned long __pad1; 
-# 188
-unsigned long __pad2; 
-# 191
-unsigned __flags; 
-# 193
-} __data; 
-# 212 "/usr/include/bits/pthreadtypes.h" 3
-char __size[56]; 
-# 213
-long __align; 
-# 214
-} pthread_rwlock_t; 
-# 220
+# 7
+unsigned long __val[(1024) / ((8) * sizeof(unsigned long))]; 
+# 8
+} __sigset_t; 
+# 7 "/usr/include/bits/types/sigset_t.h" 3
+typedef __sigset_t sigset_t; 
+# 49 "/usr/include/sys/select.h" 3
+typedef long __fd_mask; 
+# 70 "/usr/include/sys/select.h" 3
 typedef 
-# 217
-union { 
-# 218
-char __size[8]; 
-# 219
-long __align; 
-# 220
-} pthread_rwlockattr_t; 
-# 226
-typedef volatile int pthread_spinlock_t; 
-# 235
-typedef 
-# 232
-union { 
-# 233
-char __size[32]; 
-# 234
-long __align; 
-# 235
-} pthread_barrier_t; 
-# 241
-typedef 
-# 238
-union { 
-# 239
-char __size[4]; 
-# 240
-int __align; 
-# 241
-} pthread_barrierattr_t; 
-# 273 "/usr/include/sys/types.h" 3
+# 60
+struct { 
+# 64
+__fd_mask fds_bits[1024 / (8 * ((int)sizeof(__fd_mask)))]; 
+# 70
+} fd_set; 
+# 77
+typedef __fd_mask fd_mask; 
+# 91 "/usr/include/sys/select.h" 3
+extern "C" {
+# 101 "/usr/include/sys/select.h" 3
+extern int select(int __nfds, fd_set *__restrict__ __readfds, fd_set *__restrict__ __writefds, fd_set *__restrict__ __exceptfds, timeval *__restrict__ __timeout); 
+# 113 "/usr/include/sys/select.h" 3
+extern int pselect(int __nfds, fd_set *__restrict__ __readfds, fd_set *__restrict__ __writefds, fd_set *__restrict__ __exceptfds, const timespec *__restrict__ __timeout, const __sigset_t *__restrict__ __sigmask); 
+# 126 "/usr/include/sys/select.h" 3
 }
-# 321 "/usr/include/stdlib.h" 3
+# 185 "/usr/include/sys/types.h" 3
+typedef __blksize_t blksize_t; 
+# 192
+typedef __blkcnt_t blkcnt_t; 
+# 196
+typedef __fsblkcnt_t fsblkcnt_t; 
+# 200
+typedef __fsfilcnt_t fsfilcnt_t; 
+# 219 "/usr/include/sys/types.h" 3
+typedef __blkcnt64_t blkcnt64_t; 
+# 220
+typedef __fsblkcnt64_t fsblkcnt64_t; 
+# 221
+typedef __fsfilcnt64_t fsfilcnt64_t; 
+# 65 "/usr/include/bits/pthreadtypes-arch.h" 3
+struct __pthread_rwlock_arch_t { 
+# 67
+unsigned __readers; 
+# 68
+unsigned __writers; 
+# 69
+unsigned __wrphase_futex; 
+# 70
+unsigned __writers_futex; 
+# 71
+unsigned __pad3; 
+# 72
+unsigned __pad4; 
+# 74
+int __cur_writer; 
+# 75
+int __shared; 
+# 76
+signed char __rwelision; 
+# 81
+unsigned char __pad1[7]; 
+# 84
+unsigned long __pad2; 
+# 87
+unsigned __flags; 
+# 99 "/usr/include/bits/pthreadtypes-arch.h" 3
+}; 
+# 86 "/usr/include/bits/thread-shared-types.h" 3
+typedef 
+# 82
+struct __pthread_internal_list { 
+# 84
+__pthread_internal_list *__prev; 
+# 85
+__pthread_internal_list *__next; 
+# 86
+} __pthread_list_t; 
+# 118 "/usr/include/bits/thread-shared-types.h" 3
+struct __pthread_mutex_s { 
+# 120
+int __lock; 
+# 121
+unsigned __count; 
+# 122
+int __owner; 
+# 124
+unsigned __nusers; 
+# 148 "/usr/include/bits/thread-shared-types.h" 3
+int __kind; 
+# 154
+short __spins; short __elision; 
+# 155
+__pthread_list_t __list; 
+# 166 "/usr/include/bits/thread-shared-types.h" 3
+}; 
+# 171
+struct __pthread_cond_s { 
+# 174
+__extension__ union { 
+# 175
+__extension__ unsigned long long __wseq; 
+# 177
+struct { 
+# 178
+unsigned __low; 
+# 179
+unsigned __high; 
+# 180
+} __wseq32; 
+# 181
+}; 
+# 183
+__extension__ union { 
+# 184
+__extension__ unsigned long long __g1_start; 
+# 186
+struct { 
+# 187
+unsigned __low; 
+# 188
+unsigned __high; 
+# 189
+} __g1_start32; 
+# 190
+}; 
+# 191
+unsigned __g_refs[2]; 
+# 192
+unsigned __g_size[2]; 
+# 193
+unsigned __g1_orig_size; 
+# 194
+unsigned __wrefs; 
+# 195
+unsigned __g_signals[2]; 
+# 196
+}; 
+# 27 "/usr/include/bits/pthreadtypes.h" 3
+typedef unsigned long pthread_t; 
+# 36
+typedef 
+# 33
+union { 
+# 34
+char __size[4]; 
+# 35
+int __align; 
+# 36
+} pthread_mutexattr_t; 
+# 45
+typedef 
+# 42
+union { 
+# 43
+char __size[4]; 
+# 44
+int __align; 
+# 45
+} pthread_condattr_t; 
+# 49
+typedef unsigned pthread_key_t; 
+# 53
+typedef int pthread_once_t; 
+# 56
+union pthread_attr_t { 
+# 58
+char __size[56]; 
+# 59
+long __align; 
+# 60
+}; 
+# 62
+typedef pthread_attr_t pthread_attr_t; 
+# 72
+typedef 
+# 68
+union { 
+# 69
+__pthread_mutex_s __data; 
+# 70
+char __size[40]; 
+# 71
+long __align; 
+# 72
+} pthread_mutex_t; 
+# 80
+typedef 
+# 76
+union { 
+# 77
+__pthread_cond_s __data; 
+# 78
+char __size[48]; 
+# 79
+__extension__ long long __align; 
+# 80
+} pthread_cond_t; 
+# 91
+typedef 
+# 87
+union { 
+# 88
+__pthread_rwlock_arch_t __data; 
+# 89
+char __size[56]; 
+# 90
+long __align; 
+# 91
+} pthread_rwlock_t; 
+# 97
+typedef 
+# 94
+union { 
+# 95
+char __size[8]; 
+# 96
+long __align; 
+# 97
+} pthread_rwlockattr_t; 
+# 103
+typedef volatile int pthread_spinlock_t; 
+# 112
+typedef 
+# 109
+union { 
+# 110
+char __size[32]; 
+# 111
+long __align; 
+# 112
+} pthread_barrier_t; 
+# 118
+typedef 
+# 115
+union { 
+# 116
+char __size[4]; 
+# 117
+int __align; 
+# 118
+} pthread_barrierattr_t; 
+# 230 "/usr/include/sys/types.h" 3
+}
+# 401 "/usr/include/stdlib.h" 3
 extern long random() throw(); 
-# 324
-extern void srandom(unsigned __seed) throw(); 
-# 330
-extern char *initstate(unsigned __seed, char * __statebuf, size_t __statelen) throw()
-# 331
- __attribute((__nonnull__(2))); 
-# 335
-extern char *setstate(char * __statebuf) throw() __attribute((__nonnull__(1))); 
-# 343
-struct random_data { 
-# 345
-int32_t *fptr; 
-# 346
-int32_t *rptr; 
-# 347
-int32_t *state; 
-# 348
-int rand_type; 
-# 349
-int rand_deg; 
-# 350
-int rand_sep; 
-# 351
-int32_t *end_ptr; 
-# 352
-}; 
-# 354
-extern int random_r(random_data *__restrict__ __buf, int32_t *__restrict__ __result) throw()
-# 355
- __attribute((__nonnull__(1, 2))); 
-# 357
-extern int srandom_r(unsigned __seed, random_data * __buf) throw()
-# 358
- __attribute((__nonnull__(2))); 
-# 360
-extern int initstate_r(unsigned __seed, char *__restrict__ __statebuf, size_t __statelen, random_data *__restrict__ __buf) throw()
-# 363
- __attribute((__nonnull__(2, 4))); 
-# 365
-extern int setstate_r(char *__restrict__ __statebuf, random_data *__restrict__ __buf) throw()
-# 367
- __attribute((__nonnull__(1, 2))); 
-# 374
-extern int rand() throw(); 
-# 376
-extern void srand(unsigned __seed) throw(); 
-# 381
-extern int rand_r(unsigned * __seed) throw(); 
-# 389
-extern double drand48() throw(); 
-# 390
-extern double erand48(unsigned short  __xsubi[3]) throw() __attribute((__nonnull__(1))); 
-# 393
-extern long lrand48() throw(); 
-# 394
-extern long nrand48(unsigned short  __xsubi[3]) throw()
-# 395
- __attribute((__nonnull__(1))); 
-# 398
-extern long mrand48() throw(); 
-# 399
-extern long jrand48(unsigned short  __xsubi[3]) throw()
-# 400
- __attribute((__nonnull__(1))); 
-# 403
-extern void srand48(long __seedval) throw(); 
 # 404
-extern unsigned short *seed48(unsigned short  __seed16v[3]) throw()
-# 405
- __attribute((__nonnull__(1))); 
-# 406
-extern void lcong48(unsigned short  __param[7]) throw() __attribute((__nonnull__(1))); 
-# 412
-struct drand48_data { 
-# 414
-unsigned short __x[3]; 
+extern void srandom(unsigned __seed) throw(); 
+# 410
+extern char *initstate(unsigned __seed, char * __statebuf, size_t __statelen) throw()
+# 411
+ __attribute((__nonnull__(2))); 
 # 415
-unsigned short __old_x[3]; 
-# 416
-unsigned short __c; 
-# 417
-unsigned short __init; 
-# 418
-unsigned long long __a; 
-# 419
-}; 
-# 422
-extern int drand48_r(drand48_data *__restrict__ __buffer, double *__restrict__ __result) throw()
+extern char *setstate(char * __statebuf) throw() __attribute((__nonnull__(1))); 
 # 423
- __attribute((__nonnull__(1, 2))); 
-# 424
-extern int erand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, double *__restrict__ __result) throw()
+struct random_data { 
+# 425
+int32_t *fptr; 
 # 426
- __attribute((__nonnull__(1, 2))); 
+int32_t *rptr; 
+# 427
+int32_t *state; 
+# 428
+int rand_type; 
 # 429
-extern int lrand48_r(drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+int rand_deg; 
+# 430
+int rand_sep; 
 # 431
- __attribute((__nonnull__(1, 2))); 
+int32_t *end_ptr; 
 # 432
-extern int nrand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+}; 
+# 434
+extern int random_r(random_data *__restrict__ __buf, int32_t *__restrict__ __result) throw()
 # 435
  __attribute((__nonnull__(1, 2))); 
+# 437
+extern int srandom_r(unsigned __seed, random_data * __buf) throw()
 # 438
-extern int mrand48_r(drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
-# 440
- __attribute((__nonnull__(1, 2))); 
-# 441
-extern int jrand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
-# 444
- __attribute((__nonnull__(1, 2))); 
-# 447
-extern int srand48_r(long __seedval, drand48_data * __buffer) throw()
-# 448
  __attribute((__nonnull__(2))); 
-# 450
-extern int seed48_r(unsigned short  __seed16v[3], drand48_data * __buffer) throw()
-# 451
+# 440
+extern int initstate_r(unsigned __seed, char *__restrict__ __statebuf, size_t __statelen, random_data *__restrict__ __buf) throw()
+# 443
+ __attribute((__nonnull__(2, 4))); 
+# 445
+extern int setstate_r(char *__restrict__ __statebuf, random_data *__restrict__ __buf) throw()
+# 447
  __attribute((__nonnull__(1, 2))); 
 # 453
-extern int lcong48_r(unsigned short  __param[7], drand48_data * __buffer) throw()
+extern int rand() throw(); 
 # 455
- __attribute((__nonnull__(1, 2))); 
-# 465
-extern void *malloc(size_t __size) throw() __attribute((__malloc__)); 
+extern void srand(unsigned __seed) throw(); 
+# 459
+extern int rand_r(unsigned * __seed) throw(); 
 # 467
-extern void *calloc(size_t __nmemb, size_t __size) throw()
+extern double drand48() throw(); 
 # 468
- __attribute((__malloc__)); 
-# 479
-extern void *realloc(void * __ptr, size_t __size) throw()
-# 480
- __attribute((__warn_unused_result__)); 
+extern double erand48(unsigned short  __xsubi[3]) throw() __attribute((__nonnull__(1))); 
+# 471
+extern long lrand48() throw(); 
+# 472
+extern long nrand48(unsigned short  __xsubi[3]) throw()
+# 473
+ __attribute((__nonnull__(1))); 
+# 476
+extern long mrand48() throw(); 
+# 477
+extern long jrand48(unsigned short  __xsubi[3]) throw()
+# 478
+ __attribute((__nonnull__(1))); 
+# 481
+extern void srand48(long __seedval) throw(); 
 # 482
+extern unsigned short *seed48(unsigned short  __seed16v[3]) throw()
+# 483
+ __attribute((__nonnull__(1))); 
+# 484
+extern void lcong48(unsigned short  __param[7]) throw() __attribute((__nonnull__(1))); 
+# 490
+struct drand48_data { 
+# 492
+unsigned short __x[3]; 
+# 493
+unsigned short __old_x[3]; 
+# 494
+unsigned short __c; 
+# 495
+unsigned short __init; 
+# 496
+__extension__ unsigned long long __a; 
+# 498
+}; 
+# 501
+extern int drand48_r(drand48_data *__restrict__ __buffer, double *__restrict__ __result) throw()
+# 502
+ __attribute((__nonnull__(1, 2))); 
+# 503
+extern int erand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, double *__restrict__ __result) throw()
+# 505
+ __attribute((__nonnull__(1, 2))); 
+# 508
+extern int lrand48_r(drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+# 510
+ __attribute((__nonnull__(1, 2))); 
+# 511
+extern int nrand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+# 514
+ __attribute((__nonnull__(1, 2))); 
+# 517
+extern int mrand48_r(drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+# 519
+ __attribute((__nonnull__(1, 2))); 
+# 520
+extern int jrand48_r(unsigned short  __xsubi[3], drand48_data *__restrict__ __buffer, long *__restrict__ __result) throw()
+# 523
+ __attribute((__nonnull__(1, 2))); 
+# 526
+extern int srand48_r(long __seedval, drand48_data * __buffer) throw()
+# 527
+ __attribute((__nonnull__(2))); 
+# 529
+extern int seed48_r(unsigned short  __seed16v[3], drand48_data * __buffer) throw()
+# 530
+ __attribute((__nonnull__(1, 2))); 
+# 532
+extern int lcong48_r(unsigned short  __param[7], drand48_data * __buffer) throw()
+# 534
+ __attribute((__nonnull__(1, 2))); 
+# 539
+extern void *malloc(size_t __size) throw() __attribute((__malloc__)); 
+# 541
+extern void *calloc(size_t __nmemb, size_t __size) throw()
+# 542
+ __attribute((__malloc__)); 
+# 549
+extern void *realloc(void * __ptr, size_t __size) throw()
+# 550
+ __attribute((__warn_unused_result__)); 
+# 558
+extern void *reallocarray(void * __ptr, size_t __nmemb, size_t __size) throw()
+# 559
+ __attribute((__warn_unused_result__)); 
+# 563
 extern void free(void * __ptr) throw(); 
-# 487
-extern void cfree(void * __ptr) throw(); 
 # 26 "/usr/include/alloca.h" 3
 extern "C" {
 # 32
 extern void *alloca(size_t __size) throw(); 
 # 38
 }
-# 497 "/usr/include/stdlib.h" 3
+# 572 "/usr/include/stdlib.h" 3
 extern void *valloc(size_t __size) throw() __attribute((__malloc__)); 
-# 502
-extern int posix_memalign(void ** __memptr, size_t __alignment, size_t __size) throw()
-# 503
- __attribute((__nonnull__(1))); 
-# 508
-extern void *aligned_alloc(size_t __alignment, size_t __size) throw()
-# 509
- __attribute((__malloc__, __alloc_size__(2))); 
-# 514
-extern void abort() throw() __attribute((__noreturn__)); 
-# 518
-extern int atexit(void (* __func)(void)) throw() __attribute((__nonnull__(1))); 
-# 523
-extern "C++" int at_quick_exit(void (* __func)(void)) throw() __asm__("at_quick_exit")
-# 524
- __attribute((__nonnull__(1))); 
-# 534
-extern int on_exit(void (* __func)(int __status, void * __arg), void * __arg) throw()
-# 535
- __attribute((__nonnull__(1))); 
-# 542
-extern void exit(int __status) throw() __attribute((__noreturn__)); 
-# 548
-extern void quick_exit(int __status) throw() __attribute((__noreturn__)); 
-# 556
-extern void _Exit(int __status) throw() __attribute((__noreturn__)); 
-# 563
-extern char *getenv(const char * __name) throw() __attribute((__nonnull__(1))); 
-# 569
-extern char *secure_getenv(const char * __name) throw()
-# 570
- __attribute((__nonnull__(1))); 
 # 577
-extern int putenv(char * __string) throw() __attribute((__nonnull__(1))); 
+extern int posix_memalign(void ** __memptr, size_t __alignment, size_t __size) throw()
+# 578
+ __attribute((__nonnull__(1))); 
 # 583
-extern int setenv(const char * __name, const char * __value, int __replace) throw()
+extern void *aligned_alloc(size_t __alignment, size_t __size) throw()
 # 584
+ __attribute((__malloc__)) __attribute((__alloc_size__(2))); 
+# 588
+extern void abort() throw() __attribute((__noreturn__)); 
+# 592
+extern int atexit(void (* __func)(void)) throw() __attribute((__nonnull__(1))); 
+# 597
+extern "C++" int at_quick_exit(void (* __func)(void)) throw() __asm__("at_quick_exit")
+# 598
+ __attribute((__nonnull__(1))); 
+# 607 "/usr/include/stdlib.h" 3
+extern int on_exit(void (* __func)(int __status, void * __arg), void * __arg) throw()
+# 608
+ __attribute((__nonnull__(1))); 
+# 614
+extern void exit(int __status) throw() __attribute((__noreturn__)); 
+# 620
+extern void quick_exit(int __status) throw() __attribute((__noreturn__)); 
+# 626
+extern void _Exit(int __status) throw() __attribute((__noreturn__)); 
+# 631
+extern char *getenv(const char * __name) throw() __attribute((__nonnull__(1))); 
+# 636
+extern char *secure_getenv(const char * __name) throw()
+# 637
+ __attribute((__nonnull__(1))); 
+# 644
+extern int putenv(char * __string) throw() __attribute((__nonnull__(1))); 
+# 650
+extern int setenv(const char * __name, const char * __value, int __replace) throw()
+# 651
  __attribute((__nonnull__(2))); 
-# 587
+# 654
 extern int unsetenv(const char * __name) throw() __attribute((__nonnull__(1))); 
-# 594
+# 661
 extern int clearenv() throw(); 
-# 605 "/usr/include/stdlib.h" 3
+# 672 "/usr/include/stdlib.h" 3
 extern char *mktemp(char * __template) throw() __attribute((__nonnull__(1))); 
-# 619 "/usr/include/stdlib.h" 3
+# 685 "/usr/include/stdlib.h" 3
 extern int mkstemp(char * __template) __attribute((__nonnull__(1))); 
-# 629 "/usr/include/stdlib.h" 3
+# 695 "/usr/include/stdlib.h" 3
 extern int mkstemp64(char * __template) __attribute((__nonnull__(1))); 
-# 641 "/usr/include/stdlib.h" 3
+# 707 "/usr/include/stdlib.h" 3
 extern int mkstemps(char * __template, int __suffixlen) __attribute((__nonnull__(1))); 
-# 651 "/usr/include/stdlib.h" 3
+# 717 "/usr/include/stdlib.h" 3
 extern int mkstemps64(char * __template, int __suffixlen)
-# 652
+# 718
  __attribute((__nonnull__(1))); 
-# 662 "/usr/include/stdlib.h" 3
+# 728 "/usr/include/stdlib.h" 3
 extern char *mkdtemp(char * __template) throw() __attribute((__nonnull__(1))); 
-# 673 "/usr/include/stdlib.h" 3
+# 739 "/usr/include/stdlib.h" 3
 extern int mkostemp(char * __template, int __flags) __attribute((__nonnull__(1))); 
-# 683 "/usr/include/stdlib.h" 3
+# 749 "/usr/include/stdlib.h" 3
 extern int mkostemp64(char * __template, int __flags) __attribute((__nonnull__(1))); 
-# 693 "/usr/include/stdlib.h" 3
+# 759 "/usr/include/stdlib.h" 3
 extern int mkostemps(char * __template, int __suffixlen, int __flags)
-# 694
- __attribute((__nonnull__(1))); 
-# 705 "/usr/include/stdlib.h" 3
-extern int mkostemps64(char * __template, int __suffixlen, int __flags)
-# 706
- __attribute((__nonnull__(1))); 
-# 716
-extern int system(const char * __command); 
-# 723
-extern char *canonicalize_file_name(const char * __name) throw()
-# 724
- __attribute((__nonnull__(1))); 
-# 733 "/usr/include/stdlib.h" 3
-extern char *realpath(const char *__restrict__ __name, char *__restrict__ __resolved) throw(); 
-# 741
-typedef int (*__compar_fn_t)(const void *, const void *); 
-# 744
-typedef __compar_fn_t comparison_fn_t; 
-# 748
-typedef int (*__compar_d_fn_t)(const void *, const void *, void *); 
-# 754
-extern void *bsearch(const void * __key, const void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)
-# 756
- __attribute((__nonnull__(1, 2, 5))); 
 # 760
-extern void qsort(void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)
-# 761
- __attribute((__nonnull__(1, 4))); 
-# 763
-extern void qsort_r(void * __base, size_t __nmemb, size_t __size, __compar_d_fn_t __compar, void * __arg)
-# 765
- __attribute((__nonnull__(1, 4))); 
-# 770
-extern int abs(int __x) throw() __attribute((const)); 
-# 771
-extern long labs(long __x) throw() __attribute((const)); 
-# 775
-__extension__ extern long long llabs(long long __x) throw()
-# 776
- __attribute((const)); 
-# 784
-extern div_t div(int __numer, int __denom) throw()
-# 785
- __attribute((const)); 
-# 786
-extern ldiv_t ldiv(long __numer, long __denom) throw()
-# 787
- __attribute((const)); 
-# 792
-__extension__ extern lldiv_t lldiv(long long __numer, long long __denom) throw()
-# 794
- __attribute((const)); 
-# 807 "/usr/include/stdlib.h" 3
-extern char *ecvt(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
-# 808
- __attribute((__nonnull__(3, 4))); 
-# 813
-extern char *fcvt(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
-# 814
- __attribute((__nonnull__(3, 4))); 
-# 819
-extern char *gcvt(double __value, int __ndigit, char * __buf) throw()
-# 820
- __attribute((__nonnull__(3))); 
-# 825
-extern char *qecvt(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
-# 827
- __attribute((__nonnull__(3, 4))); 
-# 828
-extern char *qfcvt(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
-# 830
- __attribute((__nonnull__(3, 4))); 
-# 831
-extern char *qgcvt(long double __value, int __ndigit, char * __buf) throw()
-# 832
- __attribute((__nonnull__(3))); 
-# 837
-extern int ecvt_r(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
-# 839
- __attribute((__nonnull__(3, 4, 5))); 
-# 840
-extern int fcvt_r(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
-# 842
- __attribute((__nonnull__(3, 4, 5))); 
-# 844
-extern int qecvt_r(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
-# 847
- __attribute((__nonnull__(3, 4, 5))); 
-# 848
-extern int qfcvt_r(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
-# 851
- __attribute((__nonnull__(3, 4, 5))); 
-# 859
-extern int mblen(const char * __s, size_t __n) throw(); 
-# 862
-extern int mbtowc(wchar_t *__restrict__ __pwc, const char *__restrict__ __s, size_t __n) throw(); 
-# 866
-extern int wctomb(char * __s, wchar_t __wchar) throw(); 
-# 870
-extern size_t mbstowcs(wchar_t *__restrict__ __pwcs, const char *__restrict__ __s, size_t __n) throw(); 
-# 873
-extern size_t wcstombs(char *__restrict__ __s, const wchar_t *__restrict__ __pwcs, size_t __n) throw(); 
-# 884
-extern int rpmatch(const char * __response) throw() __attribute((__nonnull__(1))); 
-# 895 "/usr/include/stdlib.h" 3
-extern int getsubopt(char **__restrict__ __optionp, char *const *__restrict__ __tokens, char **__restrict__ __valuep) throw()
-# 898
- __attribute((__nonnull__(1, 2, 3))); 
-# 904
-extern void setkey(const char * __key) throw() __attribute((__nonnull__(1))); 
-# 912
-extern int posix_openpt(int __oflag); 
-# 920
-extern int grantpt(int __fd) throw(); 
-# 924
-extern int unlockpt(int __fd) throw(); 
-# 929
-extern char *ptsname(int __fd) throw(); 
-# 936
-extern int ptsname_r(int __fd, char * __buf, size_t __buflen) throw()
-# 937
- __attribute((__nonnull__(2))); 
-# 940
-extern int getpt(); 
-# 947
-extern int getloadavg(double  __loadavg[], int __nelem) throw()
-# 948
  __attribute((__nonnull__(1))); 
-# 964 "/usr/include/stdlib.h" 3
+# 771 "/usr/include/stdlib.h" 3
+extern int mkostemps64(char * __template, int __suffixlen, int __flags)
+# 772
+ __attribute((__nonnull__(1))); 
+# 781 "/usr/include/stdlib.h" 3
+extern int system(const char * __command); 
+# 787
+extern char *canonicalize_file_name(const char * __name) throw()
+# 788
+ __attribute((__nonnull__(1))); 
+# 797 "/usr/include/stdlib.h" 3
+extern char *realpath(const char *__restrict__ __name, char *__restrict__ __resolved) throw(); 
+# 805
+typedef int (*__compar_fn_t)(const void *, const void *); 
+# 808
+typedef __compar_fn_t comparison_fn_t; 
+# 812
+typedef int (*__compar_d_fn_t)(const void *, const void *, void *); 
+# 817
+extern void *bsearch(const void * __key, const void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)
+# 819
+ __attribute((__nonnull__(1, 2, 5))); 
+# 827
+extern void qsort(void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)
+# 828
+ __attribute((__nonnull__(1, 4))); 
+# 830
+extern void qsort_r(void * __base, size_t __nmemb, size_t __size, __compar_d_fn_t __compar, void * __arg)
+# 832
+ __attribute((__nonnull__(1, 4))); 
+# 837
+extern int abs(int __x) throw() __attribute((const)); 
+# 838
+extern long labs(long __x) throw() __attribute((const)); 
+# 841
+__extension__ extern long long llabs(long long __x) throw()
+# 842
+ __attribute((const)); 
+# 849
+extern div_t div(int __numer, int __denom) throw()
+# 850
+ __attribute((const)); 
+# 851
+extern ldiv_t ldiv(long __numer, long __denom) throw()
+# 852
+ __attribute((const)); 
+# 855
+__extension__ extern lldiv_t lldiv(long long __numer, long long __denom) throw()
+# 857
+ __attribute((const)); 
+# 869 "/usr/include/stdlib.h" 3
+extern char *ecvt(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
+# 870
+ __attribute((__nonnull__(3, 4))); 
+# 875
+extern char *fcvt(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
+# 876
+ __attribute((__nonnull__(3, 4))); 
+# 881
+extern char *gcvt(double __value, int __ndigit, char * __buf) throw()
+# 882
+ __attribute((__nonnull__(3))); 
+# 887
+extern char *qecvt(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
+# 889
+ __attribute((__nonnull__(3, 4))); 
+# 890
+extern char *qfcvt(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign) throw()
+# 892
+ __attribute((__nonnull__(3, 4))); 
+# 893
+extern char *qgcvt(long double __value, int __ndigit, char * __buf) throw()
+# 894
+ __attribute((__nonnull__(3))); 
+# 899
+extern int ecvt_r(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
+# 901
+ __attribute((__nonnull__(3, 4, 5))); 
+# 902
+extern int fcvt_r(double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
+# 904
+ __attribute((__nonnull__(3, 4, 5))); 
+# 906
+extern int qecvt_r(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
+# 909
+ __attribute((__nonnull__(3, 4, 5))); 
+# 910
+extern int qfcvt_r(long double __value, int __ndigit, int *__restrict__ __decpt, int *__restrict__ __sign, char *__restrict__ __buf, size_t __len) throw()
+# 913
+ __attribute((__nonnull__(3, 4, 5))); 
+# 919
+extern int mblen(const char * __s, size_t __n) throw(); 
+# 922
+extern int mbtowc(wchar_t *__restrict__ __pwc, const char *__restrict__ __s, size_t __n) throw(); 
+# 926
+extern int wctomb(char * __s, wchar_t __wchar) throw(); 
+# 930
+extern size_t mbstowcs(wchar_t *__restrict__ __pwcs, const char *__restrict__ __s, size_t __n) throw(); 
+# 933
+extern size_t wcstombs(char *__restrict__ __s, const wchar_t *__restrict__ __pwcs, size_t __n) throw(); 
+# 943
+extern int rpmatch(const char * __response) throw() __attribute((__nonnull__(1))); 
+# 954 "/usr/include/stdlib.h" 3
+extern int getsubopt(char **__restrict__ __optionp, char *const *__restrict__ __tokens, char **__restrict__ __valuep) throw()
+# 957
+ __attribute((__nonnull__(1, 2, 3))); 
+# 965
+extern int posix_openpt(int __oflag); 
+# 973
+extern int grantpt(int __fd) throw(); 
+# 977
+extern int unlockpt(int __fd) throw(); 
+# 982
+extern char *ptsname(int __fd) throw(); 
+# 989
+extern int ptsname_r(int __fd, char * __buf, size_t __buflen) throw()
+# 990
+ __attribute((__nonnull__(2))); 
+# 993
+extern int getpt(); 
+# 1000
+extern int getloadavg(double  __loadavg[], int __nelem) throw()
+# 1001
+ __attribute((__nonnull__(1))); 
+# 1020 "/usr/include/stdlib.h" 3
 }
 # 46 "/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/include/c++/10.2.0/bits/std_abs.h" 3
 extern "C++" {
@@ -8029,8 +9309,10 @@ isfinite(_Tp __x)
 constexpr bool isinf(float __x) 
 # 585
 { return __builtin_isinf(__x); } 
-# 589
-using ::isinf;
+# 592
+constexpr bool isinf(double __x) 
+# 593
+{ return __builtin_isinf(__x); } 
 # 597
 constexpr bool isinf(long double __x) 
 # 598
@@ -8045,8 +9327,10 @@ isinf(_Tp __x)
 constexpr bool isnan(float __x) 
 # 612
 { return __builtin_isnan(__x); } 
-# 616
-using ::isnan;
+# 619
+constexpr bool isnan(double __x) 
+# 620
+{ return __builtin_isnan(__x); } 
 # 624
 constexpr bool isnan(long double __x) 
 # 625
@@ -9321,14 +10605,14 @@ constexpr bool isfinite(double x);
 constexpr bool isfinite(long double x); 
 # 9036
 constexpr bool isnan(float x); 
-# 9039
-extern "C" int isnan(double x) throw(); 
+# 9041
+constexpr bool isnan(double x); 
 # 9043
 constexpr bool isnan(long double x); 
 # 9044
 constexpr bool isinf(float x); 
-# 9047
-extern "C" int isinf(double x) throw(); 
+# 9049
+constexpr bool isinf(double x); 
 # 9051
 constexpr bool isinf(long double x); 
 # 9052

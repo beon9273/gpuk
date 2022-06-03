@@ -352,7 +352,7 @@ CUDA_npps_LIBRARY:FILEPATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/lib64/
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib64/librt.so
 
 //Path to a file.
-EIGEN_INCLUDE_DIR:PATH=EIGEN_INCLUDE_DIR-NOTFOUND
+EIGEN_INCLUDE_DIR:PATH=/uufs/chpc.utah.edu/common/home/u1305734/eigen/install/include/eigen3
 
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/uufs/chpc.utah.edu/common/home/u1305734/eigen/build
@@ -613,9 +613,13 @@ CUDA_parse_cubin:INTERNAL=/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/
 //Location of run_nvcc.cmake
 CUDA_run_nvcc:INTERNAL=/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/share/cmake-3.15/Modules/FindCUDA/run_nvcc.cmake
 //ADVANCED property for variable: EIGEN_INCLUDE_DIR
-EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=0
+EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Eigen3_DIR
+Eigen3_DIR-ADVANCED:INTERNAL=1
 //Details about finding CUDA
 FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0][/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/bin/nvcc][/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/include][/uufs/chpc.utah.edu/sys/installdir/cuda/11.3.0/lib64/libcudart_static.a][v11.3()]
+//Details about finding Eigen
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen:INTERNAL=[/uufs/chpc.utah.edu/common/home/u1305734/eigen/install/include/eigen3][v3.4.90()]
 //Details about finding OpenMP
 FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][c ][v4.5()]
 //Details about finding OpenMP_CXX
