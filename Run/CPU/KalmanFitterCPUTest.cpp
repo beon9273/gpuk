@@ -184,8 +184,9 @@ int main(int argc, char *argv[]) {
 
   int threads = 1;
   auto start_fit = std::chrono::high_resolution_clock::now();
-#pragma omp parallel for num_threads(nThreads)
+// #pragma omp parallel for num_threads(nThreads)
   for (int it = 0; it < nTracks; it++) {
+    std::cout << "Track id: " << it << std::endl;
     // The fit result wrapper
     KalmanFitterResultType kfResult;
     kfResult.fittedStates = Acts::CudaKernelContainer<TSType>(
@@ -198,6 +199,7 @@ int main(int argc, char *argv[]) {
     // Run the fit. The fittedStates will be changed here
     auto status = kFitter.fit(sourcelinkTrack, startPars[it], kfOptions,
                               kfResult, surfacePtrs, nSurfaces);
+    std::cout << "\n" << std::endl;
     // if (not status) {
     //  std::cout << "WARNING: fit failure for track " << it << std::endl;
     //}
@@ -205,7 +207,9 @@ int main(int argc, char *argv[]) {
     // Store the fit parameters and status
     fitStatus[it] = status;
     fittedParams[it] = kfResult.fittedParameters;
-    threads = omp_get_num_threads();
+    // std::cout << "fitted status is: " << status << std::endl;
+    // std::cout << "fitted parameters are: " << kfResult.fittedParameters << std::endl;
+    // threads = omp_get_num_threads();
   }
   auto end_fit = std::chrono::high_resolution_clock::now();
   elapsed_seconds = end_fit - start_fit;
@@ -222,6 +226,9 @@ int main(int argc, char *argv[]) {
                                   std::to_string(nTracks), "OMP_NumThreads",
                                   std::to_string(threads)),
       elapsed_seconds.count() * 1000);
+  
+  // std::cout << fittedStates.data() << std::endl;
+  // std::cout << fittedParams.data() << std::endl;
 
   if (output) {
     std::cout << "INFO: Writing KF track fitting results" << std::endl;

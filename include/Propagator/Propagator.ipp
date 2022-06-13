@@ -55,6 +55,13 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       // result.pathLength += s;
 
       POP_RANGE();
+      // std::cout << "state pos after step:" << state.stepping.pos(0, 0) << ", " << state.stepping.pos(0, 1) << ", " << state.stepping.pos(0, 2) << std::endl; 
+      // printf("state pos after step: (%d, %d, %d)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
+      printf("Surface Id %d:\n", result.steps/2);
+      printf("state pos after step: (%f, %f, %f)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
+      printf("state dir after step: (%f, %f, %f)\n", state.stepping.dir(0, 0), state.stepping.dir(0, 1), state.stepping.dir(0, 2));
+      printf("state num of stepTrails is: %zu\n", state.stepping.nStepTrials);
+      // std::cout << "state pos after step:" << state.stepping.pos << std::endl;
       // ++surface_steps;
 
       // Post-stepping:
@@ -71,6 +78,8 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       // }
 
       state.options.action(state, m_stepper, actorResult);
+
+      // printf("state pos after kalman: (%f, %f, %f)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
 
       if (state.options.aborter(state, m_stepper, actorResult) or
           pathAborter(state, m_stepper)) {

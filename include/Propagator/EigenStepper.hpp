@@ -72,6 +72,8 @@ template <typename bfield_t> struct EigenStepper {
     /// The charge
     int q = 1;
 
+    size_t nStepTrials = -1;
+
     /// Propagated time
     ActsScalar t = 0.;
 

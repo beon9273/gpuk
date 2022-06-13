@@ -790,6 +790,24 @@ public:
       // printf("KalmanFilter failed: \n");
       return false;
     }
+    // printf("Total KF states is: %d\n", kfResult.fittedStates.size());
+    int count = 0;
+    printf("Kalman Filter Result:\n");
+    for(auto iter = kfResult.fittedStates.begin(); iter != kfResult.fittedStates.end(); iter++) {
+      printf("surface id %d:\n", count);
+      printf("smoothed value is: %f\n", (*iter).parameter.smoothed);
+      printf("cov[0, 0] is: %f\n", (*iter).parameter.jacobian(0, 0));
+      printf("cov[0, 1] is: %f\n", (*iter).parameter.jacobian(0, 1));
+      printf("cov[0, 2] is: %f\n", (*iter).parameter.jacobian(0, 2));
+      printf("cov[1, 0] is: %f\n", (*iter).parameter.jacobian(1, 0));
+      printf("cov[1, 1] is: %f\n", (*iter).parameter.jacobian(1, 1));
+      printf("cov[1, 2] is: %f\n", (*iter).parameter.jacobian(1, 2));
+      printf("cov[2, 0] is: %f\n", (*iter).parameter.jacobian(2, 0));
+      printf("cov[2, 1] is: %f\n", (*iter).parameter.jacobian(2, 1));
+      printf("cov[2, 2] is: %f\n", (*iter).parameter.jacobian(2, 2));
+      printf("\n");
+      count++;
+    }
 
     // Return the converted Track
     return true;

@@ -124,7 +124,7 @@ public:
   /// Typedef the navigator state
   using NavigatorState = typename navigator_t::State;
 
-  /// Typedef the navigator surface type (surface must have the same type on GPU
+  /// Typedef the navigator surface type (surface muspropagator_options_tt have the same type on GPU
   /// currently)
   using NavigationSurface = typename navigator_t::NavigationSurface;
 

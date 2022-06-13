@@ -273,8 +273,10 @@ Acts::EigenStepper<B>::step(propagator_state_t &state) const {
 
   ActsScalar stepSizeScaling = 1.;
   size_t nStepTrials = 0;
+  state.stepping.nStepTrials = nStepTrials;
   // Select and adjust the appropriate Runge-Kutta step size as given
   // ATL-SOFT-PUB-2009-001
+  // printf("num of step trials for statistics:\n");
   while (!tryRungeKuttaStep(state.stepping.stepSize)) {
     stepSizeScaling =
         std::min(std::max(0.25, std::pow((state.options.tolerance /
@@ -299,10 +301,14 @@ Acts::EigenStepper<B>::step(propagator_state_t &state) const {
     // appropriate
     if (nStepTrials > state.options.maxRungeKuttaStepTrials) {
       // Too many trials, have to abort
+      // printf("num of stepTrails under abort condition is: %ld\n", nStepTrials);
       return false;
     }
+    printf("Additional Trial Step\n");
     nStepTrials++;
+    state.stepping.nStepTrials = nStepTrials;
   }
+  // printf("num of stepTrails under success is: %ld\n", nStepTrials);
 
   // use the adjusted step size
   const ActsScalar h = state.stepping.stepSize;
@@ -331,6 +337,9 @@ Acts::EigenStepper<B>::step(propagator_state_t &state) const {
   }
   state.stepping.pathAccumulated += h;
   // return h;
+  // std::cout << "state pos after step:" << state.stepping.pos << std::endl;
+  // printf("state pos after step: (%f, %f, %f)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
+  // printf("state dir after step: (%f, %f, %f)\n", state.stepping.dir(0, 0), state.stepping.dir(0, 1), state.stepping.dir(0, 2));
   return true;
 }
 
@@ -532,13 +541,14 @@ ACTS_DEVICE_FUNC void Acts::EigenStepper<B>::boundState(
   parameters[6] = state.dir[2];
   parameters[7] = state.q / state.p;
 
-  // printf("stats.cov(5.5) = %f\n", state.cov(5,5));
+  // printf("state.cov(5.5) = %f\n", state.cov(5,5));
   detail::boundState<surface_derived_t>(
       state.geoContext, state.cov, state.jacobian, state.jacTransport,
       state.derivative, state.jacToGlobal, parameters, state.covTransport,
       surface, boundParams);
   // Bound to bound jacobian
   jacobian = state.jacobian;
+  // std::cout << jacobian << std::endl;
   path = state.pathAccumulated;
 }
 

@@ -1,21 +1,21 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_f1ce7/fast && /usr/bin/gmake -f CMakeFiles/cmTC_f1ce7.dir/build.make CMakeFiles/cmTC_f1ce7.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_96ff0/fast && /usr/bin/gmake -f CMakeFiles/cmTC_96ff0.dir/build.make CMakeFiles/cmTC_96ff0.dir/build
 gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f1ce7.dir/src.cxx.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f1ce7.dir/src.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_f1ce7
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1ce7.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_f1ce7.dir/src.cxx.o  -o cmTC_f1ce7 
-CMakeFiles/cmTC_f1ce7.dir/src.cxx.o: In function `main':
+Building CXX object CMakeFiles/cmTC_96ff0.dir/src.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_96ff0.dir/src.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_96ff0
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96ff0.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_96ff0.dir/src.cxx.o  -o cmTC_96ff0 
+CMakeFiles/cmTC_96ff0.dir/src.cxx.o: In function `main':
 src.cxx:(.text+0x2d): undefined reference to `pthread_create'
 src.cxx:(.text+0x39): undefined reference to `pthread_detach'
 src.cxx:(.text+0x4a): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_f1ce7.dir/build.make:87: cmTC_f1ce7] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_96ff0.dir/build.make:87: cmTC_96ff0] Error 1
 gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:121: cmTC_f1ce7/fast] Error 2
+gmake: *** [Makefile:121: cmTC_96ff0/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_639cf/fast && /usr/bin/gmake -f CMakeFiles/cmTC_639cf.dir/build.make CMakeFiles/cmTC_639cf.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_93b6d/fast && /usr/bin/gmake -f CMakeFiles/cmTC_93b6d.dir/build.make CMakeFiles/cmTC_93b6d.dir/build
 gmake[1]: Entering directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_639cf.dir/CheckFunctionExists.cxx.o
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_639cf.dir/CheckFunctionExists.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_639cf
-/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_639cf.dir/link.txt --verbose=1
-/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_639cf.dir/CheckFunctionExists.cxx.o  -o cmTC_639cf -lpthreads 
+Building CXX object CMakeFiles/cmTC_93b6d.dir/CheckFunctionExists.cxx.o
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_93b6d.dir/CheckFunctionExists.cxx.o -c /uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_93b6d
+/uufs/chpc.utah.edu/sys/installdir/cmake/3.15.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93b6d.dir/link.txt --verbose=1
+/uufs/chpc.utah.edu/sys/installdir/gcc/10.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_93b6d.dir/CheckFunctionExists.cxx.o  -o cmTC_93b6d -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_639cf.dir/build.make:87: cmTC_639cf] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_93b6d.dir/build.make:87: cmTC_93b6d] Error 1
 gmake[1]: Leaving directory '/uufs/chpc.utah.edu/common/home/u1305734/gpuKalmanFitter/demo/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:121: cmTC_639cf/fast] Error 2
+gmake: *** [Makefile:121: cmTC_93b6d/fast] Error 2
 
 
 
