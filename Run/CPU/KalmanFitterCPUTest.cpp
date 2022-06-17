@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
   auto start_fit = std::chrono::high_resolution_clock::now();
 // #pragma omp parallel for num_threads(nThreads)
   for (int it = 0; it < nTracks; it++) {
-    std::cout << "Track id: " << it << std::endl;
+    std::cout << "track id: " << it << std::endl;
     // The fit result wrapper
     KalmanFitterResultType kfResult;
     kfResult.fittedStates = Acts::CudaKernelContainer<TSType>(

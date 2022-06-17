@@ -794,7 +794,7 @@ public:
     int count = 0;
     printf("Kalman Filter Result:\n");
     for(auto iter = kfResult.fittedStates.begin(); iter != kfResult.fittedStates.end(); iter++) {
-      printf("surface id %d:\n", count);
+      printf("surface id: %d\n", count);
       printf("smoothed value is: %f\n", (*iter).parameter.smoothed);
       printf("cov[0, 0] is: %f\n", (*iter).parameter.jacobian(0, 0));
       printf("cov[0, 1] is: %f\n", (*iter).parameter.jacobian(0, 1));

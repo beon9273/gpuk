@@ -11,8 +11,8 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
 
   PropagatorResult result;
 
-  // int surface_steps = 0;
-  // int surface_counts = 0;
+  int surface_steps = 0;
+  int surface_counts = 0;
 
 
   using StateType = State<propagator_options_t>;
@@ -43,6 +43,8 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
     for (; result.steps < state.options.maxSteps; ++result.steps) {
       // Perform a propagation step - it takes the propagation state
 
+      printf("surface id: %d\n", surface_counts);
+
       PUSH_RANGE("step", 3);
       // int64_t t0 = clock ();
       bool res = m_stepper.step(state);
@@ -57,12 +59,17 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       POP_RANGE();
       // std::cout << "state pos after step:" << state.stepping.pos(0, 0) << ", " << state.stepping.pos(0, 1) << ", " << state.stepping.pos(0, 2) << std::endl; 
       // printf("state pos after step: (%d, %d, %d)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
-      printf("Surface Id %d:\n", result.steps/2);
+      // printf("Surface Id %d:\n", result.steps/2);
+      ++surface_steps;
+      printf("step id: %d\n", surface_steps);
       printf("state pos after step: (%f, %f, %f)\n", state.stepping.pos(0, 0), state.stepping.pos(0, 1), state.stepping.pos(0, 2));
       printf("state dir after step: (%f, %f, %f)\n", state.stepping.dir(0, 0), state.stepping.dir(0, 1), state.stepping.dir(0, 2));
+      printf("state momentum: %f\n", state.stepping.p);
+      printf("state charge: %d\n", state.stepping.q);
       printf("state num of stepTrails is: %zu\n", state.stepping.nStepTrials);
       // std::cout << "state pos after step:" << state.stepping.pos << std::endl;
       // ++surface_steps;
+    
 
       // Post-stepping:
       // navigator status call - action list - aborter list - target call
@@ -71,11 +78,12 @@ ACTS_DEVICE_FUNC Acts::PropagatorResult Acts::Propagator<S, N>::propagate(
       m_navigator.status(state, m_stepper);
 
       auto surface = state.navigation.currentSurface;
-      // if (surface != nullptr) {
-      //   printf("Steps %d; %d; %ld\n", surface_steps, surface_counts, t1-t0);
-      //   surface_steps = 0;
-      //   ++surface_counts;
-      // }
+      if (surface != nullptr) {
+        // printf("Steps %d; %d; %ld\n", surface_steps, surface_counts, t1-t0);
+        // printf("Steps %d; %d\n", surface_steps, surface_counts);
+        surface_steps = 0;
+        ++surface_counts;
+      }
 
       state.options.action(state, m_stepper, actorResult);
 
